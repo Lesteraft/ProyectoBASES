@@ -3,6 +3,11 @@ html{
     width: 100%;
 }
 
+form{
+    color: white;
+    font-size: 13px;   
+}
+
 body{
     margin: 0;
     width: 100%;
@@ -22,7 +27,7 @@ body{
 }
 
 .fn{
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.5);
 }
 .wht{
     height: 100%;
@@ -39,16 +44,25 @@ body{
 }
 
 #div-login{
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
     width: 300px;
-    padding:40px;
+    height: auto;
+    padding:60px 60px 20px;
     margin-right: auto;
     margin-left: auto;
 }
 
+table{
+    width: 100%;
+}
+
+td{
+    width: 29px;
+}
+
 h1{
     color: white;
-    font-size: 2em;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -56,14 +70,13 @@ input[type="email"], input[type="password"]{
     color: white;
     width: 100%;
     font-size: 16px;
-    padding: 16px 20px 0;
+    padding: 12px 20px;
     border-style: solid;
     border-radius: 4px;
     border-width: 1px;
     border-color: #000000;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     box-sizing: border-box;
-
     background-color: #333333;
 }
 input:focus{
@@ -72,13 +85,12 @@ input:focus{
 
 a {
     text-decoration: none;
-    color: #0080ff;
-    font-size:0.9em;
+    font-size: 13px;
+    color: #9d9595;
 }
 
 a:hover{
-    text-decoration: underline;
-    color: #153e68;
+    text-decoration: none;
 }
 
 button{
@@ -87,7 +99,13 @@ button{
     color: #fff;
     border: transparent;
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#inicioFacebook{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
 }
