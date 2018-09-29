@@ -123,9 +123,33 @@ a{
 /*FIN CONTENIDO CENTRAL*/
 
 .valid{
-    color: #27cf43;
+    color: #27cf43; 
+}
+
+#valid-email{
+    display: none;   
+}
+
+#texto-invalid-email, #email-vacio, #password-vacio{
+    display: none;
+}
+
+#valid-password{
+    display: none;   
 }
 
 .invalid{
     color: red;
+    display: none;
+}
+
+.texto-validacion{
+    font-size: 14px;
+    color: red;
+}
+
+.icon{
+    position: relative;
+    right: 10px;
+    bottom: 40px;
 }
