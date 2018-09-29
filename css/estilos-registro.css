@@ -1,0 +1,131 @@
+/*INICIO body*/
+body{
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin: 0;
+}
+/*FIN body*/
+
+/*INICIO Navbar*/
+#navbar{
+    height: 90px;
+    border-bottom: solid 1px #ccc;
+    padding: 0 20px;
+}
+
+#navbar-img-logo{
+    width: 200px;
+}
+
+#navbar-text{
+    font-weight: 700;
+    float: right;
+    font-size: 19px;
+    margin: 0 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;    
+}
+
+.navbar-items{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*FIN Navbar*/
+
+/*INICIO CONTENIDO CENTRAL*/
+.div-central{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+/*INICIO CC1*/
+#contenido-central-1{
+    text-align: left;
+    text-align: center;
+    width: 340px;
+    font-size: 17px;
+    
+}
+#contenido-central-1 img{
+    width: 80%;
+    margin: 15px 0;
+}
+
+.texto-central-1{
+    width: 300px;
+    margin: 10px 0;
+    
+}
+
+#contenido-central-1 button{
+    background-color: #F6121D;
+    font-size: 17px;
+    font-weight: 500;
+    width: 100%;
+    color: #fff;
+    height: 50px;
+    margin: 20px 0;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
+    border-style: none;
+}
+/*FIN CC1*/
+
+/*INICIO CC2*/
+#contenido-central-2{
+    text-align: left;
+    width: 440px;
+    font-size: 20px;
+    
+}
+
+.signup-input{
+    width: 100%;
+    height: 50px;
+    border: solid 1px #000;
+    font-size: 17px;
+    padding: 0 15px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.texto-central-2{
+    width: 100%;
+    margin: 10px 0;
+}
+
+#contenido-central-2 button{    
+    background-color: #F6121D;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
+    border-style: none;
+}
+/*FIN CC2*/
+
+.fas{
+    float: right;
+    font-size: 18px;
+}
+/*FIN CONTENIDO CENTRAL*/
+
+.valid{
+    color: #27cf43;
+}
+
+.invalid{
+    color: red;
+}
