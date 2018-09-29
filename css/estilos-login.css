@@ -20,8 +20,7 @@ body{
     top: 0;
     background-image: url("../img/HN-es-20180924-popsignuptwoweeks-perspective_alpha_website_small.jpg");
     background-repeat: no-repeat; 
-    background-position: center center;
-    background-size: cover;
+    background-size: inherit;
     background-attachment: fixed;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
@@ -50,6 +49,7 @@ body{
     padding:60px 60px 20px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 100px;   
 }
 
 table{
