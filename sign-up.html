@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/estilos-registro.css">
     <title>Netflix</title>
@@ -14,19 +15,87 @@
         <div id="navbar-text" class="navbar-items"><a href="index.html">Iniciar Sesion</a></div>
     </nav>
 
-    <div class="div-central" id="contenido-central-1" style="display:none">
+    <div class="" id="contenido-registro">
+        <div></div>
+        <div class="container-fluid">
+            <div class="" style="font-size:13px;">PASO 1 DE 3</div>
+            <div class=""><b style="font-size:20px;">Selecciona el plan ideal para ti.</b></div>
+            <div class="">Cambia a un plan inferior o superior en cualquier momento</div>
+            <div class="row" id="row-sup">
+                <div class="col-md-4 col-planes-0"></div>
+                <div class="col-md-2 col-planes-1"><button type="button" class="cuadrado" id="plan-basico">Básico<div class="triangulo" id="triangulo-plan-basico" style="display:none"></div></button></div>
+                <div class="col-md-2 col-planes-2"><button type="button" class="cuadrado" id="plan-estandar">Estándar<div class="triangulo" id="triangulo-plan-estandar" style="display:none"></div></button></div>
+                <div class="col-md-2 col-planes-3"><button type="button" class="cuadrado" id="plan-premium">Premium<div class="triangulo" id="triangulo-plan-premium" style="display:none"></div></button></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-planes-0">El precio mensual después de que termina el mes gratis el [Fecha]</div>
+                <div class="col-md-2 text-red col-planes-1">USD7.99</div>
+                <div class="col-md-2 text-red col-planes-2">UDS9.99</div>
+                <div class="col-md-2 text-red col-planes-3">USD11.99</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-planes-0">HD disponible</div>
+                <div class="col-md-2"><i class="fas fa-times col-planes-1"></i></div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-2"></i></div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-3"></i></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-planes-0">Ultra HD disponible</div>
+                <div class="col-md-2"><i class="fas fa-times col-planes-1"></i></div>
+                <div class="col-md-2"><i class="fas fa-times col-planes-2"></i></div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-3"></i></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-planes-0">Pantallas en las que puedes ver al mismo tiempo</div>
+                <div class="col-md-2 text-red col-planes-1">1</div>
+                <div class="col-md-2 text-red col-planes-2">2</div>
+                <div class="col-md-2 text-red col-planes-3">4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-planes-0">Ve en tu laptop, TV, teléfono y tablet</div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-1"></i></div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-2"></i></div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-3"></i></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-planes-0">Péliculas y programas de TV ilimitados</div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-1"></i></div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-2"></i></div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-3"></i></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-planes-0">Cancela en cualquier momento</div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-1"></i></div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-2"></i></div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-3"></i></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-planes-0">El primer mes es gratis</div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-1"></i></div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-2"></i></div>
+                <div class="col-md-2"><i class="fas fa-check col-planes-3"></i></div>
+            </div><br>
+            <div style="font-size:12px;">La disponibilidad del contenido HD y Ultra HD depende de tu proveedor de servicios de internet y del dispositivo en uso.
+                 No todo el contenido está disponible en HD o en Ultra HD.
+                 Consulta los Términos de uso para obtener más información.
+            </div>
+        </div><br>
+        <button id="btn-cc" type="button">CONTINUAR</button>
+    </div>
+
+    <div class="div-central" id="contenido-registro-1" style="display:none">
         <img src="img/Devices.png">
         <div class="texto-central-1" style="font-size:13px;">PASO 2 DE 3</div>
         <div class="texto-central-1"><b>Crea tu cuenta.</b></div>
         <div class="texto-central-1">Usa tu email y crea una contraseña para ver Netflix en cualquier dispositivo, cuando quieras</div>
         <button id="btn-cc1" type="button">CONTINUAR<i class="fas fa-chevron-circle-right"></i></button>
     </div>
-    <div class="div-central" id="contenido-central-2" >
+    <div class="div-central" id="contenido-registro-2" style="display:none">
         <div class="texto-central-2" style="font-size:13px;">PASO 2 DE 3</div>
         <div class="texto-central-2"><b>Suscríbete para que comiences tu mes gratis</b></div>
         <div class="texto-central-2">¡Dos pasos más y listo!<br>Tampoco nos gustan los trámites.</div>
         <div class="texto-central-2"><b>Crea tu cuenta.</b></div>
-        <input type="email" name="" id="user-email" class="signup-input" placeholder="Email"><br>
+        <input type="email" name="" id="user-email" class="signup-input" placeholder="Email">
         <i class="fas fa-check-circle valid icon" id="valid-email"></i><i class="fas fa-times-circle invalid icon" id="invalid-email"></i></i>
         <i class="texto-validacion" id="texto-invalid-email">Correo electronico invalido.</i>
         <i class="texto-validacion" id="email-vacio">Debe introducir un correo electronico.</i>
@@ -36,7 +105,6 @@
         <button id="btn-cc2" type="button">CONTINUAR<i class="fas fa-chevron-circle-right"></i></button>
     </div>
     <footer>
-
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/controlador-sign-up.js"></script>

@@ -1,7 +1,59 @@
 $(document).ready(function(){
+    
+    var planUsuario;
+
+    $(window).click(function(e){
+        switch(e.target.id){
+            case "plan-basico":
+                planUsuario = "basico";
+                $("#triangulo-plan-basico").attr("style", "display:");
+                $("#triangulo-plan-estandar").attr("style", "display:none");
+                $("#triangulo-plan-premium").attr("style", "display:none");
+                $("#plan-basico").css({"background-color":"#F6121D"});
+                $("#plan-estandar").css({"background-color":"#ef6b71"});
+                $("#plan-premium").css({"background-color":"#ef6b71"});
+                $(".col-planes-1").css({"color":"#F6121D"});
+                $(".col-planes-2").css({"color":"#ccc"});
+                $(".col-planes-3").css({"color":"#ccc"});
+                break;
+            case "plan-estandar":
+                planUsuario = "estandar";
+                $("#triangulo-plan-basico").attr("style", "display:none");
+                $("#triangulo-plan-estandar").attr("style", "display:");
+                $("#triangulo-plan-premium").attr("style", "display:none");
+                $("#plan-basico").css({"background-color":"#ef6b71"});
+                $("#plan-estandar").css({"background-color":"#F6121D"});
+                $("#plan-premium").css({"background-color":"#ef6b71"});
+                $(".col-planes-1").css({"color":"#ccc"});
+                $(".col-planes-2").css({"color":"#F6121D"});
+                $(".col-planes-3").css({"color":"#ccc"});
+                break;
+            case "plan-premium":
+                planUsuario = "premium";
+                $("#triangulo-plan-basico").attr("style", "display:none");
+                $("#triangulo-plan-estandar").attr("style", "display:none");
+                $("#triangulo-plan-premium").attr("style", "display:");
+                $("#plan-basico").css({"background-color":"#ef6b71"});
+                $("#plan-estandar").css({"background-color":"#ef6b71"});
+                $("#plan-premium").css({"background-color":"#F6121D"});
+                $(".col-planes-1").css({"color":"#ccc"});
+                $(".col-planes-2").css({"color":"#ccc"});
+                $(".col-planes-3").css({"color":"#F6121D"});
+                break;
+            default:
+                break;
+        }
+    });
+
+    //Botones continuar registro
+    $("#btn-cc").click(function(){
+        $("#contenido-registro").attr("style", "display:none");
+        $("#contenido-registro-1").attr("style", "display:");
+    });
+
     $("#btn-cc1").click(function(){
-        $("#contenido-central-1").attr("style", "display:none");
-        $("#contenido-central-2").attr("style", "display:");
+        $("#contenido-registro-1").attr("style", "display:none");
+        $("#contenido-registro-2").attr("style", "display:");
     });
 
     //Validacion campos
@@ -41,6 +93,7 @@ $(document).ready(function(){
         //CORREO, CONTRASENIA VALIDO
         if(emailValido == true && passValido == true){
             console.log("correo y contra valido"); //Capturar informacion y seguir con siguiente paso
+            console.log("Plan:"+planUsuario+"\nCorreo:"+$("#user-email").val()+"\nContraseña:"+$("#user-password").val());
             $("#texto-invalid-email").attr("style", "display:none");
             $("#email-vacio").attr("style", "display:none");
             $("#password-vacio").attr("style", "display:none");
