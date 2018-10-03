@@ -7,6 +7,11 @@ $(document).ready(function(){
             case "plan-basico":
                 planUsuario = "basico";
                 $("#triangulo-plan-basico").attr("style", "display:");
+                $("#triangulo-plan-basico").animate(
+                    {
+                        opacity:"1"
+                    }, "500"
+                );
                 $("#triangulo-plan-estandar").attr("style", "display:none");
                 $("#triangulo-plan-premium").attr("style", "display:none");
                 $("#plan-basico").css({"background-color":"#F6121D"});
@@ -20,6 +25,11 @@ $(document).ready(function(){
                 planUsuario = "estandar";
                 $("#triangulo-plan-basico").attr("style", "display:none");
                 $("#triangulo-plan-estandar").attr("style", "display:");
+                $("#triangulo-plan-estandar").animate(
+                    {
+                        opacity:"1"
+                    }, "500"
+                );
                 $("#triangulo-plan-premium").attr("style", "display:none");
                 $("#plan-basico").css({"background-color":"#ef6b71"});
                 $("#plan-estandar").css({"background-color":"#F6121D"});
@@ -33,6 +43,11 @@ $(document).ready(function(){
                 $("#triangulo-plan-basico").attr("style", "display:none");
                 $("#triangulo-plan-estandar").attr("style", "display:none");
                 $("#triangulo-plan-premium").attr("style", "display:");
+                $("#triangulo-plan-premium").animate(
+                    {
+                        opacity:"1"
+                    }, "500"
+                );
                 $("#plan-basico").css({"background-color":"#ef6b71"});
                 $("#plan-estandar").css({"background-color":"#ef6b71"});
                 $("#plan-premium").css({"background-color":"#F6121D"});
@@ -46,14 +61,42 @@ $(document).ready(function(){
     });
 
     //Botones continuar registro
+    $("#btn-ir").click(function(){
+         $("#info-registro").animate({
+            opacity:"0",
+            left:"300px"
+         },"fast");
+        //$("#info-registro").attr("style", "display:none");
+        $("#contenido-registro").attr("style", "display:");
+        $("#contenido-registro").animate({
+            opacity:"1"
+         });
+        
+    });
     $("#btn-cc").click(function(){
-        $("#contenido-registro").attr("style", "display:none");
+        $("#contenido-registro").animate({
+            opacity:"0"
+         },"fast");
+         $("html, body").animate({
+            scrollTop: $("#contenido-registro-1").offset().top
+        }, 300);
+        //$("#contenido-registro").attr("style", "display:none");
         $("#contenido-registro-1").attr("style", "display:");
+        $("#contenido-registro-1").animate({
+            opacity:"1"
+         });
     });
 
     $("#btn-cc1").click(function(){
-        $("#contenido-registro-1").attr("style", "display:none");
+        //$("#contenido-registro-1").attr("style", "display:none");
+        $("#contenido-registro-1").animate({
+            left:"300px",
+            opacity:"0"
+         },"fast");
         $("#contenido-registro-2").attr("style", "display:");
+        $("#contenido-registro-2").animate({
+            opacity:"1"
+         });
     });
 
     //Validacion campos

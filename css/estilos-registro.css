@@ -45,9 +45,54 @@ a{
     
 }
 
+#info-registro{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 300px;
+}
+
+.informacion-planes{
+    display: inline-block;
+    position: absolute;
+    margin: 0 5px;
+    
+}
+
+#btn-ir{
+    border: none;
+    color: #F6121D;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: px;
+    border-bottom: solid 1px #F6121D;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+
+#btn-ir:focus{
+    outline: 1;
+}
+#img-check{
+    width: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#info-registro .fas{
+    margin: 5px;
+}
+
 /*INICIO CR*/
     #contenido-registro{
         margin: 30px 0;
+        opacity: 0;
     }
     .container-fluid{
         text-align: left;
@@ -114,6 +159,7 @@ a{
         border-right: 10px solid transparent;
         border-top: 10px solid #F6121D;
         border-left: 10px solid transparent;
+        opacity: 0;
     }
 /*FIN CR*/
 
@@ -123,6 +169,7 @@ a{
     text-align: center;
     width: 340px;
     font-size: 17px;
+    opacity: 0;
     
 }
 #contenido-registro-1 img{
@@ -149,6 +196,10 @@ a{
     cursor: pointer;
     border-style: none;
 }
+
+#contenido-registro-1 i.fas{
+    float: right;
+}
 /*FIN CR1*/
 
 /*INICIO CR2*/
@@ -156,6 +207,7 @@ a{
     text-align: left;
     width: 440px;
     font-size: 20px;
+    opacity: 0;
     
 }
 
@@ -189,7 +241,7 @@ a{
 }
 /*FIN CR2*/
 
-.fas{
+#contenido-registro-2 .fas{
     float: right;
     font-size: 18px;
 }
