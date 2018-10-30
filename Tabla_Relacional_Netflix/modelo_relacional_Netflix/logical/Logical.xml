@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="7C265465-9689-FA93-0117-1E9374B6D6B3" mainViewID="5A8FBD91-2746-3DE2-E5D8-D339A64A81AA">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 01:48:22 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

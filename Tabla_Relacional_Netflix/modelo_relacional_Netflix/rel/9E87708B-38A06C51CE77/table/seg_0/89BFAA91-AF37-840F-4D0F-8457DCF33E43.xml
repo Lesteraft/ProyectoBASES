@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89BFAA91-AF37-840F-4D0F-8457DCF33E43" name="TBL_CUENTA">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 01:49:30 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CUENTA" id="93AFBE6B-5CC0-D466-D018-0C706C20A4DB">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:19:29 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_PLAN" id="B6703EA1-789B-C1FA-61FD-F03A03C7A126">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:28:30 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA8DA4FE-60FF-6F3F-C91E-D70046B1B59E" referredColumn="FAE66B24-E5C1-06CA-41BD-352E98ED13DA"/>
+</associations>
+</Column>
+<Column name="CORREO" id="05369407-B619-C07D-3CB5-6ABCA9358994">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:20:01 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTRASEÑA" id="6CAEB191-3077-279A-ABDD-60A12005C4E6">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:20:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_TARGETA_CREDITO" id="ED8C0A92-EDF9-1260-7275-31ABD2A9E559">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:18:49 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_VENCIMIENTO" id="51431F72-9537-4DFE-3075-83C2328C4493">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:18:49 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6FC621F-E731-1588-5EA1-2809137BD5FB" name="TBL_CUENTA_PK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:19:29 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93AFBE6B-5CC0-D466-D018-0C706C20A4DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="724DB4C2-68B2-3E59-6CE0-480E80771115" name="TBL_CUENTA_TBL_PLANES_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:28:30 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6703EA1-789B-C1FA-61FD-F03A03C7A126"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

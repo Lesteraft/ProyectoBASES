@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDC14D53-D486-7013-1C7F-D7B1EA8C8EF6" name="TBL_GUIONISTAS">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 05:57:59 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_GUIONISTA" id="E65D951F-FCFA-1F38-7273-BA1C72290989">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 05:58:27 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_GUIONISTA" id="194E0ED7-1C6D-D32D-65B5-1D3C0EB99CA4">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 05:59:33 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NACIMIENTO" id="8BECFED2-9FE9-5254-BBEF-6200A9862682">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 05:59:33 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESIDENCIA" id="9C38494D-9135-DBEA-FF3E-AA7EE93458B1">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:01:22 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A4B30D05-F6F5-D9E4-62C6-44FBAB37E001" name="TBL_GUIONISTAS_PK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 05:58:27 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E65D951F-FCFA-1F38-7273-BA1C72290989"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

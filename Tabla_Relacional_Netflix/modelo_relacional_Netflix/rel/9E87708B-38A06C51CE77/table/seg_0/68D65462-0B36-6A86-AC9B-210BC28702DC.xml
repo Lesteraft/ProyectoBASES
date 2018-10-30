@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="68D65462-0B36-6A86-AC9B-210BC28702DC" name="TBL_EPISODIOS">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:05:16 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_EPISODIO" id="18886969-22BC-6806-64C9-CE57317AFA7A">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:06:29 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CADIGO_TEMPORADA" id="AAE293A3-F257-DD3D-4E43-6955FE27B7C4">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:33:32 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0634BBA-D067-A069-2C52-5DC84B725BD3" referredColumn="8CEB6D49-333C-A0C9-5135-59522168C2C7"/>
+</associations>
+</Column>
+<Column name="NOMBRE_EPISODIO" id="98162267-301F-BC87-3AC5-6E25A68DB021">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:06:29 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DURACION" id="0CB0E751-D962-AA09-0339-F481186D991C">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:06:29 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VISUALIZACIONES" id="42F2EC7D-B6FF-14BA-7411-DDE628C75913">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:24:47 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8035014F-F166-F831-4437-5E5631106EA7" name="TBL_EPISODIOS_PK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:06:29 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18886969-22BC-6806-64C9-CE57317AFA7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16E4CF8D-A374-436E-D8ED-61B927CF6616" name="TBL_EPISODIOS_TBL_TEMPORADA_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:33:32 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAE293A3-F257-DD3D-4E43-6955FE27B7C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

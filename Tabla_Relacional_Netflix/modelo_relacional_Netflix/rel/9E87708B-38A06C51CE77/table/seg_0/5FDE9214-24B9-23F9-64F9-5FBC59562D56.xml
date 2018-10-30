@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FDE9214-24B9-23F9-64F9-5FBC59562D56" name="TB_PERFIL">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:21:15 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_PERFIL" id="DB02FA59-1D95-C714-0B8A-3B0DE7AA5974">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:22:48 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_IDIOMA" id="E113B26E-C5E4-1A2B-30B8-0369FA1CD5BC">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:30:11 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB5313D7-FC54-298E-A5AB-8CF71E6AACD0" referredColumn="A5AFE658-A524-11EF-0B68-65E8C7E94209"/>
+</associations>
+</Column>
+<Column name="CODIGO_CLASIFICACION" id="184401D7-3314-F6E0-3E93-9688D9121B42">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:31:01 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FBDA269D-12A1-E268-BF8A-B328285B6A66" referredColumn="4ECFB294-9FE5-EC81-DE46-E12B893702EE"/>
+</associations>
+</Column>
+<Column name="CODIGO_LUGAR" id="DA4A4531-882F-4902-9118-A2D57D90A01E">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:31:56 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="680E2BD9-7D2B-00E8-C844-1940EB7F4C66" referredColumn="EFC2E3F8-BB7E-315F-4AA5-BCFCDA6DFEBD"/>
+</associations>
+</Column>
+<Column name="CODIGO_CUENTA" id="757F4338-5AC5-166F-7A7B-A6A3CC8B6F02">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:27:29 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5951487F-47F0-E4BD-5189-35BD8864CDAF" referredColumn="93AFBE6B-5CC0-D466-D018-0C706C20A4DB"/>
+</associations>
+</Column>
+<Column name="NOMBRE_PERFIL" id="E8CF9FBD-6A6C-DACD-8EA5-8072F26FF00B">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:23:40 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMAGEN" id="09627FFD-2149-0B0D-DFA8-8851AEB7ACA1">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:31:27 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC19A83E-AB75-3F78-3B76-63C31F88A8DF" name="TB_PERFIL_PK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:22:48 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB02FA59-1D95-C714-0B8A-3B0DE7AA5974"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F76D955-D1DA-62BA-7CEF-98B97A608550" name="TB_PERFIL_TBL_CUENTA_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:27:29 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="757F4338-5AC5-166F-7A7B-A6A3CC8B6F02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99CDC28B-A9DF-5E24-9203-1301AC5C96F7" name="TB_PERFIL_TBL_IDIOMA_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:30:11 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E113B26E-C5E4-1A2B-30B8-0369FA1CD5BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD4EBFFF-DFED-1552-141E-3A623B564B36" name="TB_PERFIL_TBL_CLASIFICACIÓN_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:31:01 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="184401D7-3314-F6E0-3E93-9688D9121B42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42FBA0EE-23C2-FCCD-AE4B-CFC82291F4AC" name="TB_PERFIL_TBL_REGION_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:31:56 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA4A4531-882F-4902-9118-A2D57D90A01E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

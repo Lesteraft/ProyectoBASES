@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BB5313D7-FC54-298E-A5AB-8CF71E6AACD0" containerWithKeyObject="5FDE9214-24B9-23F9-64F9-5FBC59562D56" localFKIndex="99CDC28B-A9DF-5E24-9203-1301AC5C96F7" name="TB_PERFIL_TBL_IDIOMA_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:30:11 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<referredTableLongName>TBL_IDIOMA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EF32C24F-CE92-706B-7B3C-01A431971B11</referredTableID>
+<keyObject>067EF815-AC6D-9534-D573-FABF7F2E45F1</keyObject>
+<referredKeyID>067EF815-AC6D-9534-D573-FABF7F2E45F1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_IDIOMA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

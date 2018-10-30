@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo_relacional_Netflix" id="DDD13A9D-B57F-0EE7-33D1-C7D8375F433B" version="3.5">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 01:48:22 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>DDD13A9D-B57F-0EE7-33D1-C7D8375F433B</designId>
+</OSDM_Design>

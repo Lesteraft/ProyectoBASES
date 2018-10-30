@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4473A2DC-82B9-7160-444B-098C521C36BE" name="TBL_GENEROS">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 05:47:59 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_GENERO" id="4892E77F-649E-9A55-A4F9-D047674B5362">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 05:49:02 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_PELICULA" id="A98B15AC-85D8-1B32-FB01-3C744C371A9E">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:51:09 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34A872BE-7919-2AB0-E759-68749975E265" referredColumn="C6FF73A1-6E9B-CB9F-5C62-78DDDE13A2D7"/>
+</associations>
+</Column>
+<Column name="NOMBRE_GENERO" id="B0E8AA0E-8495-BF3C-91D7-A8A58ED581A8">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 05:49:02 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03402E5B-B4BD-E3A9-9CD1-CDA1C5AF87AC" name="TBL_GENEROS_PK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 05:49:02 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4892E77F-649E-9A55-A4F9-D047674B5362"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AA0D7AE-AFAE-6DD3-1ADC-5515352C3BAF" name="TBL_GENEROS_TBL_PELICULAS_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:51:09 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A98B15AC-85D8-1B32-FB01-3C744C371A9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

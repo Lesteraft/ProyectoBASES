@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0956EF6C-0BC3-4121-3FB5-D50C21656E69" containerWithKeyObject="4F68D279-2506-60ED-0CD4-A63EBF0197D6" localFKIndex="9FA85CBB-7DB3-05F8-06A1-605647AFD3C3" name="TBL_LISTA_FAVORITOS_TBL_TEMPORADA_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 16:56:16 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<referredTableLongName>TBL_TEMPORADA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1C0476AC-A658-8785-F0AD-61B04731974C</referredTableID>
+<keyObject>E47D33BA-BF3A-7CD0-B99E-84E27FC35251</keyObject>
+<referredKeyID>E47D33BA-BF3A-7CD0-B99E-84E27FC35251</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>CADIGO_TEMPORADA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

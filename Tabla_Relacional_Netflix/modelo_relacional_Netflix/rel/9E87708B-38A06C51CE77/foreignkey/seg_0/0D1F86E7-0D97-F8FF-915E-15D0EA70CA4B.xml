@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0D1F86E7-0D97-F8FF-915E-15D0EA70CA4B" containerWithKeyObject="4F68D279-2506-60ED-0CD4-A63EBF0197D6" localFKIndex="4AED0A6B-127E-FA8B-54E4-78C9281CC663" name="TBL_LISTA_FAVORITOS_TBL_SERIES_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 16:56:08 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<referredTableLongName>TBL_SERIES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FE69FCF8-6094-4446-1D8B-668797B12E63</referredTableID>
+<keyObject>DCA83E38-863E-FC07-B942-BC6F5E6E49F7</keyObject>
+<referredKeyID>DCA83E38-863E-FC07-B942-BC6F5E6E49F7</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>CÓDIGO_SERIE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

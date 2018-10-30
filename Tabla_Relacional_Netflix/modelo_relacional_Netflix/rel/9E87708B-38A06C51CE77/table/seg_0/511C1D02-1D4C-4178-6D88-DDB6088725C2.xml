@@ -1,0 +1,188 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="511C1D02-1D4C-4178-6D88-DDB6088725C2" name="TBL_PELICULAS">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:51:39 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_PELICULA" id="C6FF73A1-6E9B-CB9F-5C62-78DDDE13A2D7">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:52:13 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_VALORACION" id="74E669F2-9398-6D5B-F1BE-FD084AD987EC">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:55:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5370E4F-4084-46D3-DF43-254C155FFFB3" referredColumn="4DD4437A-EDA6-EE8D-E758-F64736C91ED0"/>
+</associations>
+</Column>
+<Column name="CODIGO_CLASIFICACION" id="406D109F-3AFE-613C-EA6C-202F6E177CB4">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:55:05 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E3C7533-D21B-83EF-A10A-EE0F3873811B" referredColumn="33593EF0-26F8-BBBC-AB49-1F99A31AEFAF"/>
+</associations>
+</Column>
+<Column name="CODIGO_SUBTITULO" id="3BD41BF5-D09C-51B1-E5B2-158A4AEC0236">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 16:43:41 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1395E1B4-61FE-39F6-C7B4-01F61110F7B5" referredColumn="4D120E3D-BD3D-F6C8-0A65-4D2B7413DBDF"/>
+</associations>
+</Column>
+<Column name="NOMBRE_PELICULA" id="0208E850-0057-5BC4-BED1-7EDB3D99AAFC">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:52:33 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DURACION" id="03F62E9C-51E4-6D34-ADB7-82BA4DDF58E6">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 05:35:01 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESENIA" id="5D7CBDBC-F45E-375F-3228-E4E81B31D7A0">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 05:35:24 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANIO_ESTRENO" id="A02902D4-33DC-1FB6-DD7C-D41E567DD226">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:13:11 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VISUALIZACIONES" id="B041534B-29CD-6156-D067-871E224478FB">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:24:29 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_IDIOMA_CODIGO_IDIOMA" id="890025CC-5F4D-C3E4-31E3-03021E757ACD">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 16:46:31 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6941EEE1-2142-53D5-694F-497ED390BBF2" referredColumn="A5AFE658-A524-11EF-0B68-65E8C7E94209"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EEE5026E-0FFA-DC8B-B444-503BAF4838ED" name="TBL_PELICULAS_PK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 04:52:13 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6FF73A1-6E9B-CB9F-5C62-78DDDE13A2D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51F7B1AA-D4A4-3187-AB38-2913DDCD269A" name="TBL_PELICULAS_TBL_CLASIFICACION_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:55:05 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="406D109F-3AFE-613C-EA6C-202F6E177CB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F7B9E5F-7A1C-2DC7-807D-A7BEF218A55D" name="TBL_PELICULAS_TBL_VALORACION_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:55:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74E669F2-9398-6D5B-F1BE-FD084AD987EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A825851-4EFF-9994-73D6-30BF82465052" name="TBL_PELICULAS_TBL_SUBTITULOS_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 16:43:41 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BD41BF5-D09C-51B1-E5B2-158A4AEC0236"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A7FF88C-0642-F50A-58A8-26EAFE5F2257" name="TBL_PELICULAS_TBL_IDIOMA_FK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 16:46:31 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="890025CC-5F4D-C3E4-31E3-03021E757ACD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

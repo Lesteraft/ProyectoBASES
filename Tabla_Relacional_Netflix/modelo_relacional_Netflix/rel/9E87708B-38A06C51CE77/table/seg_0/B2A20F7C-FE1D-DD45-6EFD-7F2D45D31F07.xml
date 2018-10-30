@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2A20F7C-FE1D-DD45-6EFD-7F2D45D31F07" name="TBL_REGION">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:13:59 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_25</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_LUGAR" id="EFC2E3F8-BB7E-315F-4AA5-BCFCDA6DFEBD">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:14:56 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_LUGAR" id="0519EA7B-22C0-B127-54C2-E52E06C6537B">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:14:56 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19471702-676C-0E13-059F-41CD205B7819" name="TBL_REGION_PK">
+<createdBy>LesterPC</createdBy>
+<createdTime>2018-10-24 06:14:56 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFC2E3F8-BB7E-315F-4AA5-BCFCDA6DFEBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
