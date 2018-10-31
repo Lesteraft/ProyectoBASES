@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="530C5127-05EA-1A40-8134-9992C48CA852" name="TBL_PAGOS">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:18:56 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_49</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CUENTA" id="A6730AAE-F584-55CC-AF5D-15F707CE973C">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:27:37 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D316FFEC-04A4-F97C-0336-5E8251FB5008" referredColumn="93AFBE6B-5CC0-D466-D018-0C706C20A4DB"/>
+</associations>
+</Column>
+<Column name="CODIGO_PAGO" id="77BEC319-488B-BF08-0913-93BFBEC34AA2">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:19:43 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_PAGO" id="7EBF0864-F24B-766E-9611-918FFC35E2A7">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:19:43 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTO_PAGADO" id="C51B1DBD-1FD7-2044-3CD3-2157812B8723">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:28:02 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_PAGO" id="F37630AF-EE68-6487-39DA-886B1CD9EDE5">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:47:39 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F7B731EB-9355-332B-F017-0E3C6FC7240F" name="TBL_PAGOS_PK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:26:15 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77BEC319-488B-BF08-0913-93BFBEC34AA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28451CB2-53CC-8FB4-C9F7-DB352A39EB73" name="TBL_PAGOS_TBL_CUENTA_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:27:37 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6730AAE-F584-55CC-AF5D-15F707CE973C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

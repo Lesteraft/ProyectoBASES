@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3A49AAD-D81D-CB0F-7FC5-28A5A64619E0" name="TBL_VALORACION">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3A49AAD-D81D-CB0F-7FC5-28A5A64619E0" name="TBL_VALORACIONES">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 05:41:46 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

@@ -8,20 +8,6 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CODIGO_VALORACION" id="F651D64A-DE58-7C84-5AD3-6898517CF53E">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 16:27:27 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="407E4FFB-4F32-C99C-1924-9A2345D61A39" referredColumn="4DD4437A-EDA6-EE8D-E758-F64736C91ED0"/>
-</associations>
-</Column>
 <Column name="CODIGO_DIRECTOR" id="9B54E170-8DF4-4556-43EC-F1088C8E2381">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:28:46 UTC</createdTime>
@@ -47,6 +33,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CODIGO_PELICULA" id="CAE8D919-E529-B0AE-56F7-3793EFB4416F">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 00:10:10 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC15BAC6-692C-02B8-1DC2-945A3F7E752F" referredColumn="C6FF73A1-6E9B-CB9F-5C62-78DDDE13A2D7"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="D4CE3D88-8DD2-FD76-FDF3-5E145E133031" name="TBL_DIRECTORES_X_PELICULA_PK">
@@ -57,18 +57,8 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F651D64A-DE58-7C84-5AD3-6898517CF53E"/>
 <colUsage columnID="9B54E170-8DF4-4556-43EC-F1088C8E2381"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="23C9C9B1-5661-217B-DF28-F177E87B8A36" name="TBL_DIRECTORES_X_PELICULA_TBL_VALORACION_FK">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 16:27:27 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="F651D64A-DE58-7C84-5AD3-6898517CF53E"/>
+<colUsage columnID="CAE8D919-E529-B0AE-56F7-3793EFB4416F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="E5FD1671-AAB5-AD00-1B5B-C9BB96CEDDC6" name="TBL_DIRECTORES_X_PELICULA_TBL_DIRECTOR_FK">
@@ -79,6 +69,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9B54E170-8DF4-4556-43EC-F1088C8E2381"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20CEA74D-F676-A07F-E56F-A556E42CA7DC" name="TBL_DIRECTORES_X_PELICULA_TBL_PELICULAS_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 00:10:10 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CAE8D919-E529-B0AE-56F7-3793EFB4416F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

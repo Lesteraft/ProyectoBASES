@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF32C24F-CE92-706B-7B3C-01A431971B11" name="TBL_IDIOMA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF32C24F-CE92-706B-7B3C-01A431971B11" name="TBL_IDIOMAS">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 04:31:31 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="858E450C-A0C6-3C23-E657-15947CC6757B" containerWithKeyObject="926D6DA3-328A-6DE4-AF34-4F8047D7FB5D" localFKIndex="0F607F53-70F0-EAA6-C12A-65095892160D" name="TBL_TARJETAS_TBL_CUENTA_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:35:28 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<referredTableLongName>TBL_CUENTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>89BFAA91-AF37-840F-4D0F-8457DCF33E43</referredTableID>
+<keyObject>E6FC621F-E731-1588-5EA1-2809137BD5FB</keyObject>
+<referredKeyID>E6FC621F-E731-1588-5EA1-2809137BD5FB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_CUENTA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

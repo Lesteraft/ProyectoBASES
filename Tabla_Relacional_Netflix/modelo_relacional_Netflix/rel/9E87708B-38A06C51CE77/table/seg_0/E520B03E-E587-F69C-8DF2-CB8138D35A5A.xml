@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E520B03E-E587-F69C-8DF2-CB8138D35A5A" name="TBL_DIRECTOR">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E520B03E-E587-F69C-8DF2-CB8138D35A5A" name="TBL_DIRECTORES">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:02:03 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -37,17 +37,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="NACIONALIDAD" id="F923CC37-EF74-C9F9-26CA-FB20FB443A30">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 06:03:32 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

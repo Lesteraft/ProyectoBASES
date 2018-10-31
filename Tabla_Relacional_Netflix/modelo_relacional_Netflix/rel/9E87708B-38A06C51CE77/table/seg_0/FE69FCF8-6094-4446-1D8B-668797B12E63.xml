@@ -18,6 +18,34 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CODIGO_ESTADO" id="59DD32A7-79E1-8AEB-163F-5B383AD9BD5B">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 23:58:17 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="420E758B-15A1-190A-0FB2-FF0EEE5D31E8" referredColumn="192EC9F0-D757-A2F9-1C0F-3F07EB541EDB"/>
+</associations>
+</Column>
+<Column name="CODIGO_ADMINISTRADOR" id="369A7625-60D2-7FC0-276C-AAF5AB42B6C4">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 00:40:13 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23FC733F-A66A-2A85-5AC6-42907BEB5969" referredColumn="A36366CA-75BE-7A18-7F98-2BDBEB7B4284"/>
+</associations>
+</Column>
 <Column name="NOMBRE_SERIE" id="35D4A648-E299-4E47-B29C-901F3B5B309E">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 05:53:46 UTC</createdTime>
@@ -51,6 +79,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F17F8AD9-EA8A-A676-E158-2C6E262843A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF74FDC8-2747-6F3A-CA96-F76B12F692D8" name="TBL_SERIES_TBL_ESTADOS_SERIES_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 23:58:17 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59DD32A7-79E1-8AEB-163F-5B383AD9BD5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88CEB09F-7631-3112-E04A-FE7753D78ADD" name="TBL_SERIES_TBL_ADMINISTRADORES_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 00:40:13 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="369A7625-60D2-7FC0-276C-AAF5AB42B6C4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

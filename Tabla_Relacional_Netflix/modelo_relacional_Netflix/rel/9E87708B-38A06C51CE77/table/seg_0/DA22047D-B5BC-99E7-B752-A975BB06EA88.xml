@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA22047D-B5BC-99E7-B752-A975BB06EA88" name="TBL_BUSQUEDAS">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:26:58 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_25</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_BUSQUEDA" id="E12957C9-9B40-4FFC-69F5-C5A16741B2E8">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:26:58 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_PERFIL" id="E84AE77E-E28D-7FDE-AE53-3968BF5DA465">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:27:06 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2AFD823-F7C0-9310-A7B1-76901DACA961" referredColumn="DB02FA59-1D95-C714-0B8A-3B0DE7AA5974"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION_BUSQUEDA" id="DB299D71-74C3-C44A-9CF4-0DC8B50DA14C">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:26:58 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA" id="E9C29FA0-3A94-38E7-8293-293E8A91BB28">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:26:58 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8E558DE4-2728-5A47-1603-971278648BFF" name="TBL_BUSQUEDAS_PK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:26:58 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E12957C9-9B40-4FFC-69F5-C5A16741B2E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B817AE1-6095-8FC7-6B8B-D47BB10D2D3B" name="TBL_BUSQUEDAS_TB_PERFIL_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:27:06 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E84AE77E-E28D-7FDE-AE53-3968BF5DA465"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

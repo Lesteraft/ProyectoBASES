@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A92AF6EC-6F74-1509-B588-520DDA1A1F65" name="TBL_CONTROLES_PARENTALES">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:07:03 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_33</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CONTROL_PARENTAL" id="0B496EC2-A0B7-3D48-EDE5-A8F8BBC7979D">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:07:03 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_CONTROL_PARENTAL" id="D794DD94-B1D3-8A56-5976-D635693F13BF">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:07:03 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_CUENTA" id="18975100-08AA-1AB6-9828-5AF1CE928569">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:07:47 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9DBD0B8A-F321-3BC4-2166-419BF1EA5CAB" referredColumn="93AFBE6B-5CC0-D466-D018-0C706C20A4DB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A9A4E4A-438D-5FCF-C8C7-E4C2F1FC3E35" name="TBL_CONTROLES_PARENTALES_PK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:07:03 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B496EC2-A0B7-3D48-EDE5-A8F8BBC7979D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4BC79D27-38B1-36B9-0357-A88361BB0E65" name="TBL_CONTROLES_PARENTALES_TBL_CUENTA_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:07:47 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18975100-08AA-1AB6-9828-5AF1CE928569"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

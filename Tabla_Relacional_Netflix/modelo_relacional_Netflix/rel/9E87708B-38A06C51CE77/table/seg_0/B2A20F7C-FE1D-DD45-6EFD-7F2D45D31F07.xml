@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2A20F7C-FE1D-DD45-6EFD-7F2D45D31F07" name="TBL_REGION">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2A20F7C-FE1D-DD45-6EFD-7F2D45D31F07" name="TBL_REGIONES">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:13:59 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -18,6 +18,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CODIGO_LUGAR_PADRE" id="F0E82476-8600-7783-A1FB-93A6B3D55A23">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:45:55 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3AEF46BC-E81F-618E-2843-0D57CDFFBFB7" referredColumn="EFC2E3F8-BB7E-315F-4AA5-BCFCDA6DFEBD"/>
+</associations>
+</Column>
 <Column name="NOMBRE_LUGAR" id="0519EA7B-22C0-B127-54C2-E52E06C6537B">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:14:56 UTC</createdTime>
@@ -27,6 +42,28 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUD" id="544CAD32-A746-EBD1-F527-0A118EFBE19D">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:45:50 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUD" id="CFC97C03-0F6E-D719-A0C9-B517A0FF3381">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:45:50 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -40,6 +77,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EFC2E3F8-BB7E-315F-4AA5-BCFCDA6DFEBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="876426D8-DABD-7B0E-6DA2-ECFF6247250F" name="TBL_REGIONES_TBL_REGIONES_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:45:55 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0E82476-8600-7783-A1FB-93A6B3D55A23"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="04DB38E1-A8B8-35DC-E92F-BD565946D202" containerWithKeyObject="926D6DA3-328A-6DE4-AF34-4F8047D7FB5D" localFKIndex="E7E175D2-951D-3CBC-CE58-460814E26B29" name="TBL_TARJETAS_TBL_METODOS_DE_PAGO_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:36:48 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<referredTableLongName>TBL_METODOS_DE_PAGO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>11FAED3F-C758-75D6-9202-7AE199AC68D2</referredTableID>
+<keyObject>685CB67B-F09B-044A-AB94-EE131854DFE3</keyObject>
+<referredKeyID>685CB67B-F09B-044A-AB94-EE131854DFE3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_METODO_PAGO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

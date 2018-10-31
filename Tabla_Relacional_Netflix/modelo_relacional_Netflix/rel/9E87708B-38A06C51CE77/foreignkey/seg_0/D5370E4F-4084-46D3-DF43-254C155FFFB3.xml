@@ -3,7 +3,7 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:55:53 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<referredTableLongName>TBL_VALORACION</referredTableLongName>
+<referredTableLongName>TBL_VALORACIONES</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>B3A49AAD-D81D-CB0F-7FC5-28A5A64619E0</referredTableID>
 <keyObject>A4B49E2A-807A-D599-B717-4E59D8F4AF36</keyObject>

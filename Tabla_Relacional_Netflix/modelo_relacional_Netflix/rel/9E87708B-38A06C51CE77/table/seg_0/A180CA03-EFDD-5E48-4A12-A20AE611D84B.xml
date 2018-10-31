@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A180CA03-EFDD-5E48-4A12-A20AE611D84B" name="TBL_DESCARGAS">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:28:47 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_40</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_PERFIL" id="3363853F-BFD5-F2F5-0D49-5B5DB36F67C6">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:30:46 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="53895877-F479-26CE-2BFC-DB494BA00B1D" referredColumn="DB02FA59-1D95-C714-0B8A-3B0DE7AA5974"/>
+</associations>
+</Column>
+<Column name="CODIGO_DISPOSITIVO" id="88331468-5396-E59C-7B6D-A8DD453BD89A">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:30:55 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="145B8E1D-BD17-B7CD-2DA8-B50756BC237C" referredColumn="9F1F9096-DB64-EB86-BB2F-2F951965298E"/>
+</associations>
+</Column>
+<Column name="FECHA" id="057C642B-DEB5-18E6-8175-9F4B476CF745">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:28:47 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="58605D8B-F6E5-E092-80D2-B16DD594C6BB" name="TBL_DESCARGAS_PK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:28:47 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="057C642B-DEB5-18E6-8175-9F4B476CF745"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="066E1103-9AD2-AFB3-CC58-CB7CC58D7AFE" name="TBL_DESCARGAS__UN">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:32:39 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3363853F-BFD5-F2F5-0D49-5B5DB36F67C6"/>
+<colUsage columnID="88331468-5396-E59C-7B6D-A8DD453BD89A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0786B226-DBB5-CA43-1CF5-AF81A46D6B2A" name="TBL_DESCARGAS_TB_PERFIL_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:30:46 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3363853F-BFD5-F2F5-0D49-5B5DB36F67C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF6F8213-54B6-17DE-B588-50E140AEF396" name="TBL_DESCARGAS_TBL_DISPOSITIVOS_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:30:55 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88331468-5396-E59C-7B6D-A8DD453BD89A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

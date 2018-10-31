@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B8984214-934C-B545-090A-BB93A1B5618D" name="TBL_ESTADOS_SERIES">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 23:56:47 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_44</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_ESTADO" id="192EC9F0-D757-A2F9-1C0F-3F07EB541EDB">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 23:57:57 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_ESTADO" id="ABEA5824-9298-EA21-B75E-B8BA5D923AC5">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 23:57:57 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="821BFD18-1E94-0EF8-6AFF-7A7376407B72" name="TBL_ESTADOS_SERIES_PK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 23:57:57 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="192EC9F0-D757-A2F9-1C0F-3F07EB541EDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

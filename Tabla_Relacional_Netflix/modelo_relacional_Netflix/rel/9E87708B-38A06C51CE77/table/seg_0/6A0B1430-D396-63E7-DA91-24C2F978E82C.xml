@@ -22,9 +22,9 @@
 <colAssociation fkAssociation="A0F001DB-7F6E-7784-C7E8-CECDF95CF60F" referredColumn="E16FE623-A9EF-1273-F182-83B489A7BB49"/>
 </associations>
 </Column>
-<Column name="CODIGO_VALORACION" id="16AE2BB9-8ED2-8F4A-8CEA-C45428EC4040">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 16:27:23 UTC</createdTime>
+<Column name="CODIGO_PELICULA" id="4089B7FB-2259-09EE-0582-5C2537CD9F8F">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 00:10:16 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="27035870-74EF-8188-57E9-47BAFCDDE501" referredColumn="4DD4437A-EDA6-EE8D-E758-F64736C91ED0"/>
+<colAssociation fkAssociation="C1E44AA9-5A12-2084-3870-4A2DE0E0A382" referredColumn="C6FF73A1-6E9B-CB9F-5C62-78DDDE13A2D7"/>
 </associations>
 </Column>
 <Column name="FECHA" id="5D23EC96-A5EF-255C-A315-534CA4A5378E">
@@ -49,28 +49,6 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="E8359CC6-39EF-2E42-9A92-90C04F85F5E3" name="TBL_ACTORES_X_PELICULA_PK">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 16:28:10 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<pk>true</pk>
-<indexState>Primary Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="16AE2BB9-8ED2-8F4A-8CEA-C45428EC4040"/>
-<colUsage columnID="B288B26E-A4E5-AE8D-16FE-35EBDBA5E46C"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="FD2A478A-89A0-B79F-D21B-E2A3AA842693" name="TBL_ACTORES_X_PELICULA_TBL_VALORACION_FK">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 16:27:23 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="16AE2BB9-8ED2-8F4A-8CEA-C45428EC4040"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="230A3DD2-49AF-2B59-AB3B-151B00F092E7" name="TBL_ACTORES_X_PELICULA_TBL_ACTORES_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:28:39 UTC</createdTime>
@@ -79,6 +57,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B288B26E-A4E5-AE8D-16FE-35EBDBA5E46C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73F14B75-AC41-0FDC-5AAD-1F1C9035E8A5" name="TBL_ACTORES_X_PELICULA_TBL_PELICULAS_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 00:10:16 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4089B7FB-2259-09EE-0582-5C2537CD9F8F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

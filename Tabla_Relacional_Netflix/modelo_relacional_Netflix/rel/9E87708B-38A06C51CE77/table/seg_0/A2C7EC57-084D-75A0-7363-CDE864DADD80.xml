@@ -22,9 +22,9 @@
 <colAssociation fkAssociation="5AB042A6-C8D2-9AAE-FC50-0B22A58BB3DE" referredColumn="E65D951F-FCFA-1F38-7273-BA1C72290989"/>
 </associations>
 </Column>
-<Column name="CODIGO_VALORACION" id="AB42DDCD-6E61-8E6E-0982-891194C707E6">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 16:27:17 UTC</createdTime>
+<Column name="CODIGO_PELICULA" id="71A1CA16-1D7B-B424-9CB8-40D1CC1E2375">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 00:09:43 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="48527917-EA07-9C0B-0891-535CFA883DB7" referredColumn="4DD4437A-EDA6-EE8D-E758-F64736C91ED0"/>
+<colAssociation fkAssociation="D6C4435B-A7C9-EF25-4A38-5E3D6D8A59E4" referredColumn="C6FF73A1-6E9B-CB9F-5C62-78DDDE13A2D7"/>
 </associations>
 </Column>
 <Column name="FECHA" id="C53525CB-0AEA-F8A8-DB90-407A7D9E6833">
@@ -57,18 +57,8 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="AB42DDCD-6E61-8E6E-0982-891194C707E6"/>
 <colUsage columnID="FB0A10C2-990C-B19D-8A9E-11FDD935B53A"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="9869E35E-4224-A228-9CED-D716C5AA3F74" name="TBL_GUIONISTAS_X_PELICULA_TBL_VALORACION_FK">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 16:27:16 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="AB42DDCD-6E61-8E6E-0982-891194C707E6"/>
+<colUsage columnID="71A1CA16-1D7B-B424-9CB8-40D1CC1E2375"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="7AC34DA4-BE79-4FD5-56D7-509C6D3B0096" name="TBL_GUIONISTAS_X_PELICULA_TBL_GUIONISTAS_FK">
@@ -79,6 +69,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="FB0A10C2-990C-B19D-8A9E-11FDD935B53A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76A8DAE0-BDC2-B352-4E1D-67148CAAF6CE" name="TBL_GUIONISTAS_X_PELICULA_TBL_PELICULAS_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 00:09:43 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71A1CA16-1D7B-B424-9CB8-40D1CC1E2375"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

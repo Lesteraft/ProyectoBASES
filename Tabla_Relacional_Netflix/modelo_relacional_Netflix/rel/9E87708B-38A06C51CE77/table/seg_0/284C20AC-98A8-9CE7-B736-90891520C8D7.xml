@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="284C20AC-98A8-9CE7-B736-90891520C8D7" name="TBL_CONFIGURACIONES">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:05:06 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_32</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CONFIGURACION" id="20F5C0EA-51A6-F0CE-3C8F-83B97C41B20B">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:05:06 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_PERFIL" id="BD9108F2-FD3D-186F-99B9-F452867E1468">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:05:24 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76FAD04E-0F45-D85F-82B5-D98F104B653B" referredColumn="DB02FA59-1D95-C714-0B8A-3B0DE7AA5974"/>
+</associations>
+</Column>
+<Column name="NOMBRE_CONFIGURACION" id="E9011745-731E-B524-B95F-5ABA0C116B41">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:05:06 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA" id="32BA279D-48E3-429C-CCD5-7C32C1F5E9EE">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:05:06 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D0A3FB5-BBA1-A218-D9D8-8217B8FE3B5A" name="TBL_CONFIGURACIONES_PK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:05:06 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20F5C0EA-51A6-F0CE-3C8F-83B97C41B20B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF21266B-982E-13D0-EA1D-1A652E78D426" name="TBL_CONFIGURACIONES_TB_PERFIL_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:05:24 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD9108F2-FD3D-186F-99B9-F452867E1468"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

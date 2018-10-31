@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6941EEE1-2142-53D5-694F-497ED390BBF2" containerWithKeyObject="511C1D02-1D4C-4178-6D88-DDB6088725C2" localFKIndex="6A7FF88C-0642-F50A-58A8-26EAFE5F2257" name="TBL_PELICULAS_TBL_IDIOMA_FK">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 16:46:31 UTC</createdTime>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8DB91A8D-040A-B31C-B78B-B9C6303A9DBE" containerWithKeyObject="9B0E0EB7-C91D-5757-93E2-1C302714E9F5" localFKIndex="CB4E6E94-44A2-11EC-0F19-2BD00B738889" name="TBL_AUDIOS_TBL_IDIOMA_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 15:45:47 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<referredTableLongName>TBL_IDIOMA</referredTableLongName>
+<referredTableLongName>TBL_IDIOMAS</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>EF32C24F-CE92-706B-7B3C-01A431971B11</referredTableID>
 <keyObject>067EF815-AC6D-9534-D573-FABF7F2E45F1</keyObject>

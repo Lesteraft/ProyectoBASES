@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1850599F-69D2-7719-0779-EB5C684B56B2" name="TBL_GENEROS_X_PELICULAS">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:51:07 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_41</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TBL_PELICULAS_CODIGO_PELICULA" id="CB7D2D0B-EDAF-CDA8-B831-DBDA72E7A7E8">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="652ADA62-9254-FAB2-AD37-8F6DFA1DD8C6" referredColumn="C6FF73A1-6E9B-CB9F-5C62-78DDDE13A2D7"/>
+</associations>
+</Column>
+<Column name="TBL_GENEROS_CINE_CODIGO_GENERO" id="405DFE6D-560E-83BF-F1B5-69925B2AA7D9">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:51:41 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B2A53F9-17A5-C150-ACB8-CEDF5B7E3E63" referredColumn="4892E77F-649E-9A55-A4F9-D047674B5362"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B31239E1-EA62-59C7-A8C9-FFF010668056" name="TBL_GENEROS_X_PELICULA_TBL_PELICULAS_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB7D2D0B-EDAF-CDA8-B831-DBDA72E7A7E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20F87BC2-7854-56CB-1AFF-CBEA1CAC8D55" name="TBL_GENEROS_X_PELICULA_TBL_GENEROS_CINE_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:51:41 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="405DFE6D-560E-83BF-F1B5-69925B2AA7D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

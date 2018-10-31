@@ -3,7 +3,7 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:30:11 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<referredTableLongName>TBL_IDIOMA</referredTableLongName>
+<referredTableLongName>TBL_IDIOMAS</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>EF32C24F-CE92-706B-7B3C-01A431971B11</referredTableID>
 <keyObject>067EF815-AC6D-9534-D573-FABF7F2E45F1</keyObject>

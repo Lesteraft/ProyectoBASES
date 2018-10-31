@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3AEF46BC-E81F-618E-2843-0D57CDFFBFB7" containerWithKeyObject="B2A20F7C-FE1D-DD45-6EFD-7F2D45D31F07" localFKIndex="876426D8-DABD-7B0E-6DA2-ECFF6247250F" name="TBL_REGIONES_TBL_REGIONES_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:45:55 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<referredTableLongName>TBL_REGIONES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B2A20F7C-FE1D-DD45-6EFD-7F2D45D31F07</referredTableID>
+<keyObject>19471702-676C-0E13-059F-41CD205B7819</keyObject>
+<referredKeyID>19471702-676C-0E13-059F-41CD205B7819</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>CODIGO_LUGAR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

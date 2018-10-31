@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32D119E6-D050-E562-695F-7380BBED2114" name="TBL_CODIGOS_PROMOCIONALES">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:06:37 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<ordsAlias>table_34</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_PROMOCIONAL" id="8DB0BDCD-FD45-9943-F5C2-1C8BDCDE7B75">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:06:37 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_METODO_PAGO" id="8FD95D0B-6D94-A321-D2CA-B1F8D53857A8">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:25:09 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FADD680F-29FD-4245-1ECD-5F378F44897B" referredColumn="E5B39A35-8DFB-9D43-74B0-32BD09204A53"/>
+</associations>
+</Column>
+<Column name="NOMBRE_PROMOCION" id="30292BB6-4D03-CD81-FD92-28E9AAB20CB3">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:06:37 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="F6E844DC-4FF3-32D4-F8C9-C95E628BF3C4">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:06:37 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="1238126E-05F5-18CF-88B5-A04B3812A92C">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:06:37 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EC535B9-3820-8EDE-5C9A-F94D53BB17F5" name="TBL_CODIGOS_PROMOCIONALES_PK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-30 16:06:37 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DB0BDCD-FD45-9943-F5C2-1C8BDCDE7B75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="116FF547-4CA0-8384-63C0-F5AAC712B8D0" name="TBL_CODIGOS_PROMOCIONALES_TBL_METODOS_DE_PAGO_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-10-31 01:25:09 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FD95D0B-6D94-A321-D2CA-B1F8D53857A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
