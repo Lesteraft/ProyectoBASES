@@ -1,20 +1,21 @@
-
-$("#btn-login").click(function(){
-    if($("#txt-user").val() == ""){
-        $("#txt-user").addClass("is-invalid");
-    }else{
-        $("#txt-user").removeClass("is-invalid");
-        $("#txt-user").addClass("is-valid");
-        if($("#txt-password").val() == ""){
-            $("#txt-password").addClass("is-invalid");
-        }else{
-            $("#txt-password").removeClass("is-invalid");
-            $("#txt-password").addClass("is-valid");
-            window.location = "desde-login/inicio.html";
-        }
+function validar() {
+    if ((validacion("id_userLoginId") || validacion("id_userPassword")) && (validacion("id_userLoginId") && validacion("id_userPassword"))) {
+        alert("serás redireccionado");
+    } else {
+        alert("No redireccion");
     }
-})
+}
 
-function validar(){
+function validacion(id) {
+    if ($("#" + id).val() == "") {
+        $("#" + id).addClass("is-invalid");
+        return false;
+    } else {
+        $("#" + id).removeClass("is-invalid");
+        return true;
+    }
+}
 
+function validarCorreo() {
+    if
 }
