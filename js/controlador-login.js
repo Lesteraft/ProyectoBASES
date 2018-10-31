@@ -1,9 +1,5 @@
 function validar() {
-    if ((validacion("id_userLoginId") || validacion("id_userPassword")) && (validacion("id_userLoginId") && validacion("id_userPassword"))) {
-        alert("serás redireccionado");
-    } else {
-        alert("No redireccion");
-    }
+    if ((validacion("id_userLoginId") || validacion("id_userPassword")) && (validacion("id_userLoginId") && validacion("id_userPassword"))) {} else {}
 }
 
 function validacion(id) {
@@ -16,6 +12,4 @@ function validacion(id) {
     }
 }
 
-function validarCorreo() {
-    if
-}
+function validarCorreo() {}
