@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Netflix</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/netflix-small.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos-login.css">
-    <link rel="shortcut icon" href="img/netflix-small.png"/>
 </head>
+
 <body>
     <div id="fondoPantalla">
         <div class="fn wht">
@@ -15,38 +18,81 @@
                 <div id="logoNetflix">
                     <img src="img/logo.png" id="imagen-logo">
                 </div>
-                <section id ="div-login">
+                <section id="div-login">
                     <h1>Inicia Sesión</h1>
                     <form class="form control">
-                        <input id="id_userLoginId" type="email" placeholder="Email o número de teléfono"><br>
-                        <input type="password" placeholder="Contraseña">
-                        <br>
-                        <button type="button">Inicias Sesión</button>
-                        <br>
+                        <div>
+                            <input class="form-control" id="id_userLoginId" type="email" placeholder="Email o número de teléfono">
+                            <DIV class="invalid-feedback">
+                                Es necesario que llene este campo con el correo que usted proporcionó
+                            </DIV>
+                        </div>
+                        <div>
+                            <input class="form-control" type="password" placeholder="Contraseña" id="id_userPassword">
+                            <div class="invalid-feedback">
+                                Recuerde que su contraseña debe tener de 6 - 12 caracteres
+                            </div>
+                        </div>
+                        <button type="button" onclick="validar()">Inicias sesión</button>
                         <table>
                             <tr>
                                 <td><label style="font-size:13px; color: #9d9595"><input type="checkbox" > Recuerdame</label></td>
                                 <td></td>
-                                <td><a href="#"  style="font-size:13px; color: #9d9595; ">¿Necesitas ayuda?</a></td>
+                                <td><a href="#" style="font-size:13px; color: #9d9595; ">¿Necesitas ayuda?</a></td>
                             </tr>
                         </table>
-                        
+
                         <div id="inicioFacebook">
-                            <a href="#" class="btn-link"><img src="img/logo-facebook.png">   Inicia sesión con Facebook</a>
+                            <a href="#" class="btn-link"><img src="img/logo-facebook.png"> Inicia sesión con Facebook</a>
                         </div>
                         <br>
                         <div>
-                            <span style="color: #9d9595">¿Nuevo en Netflix? </span><a href="#" style="color:white; font-size:16px;">¡Suscribete ya! </a>
+                            <span style="color: #9d9595">¿Nuevo en Netflix? </span><a href="sign-up.html" style="color:white !important; font-size:16px;">¡Suscribete ya! </a>
                         </div>
                     </form>
                 </section>
                 <div id="infoContacto">
                     <div>
-                        
+                        <table>
+                            <tr>
+                                <td>
+                                    ¿Preguntas? llama al (+504) 32607258 (HN)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">Términos de las targetas de regalo</a>
+                                </td>
+                                <td>
+                                    <a href="#">Términos de uso</a>
+                                </td>
+                                <td>
+                                    <a href="#">Declaración de privacidad</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="BTN BTN-DARK" name="" id="select_list">
+                                            <option value="1">ESPAÑOL</option>
+                                            <OPtion>INGLÉS</OPtion>
+                                        </select>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador-login.js"></script>
+
 </body>
+
 </html>

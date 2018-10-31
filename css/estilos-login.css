@@ -1,72 +1,77 @@
-html{
+html {
     height: 100%;
     width: 100%;
 }
 
-form{
+form {
     color: white;
-    font-size: 13px;   
+    font-size: 13px;
 }
 
-body{
+body {
     margin: 0;
     width: 100%;
-    height: 100%;
 }
 
-#fondoPantalla{
+#fondoPantalla {
     height: 100%;
     width: 100%;
     top: 0;
     background-image: url("../img/HN-es-20180924-popsignuptwoweeks-perspective_alpha_website_small.jpg");
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: inherit;
     background-attachment: fixed;
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.fn{
-    background-color: rgba(0,0,0,0.5);
+.fn {
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.wht{
+
+.wht {
     height: 100%;
     width: 100%;
 }
 
-#logoNetflix{
-    padding-top: 25px;
+#logoNetflix {
+    padding-top: 15px;
     padding-left: 50px;
 }
 
-#imagen-logo{
+#imagen-logo {
     width: 200px;
 }
 
-#div-login{
-    background-color: rgba(0,0,0,0.8);
-    width: 300px;
+#div-login {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 420px;
     height: auto;
-    padding:60px 60px 20px;
+    padding: 40px 60px 20px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 100px;   
+    margin-bottom: 100px;
 }
 
-table{
+table {
     width: 100%;
 }
 
-td{
+td {
     width: 29px;
 }
 
-h1{
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
+tr {
+    height: 40px;
 }
 
-input[type="email"], input[type="password"]{
+h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+input[type="email"],
+input[type="password"] {
     color: white;
     width: 100%;
     font-size: 16px;
@@ -75,25 +80,26 @@ input[type="email"], input[type="password"]{
     border-radius: 4px;
     border-width: 1px;
     border-color: #000000;
-    margin-bottom: 15px;
+    margin-top: 15px;
     box-sizing: border-box;
     background-color: #333333;
 }
-input:focus{
+
+input:focus {
     outline: none;
 }
 
 a {
     text-decoration: none;
     font-size: 13px;
-    color: #9d9595;
+    color: #9d9595 !important;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
-button{
+button {
     background-color: #E50914;
     width: 100%;
     color: #fff;
@@ -104,8 +110,38 @@ button{
     margin-bottom: 10px;
 }
 
-#inicioFacebook{
+#inicioFacebook {
     margin-right: auto;
     margin-left: auto;
     margin-top: 150px;
+}
+
+#infoContacto {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #9d9595;
+    padding: 40px 15%;
+}
+
+#infoContacto a {
+    font-size: 13px;
+}
+
+#infoContacto select {
+    width: 150px;
+    height: 35px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.invalid-feedback {
+    color: #f88a13;
+}
+
+.form-control.is-invalid {
+    border-color: #f88a13;
+    border-width: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
