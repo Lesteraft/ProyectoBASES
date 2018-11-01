@@ -127,6 +127,26 @@
 <colUsage columnID="93AFBE6B-5CC0-D466-D018-0C706C20A4DB"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="97F9B202-558A-9F2B-DB04-09BB64C24A87" name="TBL_CUENTAS__UN">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-11-01 01:32:55 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A07F818C-1EEC-A9D2-61E0-D2643AD4F8BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08FAB761-F010-A31B-EB7D-E2B135CA4BB3" name="TBL_CUENTAS__UNv1">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-11-01 01:33:38 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D562798B-01CB-8866-DADA-4617AFA62AA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="724DB4C2-68B2-3E59-6CE0-480E80771115" name="TBL_CUENTA_TBL_PLANES_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:28:30 UTC</createdTime>
