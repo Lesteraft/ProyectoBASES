@@ -20,20 +20,20 @@
                 </div>
                 <section id="div-login">
                     <h1>Inicia Sesión</h1>
-                    <form class="form control">
+                    <form style="margin-top: 50px" class="form control">
                         <div>
-                            <input class="form-control" id="id_userLoginId" type="email" placeholder="Email o número de teléfono">
+                            <input class="form-control" id="id_userLoginId" type="email" placeholder="Email o número de teléfono" value="Lester">
                             <DIV class="invalid-feedback">
-                                Es necesario que llene este campo con el correo que usted proporcionó
+                                Ingrese un email o número de teléfono válido
                             </DIV>
                         </div>
                         <div>
                             <input class="form-control" type="password" placeholder="Contraseña" id="id_userPassword">
                             <div class="invalid-feedback">
-                                Recuerde que su contraseña debe tener de 6 - 12 caracteres
+                                La contraseña debe tener entre 4 - 60 caracteres
                             </div>
                         </div>
-                        <button type="button" onclick="validar()">Inicias sesión</button>
+                        <button style="margin-top: 50px;" type="button" onclick="validar()">Inicias sesión</button>
                         <table>
                             <tr>
                                 <td><label style="font-size:13px; color: #9d9595"><input type="checkbox" > Recuerdame</label></td>

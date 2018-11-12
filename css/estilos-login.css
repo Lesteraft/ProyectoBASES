@@ -145,3 +145,19 @@ button {
     border-left: none;
     border-right: none;
 }
+
+input[type="email"],
+input[type="password"]:focus {
+    color: white !important;
+    font-weight: 700;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #000000;
+    margin-top: 15px;
+    box-sizing: border-box;
+    background-color: #333333 !important;
+}

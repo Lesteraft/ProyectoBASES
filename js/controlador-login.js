@@ -11,5 +11,3 @@ function validacion(id) {
         return true;
     }
 }
-
-function validarCorreo() {}
