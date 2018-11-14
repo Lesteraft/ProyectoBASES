@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +11,26 @@
     <link rel="stylesheet" href="css/estilos-registro.css">
     <title>Netflix</title>
 </head>
+
 <body>
     <nav id="navbar">
         <img src="img/logo.png" id="navbar-img-logo" class="navbar-items">
         <div id="navbar-text" class="navbar-items"><a href="index.html">Iniciar Sesion</a></div>
     </nav>
 
-    <div id="info-registro">
+    <div id="info-registro" style="display:none">
         <img id="img-check" src="img/Checkmark.png" alt="">
         <div class="" style="font-size:13px; text-align:center">PASO 1 DE 3</div><br>
         <div class=""><b style="font-size:20px;">Selecciona tu plan.</b></div>
-        <div><i class="fas fa-check"></i><div class="informacion-planes">No se te cobrará hasta que termine tu mes gratis.</div></div><br>
-        <div><i class="fas fa-check"></i><div class="informacion-planes">Te recordaremos 3 días antes de que termine tu prueba.</div></div><br>
-        <div><i class="fas fa-check"></i><div class="informacion-planes">Sin compromisos, cancela cuando quieras.</div></div><br>
+        <div><i class="fas fa-check"></i>
+            <div class="informacion-planes">No se te cobrará hasta que termine tu mes gratis.</div>
+        </div><br>
+        <div><i class="fas fa-check"></i>
+            <div class="informacion-planes">Te recordaremos 3 días antes de que termine tu prueba.</div>
+        </div><br>
+        <div><i class="fas fa-check"></i>
+            <div class="informacion-planes">Sin compromisos, cancela cuando quieras.</div>
+        </div><br>
         <button id="btn-ir" type="button">VER PLANES</button>
     </div>
     <div class="" id="contenido-registro" style="display:none">
@@ -85,9 +93,7 @@
                 <div class="col-md-2"><i class="fas fa-check col-planes-2"></i></div>
                 <div class="col-md-2"><i class="fas fa-check col-planes-3"></i></div>
             </div><br>
-            <div style="font-size:12px;">La disponibilidad del contenido HD y Ultra HD depende de tu proveedor de servicios de internet y del dispositivo en uso.
-                 No todo el contenido está disponible en HD o en Ultra HD.
-                 Consulta los Términos de uso para obtener más información.
+            <div style="font-size:12px;">La disponibilidad del contenido HD y Ultra HD depende de tu proveedor de servicios de internet y del dispositivo en uso. No todo el contenido está disponible en HD o en Ultra HD. Consulta los Términos de uso para obtener más información.
             </div>
         </div><br>
         <button id="btn-cc" type="button">CONTINUAR</button>
@@ -100,6 +106,7 @@
         <div class="texto-central-1">Usa tu email y crea una contraseña para ver Netflix en cualquier dispositivo, cuando quieras</div>
         <button id="btn-cc1" type="button">CONTINUAR<i class="fas fa-chevron-circle-right"></i></button>
     </div>
+
     <div class="div-central" id="contenido-registro-2" style="display:none">
         <div class="texto-central-2" style="font-size:13px;">PASO 2 DE 3</div>
         <div class="texto-central-2"><b>Suscríbete para que comiences tu mes gratis</b></div>
@@ -115,18 +122,61 @@
         <button id="btn-cc2" type="button">CONTINUAR<i class="fas fa-chevron-circle-right"></i></button>
     </div>
 
-    <div class="div-central" id="contenido-registro-3" style="display:none"><br>
-        <input type="text" placeholder="Nombre"><br>
-        <input type="text" placeholder="Apellido"><br>
-        <input type="text" placeholder="Numero de tarjeta"><br>
-        <input type="text" placeholder="Fecha de vencimiento(MM/AA)"><br>
-        <input type="text" placeholder="Codigo de seguridad">
+    <div id="info-registro" style="display:none">
+        <img id="img-check" src="img/Lock.png" alt="">
+        <div class="" style="font-size:13px; text-align:center">PASO 3 DE 3</div><br>
+        <div class=""><b style="font-size:20px;">Configura tu metodo de pago.</b></div>
+        <div>
+            <div class="informacion-planes">Cancela antes del ...</div><br>
+        </div>
+        <div>
+            <div class="informacion-planes">Como recordatorio, <b>te enviaremos un email 3 dias antes</b></div>
+        </div><br>
+        <br>
+        <div>
+            <div class="informacion-planes"><b>Sin compromisos, cancela cuando quieras.</b></div>
+        </div><br><br>
+        <button id="btn-tarjetas" type="button">
+            Tarjeta de crédito o débito
+            <img class="item-btn-tarjetas" src="img/icon_visa_37x25.png" alt="">
+            <img class="item-btn-tarjetas" src="img/icon_master_33x25.png" alt="">
+            <img class="item-btn-tarjetas" src="img/icon_amex_37x25.png" alt="">
+        </button>
+    </div>
+
+    <div class="div-central" id="contenido-registro-4"><br>
+        <div>PASO 3 DE 3</div>
+        <div><b>Configura tu tarjeta de crédito o débito.</b></div>
+        <div>
+            <img class="item-btn-tarjetas" src="img/icon_visa_37x25.png" alt="">
+            <img class="item-btn-tarjetas" src="img/icon_master_33x25.png" alt="">
+            <img class="item-btn-tarjetas" src="img/icon_amex_37x25.png" alt="">
+        </div>
+        <input class="input-tarjetas" type="text" placeholder="Nombre"><br>
+        <input class="input-tarjetas" type="text" placeholder="Apellido"><br>
+        <input class="input-tarjetas" type="text" placeholder="Numero de tarjeta"><br>
+        <input class="input-tarjetas" type="text" placeholder="Fecha de vencimiento(MM/AA)"><br>
+        <input class="input-tarjetas" type="text" placeholder="Codigo de seguridad">
         <!--INFORMACION SOBRE EL PLAN A ADQUIRIR-->
-        <button type="button">INICIAR MEMBRESÍA</button>
+        <div id="info-plan-adquirido">
+            <div><span style="font-size:12px;"><b>TU PLAN</b></span><br> Streaming ilimitado en HD y Ultra HD por USD11.99 al mes después de la prueba gratis.</div><br>
+            <div style="font-size:12px;">Los pagos se procesarán internacionalmente. Es posible que se apliquen comisiones bancarias adicionales.</div><br>
+            <div style="font-size:13px;">
+                Al hacer clic en el botón "Iniciar membresía", aceptas nuestros Términos de uso y nuestra Declaración de privacidad, y declaras que tienes más de 18 años. Puedes cancelar tu membresía en cualquier momento durante tu prueba gratis y no se te cobrará. Para
+                hacerlo, visita tu Cuenta y haz clic en "Cancelar membresía".
+            </div><br>
+            <div style="font-size:12px;">
+                Cuando tu prueba gratis se termine, Netflix continuará tu membresía de manera automática y, hasta que la canceles, te facturará el cargo mensual (actualmente de USD11.99) a través de la forma de pago elegida. No se ofrecen reembolsos ni créditos por meses
+                parciales.
+            </div>
+        </div>
+
+        <button type="button" id="btn-iniciar-membresia">INICIAR MEMBRESÍA</button>
     </div>
     <footer>
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/controlador-sign-up.js"></script>
 </body>
+
 </html>
