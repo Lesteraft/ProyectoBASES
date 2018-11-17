@@ -1,0 +1,72 @@
+#contenido-registro {
+    margin: 30px 0;
+}
+
+.container-fluid {
+    text-align: left;
+    width: 80%;
+}
+
+.row {
+    border-bottom: solid 1px #ccc;
+    height: 50px;
+    font-size: 1em;
+}
+
+#row-sup {
+    height: 150px;
+    padding: 20px 0;
+}
+
+.col-planes-0 {
+    min-width: 280px;
+}
+
+.row .fas,
+.text-red {
+    float: none !important;
+    color: #F6121D;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#btn-cc {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #F6121D;
+    font-weight: bold;
+}
+
+.cuadrado {
+    background-color: #F6121D;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.cuadrado:focus {
+    outline: 0;
+}
+
+.triangulo {
+    position: relative;
+    top: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #F6121D;
+    border-left: 10px solid transparent;
+    opacity: 0;
+}
