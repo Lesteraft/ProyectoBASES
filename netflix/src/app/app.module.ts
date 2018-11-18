@@ -10,6 +10,10 @@ import { NavbarSingInComponent } from './components/sing_in/navbar/navbar.sing_i
 import { BodyComponent } from './components/sing_in/body/body.component';
 import { InicioSinginComponent } from './components/sing_in/body/inicio-singin/inicio-singin.component';
 import { PlanesSinginComponent } from './components/sing_in/body/planes-singin/planes-singin.component';
+import { RegistroSinginComponent } from './components/sing_in/body/registro-singin/registro-singin.component';
+import { RegformSinginComponent } from './components/sing_in/body/regform-singin/regform-singin.component';
+import { MetodopagoSinginComponent } from './components/sing_in/body/metodopago-singin/metodopago-singin.component';
+import { InfopagoSinginComponent } from './components/sing_in/body/infopago-singin/infopago-singin.component';
 
 
 
@@ -20,6 +24,10 @@ import { PlanesSinginComponent } from './components/sing_in/body/planes-singin/p
     BodyComponent,
     InicioSinginComponent,
     PlanesSinginComponent,
+    RegistroSinginComponent,
+    RegformSinginComponent,
+    MetodopagoSinginComponent,
+    InfopagoSinginComponent,
   ],
   imports: [
     BrowserModule,
