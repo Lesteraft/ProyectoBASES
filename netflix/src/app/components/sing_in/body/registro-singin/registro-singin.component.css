@@ -1,0 +1,35 @@
+#contenido-registro-1 {
+    text-align: left;
+    text-align: center;
+    width: 340px;
+    font-size: 17px;
+    opacity: 0;
+}
+
+#contenido-registro-1 img {
+    width: 80%;
+    margin: 15px 0;
+}
+
+.texto-central-1 {
+    width: 300px;
+    margin: 10px 0;
+}
+
+#contenido-registro-1 button {
+    background-color: #F6121D;
+    font-size: 17px;
+    font-weight: 500;
+    width: 100%;
+    color: #fff;
+    height: 50px;
+    margin: 20px 0;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
+    border-style: none;
+}
+
+#contenido-registro-1 i.fas {
+    float: right;
+}

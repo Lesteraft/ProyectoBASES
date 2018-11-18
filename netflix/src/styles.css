@@ -35,6 +35,9 @@ body {
 }
 
 
+/*SING IN*/
+
+
 /*BTN SINGIN*/
 
 .btn-singin-underline {
@@ -54,4 +57,20 @@ body {
 
 .btn-singin-underline::focus {
     outline: 1;
+    color: #000;
+}
+
+.div-central {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.info-registro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 300px;
 }
