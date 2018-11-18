@@ -1,57 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
-
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-}
-
-
-/*Animaciones*/
-
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-.fast {
-    -webkit-animation-duration: 0.4s;
-    animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+    /* You can add global styles to this file, and also import other style files */
+    
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
     }
-    to {
-        opacity: 1;
+    /*Animaciones*/
+    
+    .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
     }
-}
-
-.fadeIn {
-    animation-name: fadeIn;
-}
-
-
-/*BTN SINGIN*/
-
-.btn-singin-underline {
-    border: none;
-    color: #F6121D;
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: px;
-    border-bottom: solid 1px #F6121D;
-    cursor: pointer;
-    position: relative;
-    left: 50%;
-    top: 50px;
-    transform: translateX(-50%);
-}
-
-.btn-singin-underline::focus {
-    outline: 1;
-}
+    
+    .fast {
+        -webkit-animation-duration: 0.4s;
+        animation-duration: 0.4s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .fadeIn {
+        animation-name: fadeIn;
+    }
+    /*BTN SINGIN*/
+    
+    .btn-singin-underline {
+        border: none;
+        color: #F6121D;
+        background-color: transparent;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: px;
+        border-bottom: solid 1px #F6121D;
+        cursor: pointer;
+        position: relative;
+        left: 50%;
+        top: 50px;
+        transform: translateX(-50%);
+    }
+    
+    .btn-singin-underline::focus {
+        outline: 1;
+        color: #000;
+    }
+    
+    .div-central {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .info-registro {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 300px;
+    }
