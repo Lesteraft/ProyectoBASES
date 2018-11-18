@@ -44,7 +44,7 @@
             <div class="margin-bueno">
                 <img (mouseenter)='mostrar();' (mouseleave)="ocultar()" style="width: 35px" src="../../../../assets/img/perfil//001.png" alt="">
                 <div>
-                    <div class='text-center animated fadeIn' (mouseenter)='mostrar();' id="opcionesUssuario" style='display: none;'>
+                    <div class='text-center animated fadeIn' (mouseleave)="ocultar()" (mouseenter)='mostrar();' id="opcionesUssuario" style='display: none;'>
                         <i style="color:white; font-size: 15px; padding-top: 10px;" class="fas fa-caret-up position-absolute">
                           <div>
                             <div style='background-color: transparent; color: black; right:-100%; width: 170px; border-radius: 10px;' class='position-absolute'>

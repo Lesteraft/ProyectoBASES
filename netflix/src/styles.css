@@ -35,8 +35,21 @@
         }
     }
     
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
     .fadeIn {
         animation-name: fadeIn;
+    }
+    
+    .fadeOut {
+        animation-name: fadeOut;
     }
     /*BTN SINGIN*/
     

@@ -9,6 +9,8 @@ import * as $ from 'jquery';
 })
 export class NavbarHomeComponent implements OnInit {
 
+  i = 0;
+
   constructor( private _router: Router ) { }
 
   ngOnInit() {
@@ -16,12 +18,16 @@ export class NavbarHomeComponent implements OnInit {
 
   mostrar() {
     $('#opcionesUssuario').css('display', 'block');
+    this.i = 1;
   }
 
   ocultar() {
-    setTimeout(function () {
+    this.i = 0;
+    setTimeout(() => {
+      if ( this.i === 0 ) {
         $('#opcionesUssuario').css('display', 'none');
-    }, 1000);
+      }
+    } , 800);
   }
 
 }
