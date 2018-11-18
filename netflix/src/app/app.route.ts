@@ -17,7 +17,6 @@ const APP_ROUTES: Routes = [
     { path: 'regform', component: RegformSinginComponent },
     { path: 'metodopago', component: MetodopagoSinginComponent },
     { path: 'infopago', component: InfopagoSinginComponent },
-    { path: '**', pathMatch: 'full', redirectTo: 'inicio' },
     { path: 'perfiles', component: PerfilesComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'login' }
 
