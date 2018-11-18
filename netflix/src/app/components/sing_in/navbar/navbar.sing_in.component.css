@@ -1,6 +1,7 @@
 nav {
     border-bottom: solid 1px #ccc;
     height: 80px;
+    background-color: white;
 }
 
 #navbar-img-logo {
