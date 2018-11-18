@@ -1,19 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import { RouterModule, Routes } from '@angular/router';
+import { Router } from '@angular/router';
+
+let emailValido;
+let passValido;
+
 @Component({
   selector: 'app-regform-singin',
   templateUrl: './regform-singin.component.html',
   styleUrls: ['./regform-singin.component.css']
 })
+
 export class RegformSinginComponent implements OnInit {
-
-  constructor() { }
-
+  constructor( private router: Router ) {
+  }
   ngOnInit() {
      // Validacion campos
-     let emailValido;
-     let passValido;
      $('#user-email').keyup(function() {
          const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
          if (regex.test($('#user-email').val())) {
@@ -51,7 +53,6 @@ export class RegformSinginComponent implements OnInit {
              $('#texto-invalid-email').attr('style', 'display:none');
              $('#email-vacio').attr('style', 'display:none');
              $('#password-vacio').attr('style', 'display:none');
-             Router.n
              // CORREO, CONTRASENIA INVALIDA
          } else if (emailValido === false && passValido === false) {
              console.log('correo y contra ivalido');
@@ -90,5 +91,9 @@ export class RegformSinginComponent implements OnInit {
          }
      });
   }
-
+  camposValidos() {
+    if ( emailValido && passValido ) {
+        this.router.navigate(['/singin/metodopago']);
+    }
+  }
 }

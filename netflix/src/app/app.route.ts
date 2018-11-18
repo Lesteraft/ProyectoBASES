@@ -11,7 +11,7 @@ import { PerfilesComponent } from './components/perfiles/perfiles-usuarios/perfi
 
 const APP_ROUTES: Routes = [
 
-    { path: 'singin/inicio', component: InicioSinginComponent },
+    { path: 'singin', component: InicioSinginComponent },
     { path: 'singin/planes', component: PlanesSinginComponent },
     { path: 'singin/registro', component: RegistroSinginComponent },
     { path: 'singin/regform', component: RegformSinginComponent },

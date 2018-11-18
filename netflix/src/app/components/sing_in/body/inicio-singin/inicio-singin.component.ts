@@ -8,7 +8,8 @@ import * as $ from 'jquery';
 })
 export class InicioSinginComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() {
     $('#btn-ir').click(function() {

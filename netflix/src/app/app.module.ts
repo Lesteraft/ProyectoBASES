@@ -17,9 +17,6 @@ import { PlanesSinginComponent } from './components/sing_in/body/planes-singin/p
 import { LoginComponent } from './components/login/login.component';
 import { PerfilesComponent } from './components/perfiles/perfiles-usuarios/perfiles.component';
 
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
-
 
 @NgModule({
   declarations: [
@@ -39,9 +36,10 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     BrowserModule,
     AppRoutingModule,
     APP_ROUTING,
-    AngularFontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
+const pagina = 'formulario';
