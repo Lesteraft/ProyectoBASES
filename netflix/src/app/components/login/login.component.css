@@ -153,6 +153,7 @@ button {
 input[type="email"]:focus,
 input[type="password"]:focus {
     color: white !important;
+    font-weight: 700;
     width: 100%;
     font-size: 16px;
     padding: 23px 20px;

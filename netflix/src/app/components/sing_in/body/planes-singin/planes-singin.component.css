@@ -70,10 +70,3 @@
     border-left: 10px solid transparent;
     opacity: 0;
 }
-
-.body {
-    width: 100%;
-    position: absolute;
-    height: 120%;
-    background-color: rgb(255, 255, 255);
-}

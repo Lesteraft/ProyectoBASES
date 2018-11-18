@@ -1,3 +1,10 @@
+.body {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+}
+
 #divTotal {
     margin-top: 5%;
 }
@@ -16,7 +23,7 @@
 }
 
 h1 {
-    font-size: 3.0vw;
+    font-size: 3.5vw;
     color: white;
 }
 
@@ -39,11 +46,10 @@ li {
     margin: auto;
     min-width: 84px;
     margin-top: 15px;
-    cursor: pointer;
 }
 
 li:hover .cuadroPerfil {
-    background-color: rgb(247, 247, 247);
+    background-color: #E5E5E5;
 }
 
 li:hover a {
@@ -90,17 +96,13 @@ a:hover {
 }
 
 span {
-    color: rgb(163, 163, 163);
-    font-weight: 700;
     font-size: 1.1vw;
+    margin: 0 1.5vw;
     width: auto;
 }
 
-li:hover span {
-    color: rgb(247, 247, 247);
-}
-
 ul img {
+    width: 9.7vw;
     min-width: 80px;
 }
 
@@ -204,6 +206,7 @@ ul img {
     }
     span {
         font-size: 11px;
+        margin: 0;
     }
 }
 
