@@ -1,0 +1,72 @@
+<div id="fondoPantalla">
+    <div class="fn wht">
+        <div style="width: 100%; height: 100%;">
+            <div id="logoNetflix">
+                <img src="../../../assets/img/logo.png" id="imagen-logo">
+            </div>
+            <section id="div-login">
+                <h1>Inicia Sesión</h1>
+                <form style="margin-top: 50px" class="form control">
+                    <div>
+                        <input (keyup.enter)='validar();' class="form-control" id="id_userLoginId" type="email" placeholder="Email o número de teléfono">
+                        <DIV class="invalid-feedback">
+                            Ingrese un email o número de teléfono válido
+                        </DIV>
+                    </div>
+                    <div>
+                        <input (keyup.enter)='validar();' class="form-control" type="password" placeholder="Contraseña" id="id_userPassword">
+                        <div class="invalid-feedback">
+                            La contraseña debe tener entre 4 - 60 caracteres
+                        </div>
+                    </div>
+                    <button style="margin-top: 50px;" type="button" (click)="validar()">Inicias sesión</button>
+                    <table>
+                        <tr>
+                            <td><label style="font-size:13px; color: #9d9595"><input type="checkbox" > Recuerdame</label></td>
+                            <td></td>
+                            <td><a href="#" style="font-size:13px; color: #9d9595; ">¿Necesitas ayuda?</a></td>
+                        </tr>
+                    </table>
+
+                    <div id="inicioFacebook">
+                        <a href="#" class="btn-link"><img src="../../../assets/img/logo-facebook.png"> Inicia sesión con Facebook</a>
+                    </div>
+                    <br>
+                    <div>
+                        <span style="color: #9d9595">¿Nuevo en Netflix? </span><a href="sign-up.html" style="color:white !important; font-size:16px;">¡Suscribete ya! </a>
+                    </div>
+                </form>
+            </section>
+            <div id="infoContacto">
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                ¿Preguntas? llama al (+504) 32607258 (HN)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Términos de las targetas de regalo</a>
+                            </td>
+                            <td>
+                                <a href="#">Términos de uso</a>
+                            </td>
+                            <td>
+                                <a href="#">Declaración de privacidad</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="BTN BTN-DARK" name="" id="select_list">
+                                      <option value="1">ESPAÑOL</option>
+                                      <OPtion>INGLÉS</OPtion>
+                                  </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
