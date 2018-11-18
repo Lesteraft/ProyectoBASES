@@ -31,3 +31,10 @@
     padding: 10px;
     border: 1px solid rgb(189, 178, 178);
 }
+
+.body {
+    width: 100%;
+    position: absolute;
+    height: 130%;
+    background-color: rgb(255, 255, 255);
+}
