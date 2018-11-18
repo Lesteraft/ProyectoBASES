@@ -16,7 +16,7 @@
 }
 
 h1 {
-    font-size: 3.0vw;
+    font-size: 3.5vw;
     color: white;
 }
 
@@ -43,7 +43,7 @@ li {
 }
 
 li:hover .cuadroPerfil {
-    background-color: rgb(247, 247, 247);
+    background-color: #E5E5E5;
 }
 
 li:hover a {
@@ -90,17 +90,12 @@ a:hover {
 }
 
 span {
-    color: rgb(163, 163, 163);
-    font-weight: 700;
     font-size: 1.1vw;
     width: auto;
 }
 
-li:hover span {
-    color: rgb(247, 247, 247);
-}
-
 ul img {
+    width: 9.7vw;
     min-width: 80px;
 }
 
@@ -233,4 +228,10 @@ ul img {
     outline-offset: 0px;
     outline: none;
     box-shadow: none;
+}
+
+.errorInput {
+    border-color: #f88a13 !important;
+    border-width: 0 0 5px 0!important;
+    border-style: solid!important;
 }

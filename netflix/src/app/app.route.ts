@@ -7,6 +7,8 @@ import { MetodopagoSinginComponent } from './components/sing_in/body/metodopago-
 import { InfopagoSinginComponent } from './components/sing_in/body/infopago-singin/infopago-singin.component';
 import { LoginComponent } from './components/login/login.component';
 import { PerfilesComponent } from './components/perfiles/perfiles-usuarios/perfiles.component';
+import { AgregarPerfilesComponent } from './components/perfiles/agregar-perfiles/agregar-perfiles.component';
+
 
 
 const APP_ROUTES: Routes = [
@@ -17,7 +19,8 @@ const APP_ROUTES: Routes = [
     { path: 'regform', component: RegformSinginComponent },
     { path: 'metodopago', component: MetodopagoSinginComponent },
     { path: 'infopago', component: InfopagoSinginComponent },
-    { path: 'perfiles', component: PerfilesComponent },
+    { path: 'perfiles/:nuevo', component: PerfilesComponent },
+    { path: 'agregarPerfiles', component: AgregarPerfilesComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'login' }
 
 ];

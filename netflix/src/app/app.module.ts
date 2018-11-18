@@ -16,10 +16,8 @@ import { InicioSinginComponent } from './components/sing_in/body/inicio-singin/i
 import { PlanesSinginComponent } from './components/sing_in/body/planes-singin/planes-singin.component';
 import { LoginComponent } from './components/login/login.component';
 import { PerfilesComponent } from './components/perfiles/perfiles-usuarios/perfiles.component';
-
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
-
+import { AgregarPerfilesComponent } from './components/perfiles/agregar-perfiles/agregar-perfiles.component';
+import { ListaPerfilesComponent } from './components/perfiles/perfiles/lista-perfiles/lista-perfiles.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +32,13 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     PlanesSinginComponent,
     LoginComponent,
     PerfilesComponent,
+    AgregarPerfilesComponent,
+    ListaPerfilesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     APP_ROUTING,
-    AngularFontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
