@@ -10,10 +10,6 @@ import { NavbarSingInComponent } from './components/sing_in/navbar/navbar.sing_i
 import { BodyComponent } from './components/sing_in/body/body.component';
 import { InicioSinginComponent } from './components/sing_in/body/inicio-singin/inicio-singin.component';
 import { PlanesSinginComponent } from './components/sing_in/body/planes-singin/planes-singin.component';
-import { LoginComponent } from './components/login/login.component';
-import { PerfilesComponent } from './components/perfiles/perfiles-usuarios/perfiles.component';
-
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 
@@ -24,14 +20,11 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     BodyComponent,
     InicioSinginComponent,
     PlanesSinginComponent,
-    LoginComponent,
-    PerfilesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTING,
-    AngularFontAwesomeModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
