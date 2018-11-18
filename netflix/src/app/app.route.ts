@@ -10,6 +10,14 @@ import { PerfilesComponent } from './components/perfiles/perfiles-usuarios/perfi
 
 
 const APP_ROUTES: Routes = [
+
+    { path: 'singin', component: InicioSinginComponent },
+    { path: 'singin/planes', component: PlanesSinginComponent },
+    { path: 'singin/registro', component: RegistroSinginComponent },
+    { path: 'singin/regform', component: RegformSinginComponent },
+    { path: 'singin/metodopago', component: MetodopagoSinginComponent },
+    { path: 'singin/infopago', component: InfopagoSinginComponent },
+
     { path: 'inicio', component: InicioSinginComponent },
     { path: 'planes', component: PlanesSinginComponent },
     { path: 'login', component: LoginComponent },
@@ -19,6 +27,7 @@ const APP_ROUTES: Routes = [
     { path: 'infopago', component: InfopagoSinginComponent },
     { path: 'perfiles', component: PerfilesComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'login' }
+
 
 ];
 
