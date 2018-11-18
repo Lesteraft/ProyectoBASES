@@ -12,13 +12,13 @@ import { AgregarPerfilesComponent } from './components/perfiles/agregar-perfiles
 
 
 const APP_ROUTES: Routes = [
-    { path: 'inicio', component: InicioSinginComponent },
-    { path: 'planes', component: PlanesSinginComponent },
+    { path: 'singin', component: InicioSinginComponent },
+    { path: 'singin/planes', component: PlanesSinginComponent },
+    { path: 'singin/registro', component: RegistroSinginComponent },
+    { path: 'singin/regform', component: RegformSinginComponent },
+    { path: 'singin/metodopago', component: MetodopagoSinginComponent },
+    { path: 'singin/infopago', component: InfopagoSinginComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'registro', component: RegistroSinginComponent },
-    { path: 'regform', component: RegformSinginComponent },
-    { path: 'metodopago', component: MetodopagoSinginComponent },
-    { path: 'infopago', component: InfopagoSinginComponent },
     { path: 'perfiles/:nuevo', component: PerfilesComponent },
     { path: 'agregarPerfiles', component: AgregarPerfilesComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'login' }
