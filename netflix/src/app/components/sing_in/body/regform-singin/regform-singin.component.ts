@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import { Router } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 @Component({
   selector: 'app-regform-singin',
   templateUrl: './regform-singin.component.html',
@@ -51,6 +51,7 @@ export class RegformSinginComponent implements OnInit {
              $('#texto-invalid-email').attr('style', 'display:none');
              $('#email-vacio').attr('style', 'display:none');
              $('#password-vacio').attr('style', 'display:none');
+             Router.n
              // CORREO, CONTRASENIA INVALIDA
          } else if (emailValido === false && passValido === false) {
              console.log('correo y contra ivalido');

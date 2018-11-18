@@ -7,13 +7,13 @@ import { MetodopagoSinginComponent } from './components/sing_in/body/metodopago-
 import { InfopagoSinginComponent } from './components/sing_in/body/infopago-singin/infopago-singin.component';
 
 const APP_ROUTES: Routes = [
-    { path: 'inicio', component: InicioSinginComponent },
-    { path: 'planes', component: PlanesSinginComponent },
-    { path: 'registro', component: RegistroSinginComponent },
-    { path: 'regform', component: RegformSinginComponent },
-    { path: 'metodopago', component: MetodopagoSinginComponent },
-    { path: 'infopago', component: InfopagoSinginComponent },
-    { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
+    { path: 'singin/inicio', component: InicioSinginComponent },
+    { path: 'singin/planes', component: PlanesSinginComponent },
+    { path: 'singin/registro', component: RegistroSinginComponent },
+    { path: 'singin/regform', component: RegformSinginComponent },
+    { path: 'singin/metodopago', component: MetodopagoSinginComponent },
+    { path: 'singin/infopago', component: InfopagoSinginComponent },
+    { path: '**', pathMatch: 'full', redirectTo: 'signin/inicio' }
 
 ];
 
