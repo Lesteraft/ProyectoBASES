@@ -16,7 +16,8 @@ import { InicioSinginComponent } from './components/sing_in/body/inicio-singin/i
 import { PlanesSinginComponent } from './components/sing_in/body/planes-singin/planes-singin.component';
 import { LoginComponent } from './components/login/login.component';
 import { PerfilesComponent } from './components/perfiles/perfiles-usuarios/perfiles.component';
-
+import { AgregarPerfilesComponent } from './components/perfiles/agregar-perfiles/agregar-perfiles.component';
+import { ListaPerfilesComponent } from './components/perfiles/perfiles/lista-perfiles/lista-perfiles.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,8 @@ import { PerfilesComponent } from './components/perfiles/perfiles-usuarios/perfi
     PlanesSinginComponent,
     LoginComponent,
     PerfilesComponent,
+    AgregarPerfilesComponent,
+    ListaPerfilesComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,6 @@ import { PerfilesComponent } from './components/perfiles/perfiles-usuarios/perfi
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule { }
+
 const pagina = 'formulario';
