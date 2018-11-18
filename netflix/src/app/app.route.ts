@@ -8,6 +8,13 @@ import { InfopagoSinginComponent } from './components/sing_in/body/infopago-sing
 import { LoginComponent } from './components/login/login.component';
 import { PerfilesComponent } from './components/perfiles/perfiles-usuarios/perfiles.component';
 import { AgregarPerfilesComponent } from './components/perfiles/agregar-perfiles/agregar-perfiles.component';
+import { CardPeliculasComponent } from './components/home/card-peliculas/card-peliculas.component';
+import { PrincipalComponent } from './components/home/principal/principal.component';
+import { PeliculasComponent } from './components/home/peliculas/peliculas.component';
+import { SeriesComponent } from './components/home/series/series.component';
+import { RecientesComponent } from './components/home/recientes/recientes.component';
+import { MiListaComponent } from './components/home/mi-lista/mi-lista.component';
+
 
 
 
@@ -21,7 +28,13 @@ const APP_ROUTES: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'perfiles/:nuevo', component: PerfilesComponent },
     { path: 'agregarPerfiles', component: AgregarPerfilesComponent },
-    { path: '**', pathMatch: 'full', redirectTo: 'login' }
+    { path: 'card-pelicula', component: CardPeliculasComponent },
+    { path: 'peliculas', component: PeliculasComponent },
+    { path: 'principal', component: PrincipalComponent },
+    { path: 'series', component: SeriesComponent },
+    { path: 'recientes', component: RecientesComponent },
+    { path: 'mi-lista', component: MiListaComponent },
+    { path: '**', pathMatch: 'full', redirectTo: 'principal' }
 
 ];
 

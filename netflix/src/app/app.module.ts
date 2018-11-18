@@ -18,6 +18,13 @@ import { LoginComponent } from './components/login/login.component';
 import { PerfilesComponent } from './components/perfiles/perfiles-usuarios/perfiles.component';
 import { AgregarPerfilesComponent } from './components/perfiles/agregar-perfiles/agregar-perfiles.component';
 import { ListaPerfilesComponent } from './components/perfiles/perfiles/lista-perfiles/lista-perfiles.component';
+import { PrincipalComponent } from './components/home/principal/principal.component';
+import { NavbarHomeComponent } from './components/home/navbar-home/navbar-home.component';
+import { CardPeliculasComponent } from './components/home/card-peliculas/card-peliculas.component';
+import { PeliculasComponent } from './components/home/peliculas/peliculas.component';
+import { SeriesComponent } from './components/home/series/series.component';
+import { RecientesComponent } from './components/home/recientes/recientes.component';
+import { MiListaComponent } from './components/home/mi-lista/mi-lista.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +41,13 @@ import { ListaPerfilesComponent } from './components/perfiles/perfiles/lista-per
     PerfilesComponent,
     AgregarPerfilesComponent,
     ListaPerfilesComponent,
+    PrincipalComponent,
+    NavbarHomeComponent,
+    CardPeliculasComponent,
+    PeliculasComponent,
+    SeriesComponent,
+    RecientesComponent,
+    MiListaComponent,
   ],
   imports: [
     BrowserModule,

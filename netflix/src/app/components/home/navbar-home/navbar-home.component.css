@@ -1,0 +1,50 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+    background-color: transparent !important;
+}
+
+.mr45 {
+    margin-right: auto;
+}
+
+a {
+    /* color: rgb(200,200,200) !important;
+   cursor: pointer; */
+    font-size: 13px;
+    font-weight: 700
+}
+
+nav {
+    border-bottom-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.margin-bueno {
+    margin-right: 15px;
+}
+
+.list-group-item.active {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: rgb(20, 20, 20);
+}
+
+.list-group-item {
+    background-color: rgba(0, 0, 0, 3);
+    color: white;
+}
+
+.list-group-item-action:hover {
+    text-decoration: underline !important;
+}
+
+.list-down {
+    padding: 8px 5px;
+}
+
+.list-left {
+    text-align: left;
+}

@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href=""><img style="width: 90px;" class="img-fluid" src="../../../../assets/img/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr45">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['/principal']">Inicio</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['/series']">Series</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['/peliculas']">Peliculas</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['/recientes']">Agregados recientemente</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['/mi-lista']">Mi lista</a>
+            </li>
+            <li class="nav-item dropdown" style="display: none;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+            <input style="display:none" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <div class="margin-bueno" style="margin-right: 10px;">
+                <span style="color: white; font-size: 15px; font-weight: 500;"> Lester </span>
+            </div>
+            <div class="margin-bueno">
+                <i style="font-size: 25px; color: white;" class="fa fa-bell"></i>
+            </div>
+            <div class="margin-bueno">
+                <img (mouseenter)='mostrar();' (mouseleave)="ocultar()" style="width: 35px" src="../../../../assets/img/perfil//001.png" alt="">
+                <div>
+                    <div class='text-center animated fadeIn' (mouseenter)='mostrar();' id="opcionesUssuario" style='display: none;'>
+                        <i style="color:white; font-size: 15px; padding-top: 10px;" class="fas fa-caret-up position-absolute">
+                          <div>
+                            <div style='background-color: transparent; color: black; right:-100%; width: 170px; border-radius: 10px;' class='position-absolute'>
+                              <div class="">
+                                <div class="">
+                                  <div class="list-group" id="list-tab" role="tablist" style="background-color: tranparent !important">
+                                    <a class="list-group-item list-group-item-action list-left" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"> <img src="../../../../assets/img/perfil//001.png" style='width: 30px; margin-right: 10px;' alt=""> Perfiles</a>
+                                    <a class="list-group-item list-group-item-action list-left" style="border-bottom: white solid" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Administrar perfiles</a>
+                                    <a class="list-group-item list-group-item-action list-down list-left" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Cuenta</a>
+                                    <a class="list-group-item list-group-item-action list-down list-left" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Centro de ayuda</a>
+                                    <a class="list-group-item list-group-item-action list-down list-left" id="list-settings-list" data-toggle="list" href="#" role="tab" aria-controls="settings">Cerrar sesión</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

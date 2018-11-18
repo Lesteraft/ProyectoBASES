@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lista-perfiles',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaPerfilesComponent implements OnInit {
 
-  constructor() { }
+  constructor( private _router:Router ) { }
 
   ngOnInit() {
   }
 
+  redireccionar() {
+     this._router.navigate(['principal']);
+  }
 }
