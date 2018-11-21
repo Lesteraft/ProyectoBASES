@@ -7,7 +7,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarSingInComponent } from './components/sing_in/navbar/navbar.sing_in.component';
-import { BodyComponent } from './components/sing_in/body/body.component';
 import { RegistroSinginComponent } from './components/sing_in/body/registro-singin/registro-singin.component';
 import { RegformSinginComponent } from './components/sing_in/body/regform-singin/regform-singin.component';
 import { MetodopagoSinginComponent } from './components/sing_in/body/metodopago-singin/metodopago-singin.component';
@@ -25,12 +24,12 @@ import { PeliculasComponent } from './components/home/peliculas/peliculas.compon
 import { SeriesComponent } from './components/home/series/series.component';
 import { RecientesComponent } from './components/home/recientes/recientes.component';
 import { MiListaComponent } from './components/home/mi-lista/mi-lista.component';
+import { ConfiguracionesComponent } from './components/home/configuraciones/configuraciones.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarSingInComponent,
-    BodyComponent,
     InicioSinginComponent,
     RegistroSinginComponent,
     RegformSinginComponent,
@@ -48,6 +47,7 @@ import { MiListaComponent } from './components/home/mi-lista/mi-lista.component'
     SeriesComponent,
     RecientesComponent,
     MiListaComponent,
+    ConfiguracionesComponent,
   ],
   imports: [
     BrowserModule,

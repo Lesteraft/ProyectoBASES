@@ -18,7 +18,9 @@ export class RegformSinginComponent implements OnInit {
      // Validacion campos
      $('#user-email').keyup(function() {
          const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-         if (regex.test($('#user-email').val())) {
+         let user_email: any;
+         user_email = $('#user-email').val();
+         if (regex.test(user_email)) {
              $('#valid-email').attr('style', 'display:inline');
              $('#invalid-email').attr('style', 'display:none');
              ////////////
@@ -33,8 +35,9 @@ export class RegformSinginComponent implements OnInit {
      });
 
      $('#user-password').keyup(function() {
-
-         if ($('#user-password').val().length >= 4) {
+        let user_password: any;
+        user_password = $('#user-password').val();
+         if (user_password.length >= 4) {
              $('#valid-password').attr('style', 'display:inline');
              $('#invalid-password').attr('style', 'display:none');
              ///////////
