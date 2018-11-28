@@ -13,7 +13,7 @@ export class PlanesSinginComponent implements OnInit {
   ngOnInit() {
     let planUsuario;
 
-    $(window).click(function(e) {
+    $(window).click(function(e: any) {
         switch (e.target.id) {
             case 'plan-basico':
                 planUsuario = 'basico';
