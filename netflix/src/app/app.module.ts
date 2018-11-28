@@ -25,6 +25,7 @@ import { SeriesComponent } from './components/home/series/series.component';
 import { RecientesComponent } from './components/home/recientes/recientes.component';
 import { MiListaComponent } from './components/home/mi-lista/mi-lista.component';
 import { ConfiguracionesComponent } from './components/home/configuraciones/configuraciones.component';
+import { CarruselComponent } from './components/home/carrusel/carrusel.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { ConfiguracionesComponent } from './components/home/configuraciones/conf
     RecientesComponent,
     MiListaComponent,
     ConfiguracionesComponent,
+    CarruselComponent,
   ],
   imports: [
     BrowserModule,
