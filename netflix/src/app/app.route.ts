@@ -15,6 +15,8 @@ import { SeriesComponent } from './components/home/series/series.component';
 import { RecientesComponent } from './components/home/recientes/recientes.component';
 import { MiListaComponent } from './components/home/mi-lista/mi-lista.component';
 import { ConfiguracionesComponent } from './components/home/configuraciones/configuraciones.component';
+import { ReproductorComponent } from './components/reproductor/reproductor.component';
+
 
 
 
@@ -36,6 +38,7 @@ const APP_ROUTES: Routes = [
     { path: 'recientes', component: RecientesComponent },
     { path: 'mi-lista', component: MiListaComponent },
     { path: 'configuraciones', component: ConfiguracionesComponent },
+    { path: 'reproductor', component: ReproductorComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'principal' }
 
 ];
