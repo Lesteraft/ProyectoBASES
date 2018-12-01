@@ -19,12 +19,12 @@ export class LaunchPreviewComponent implements OnInit {
 
   onPlayerReady(api: VgAPI) {
     this.api = api;
-    //this.api.play();
+    this.api.play();
     $(window).scroll(function() {
-       if ($(window).scrollTop() > 550) {
+       if ($(window).scrollTop() > 350) {
          api.pause();
        } else if ($(window).scrollTop() < 10 ) {
-         //api.play();
+         api.play();
        }
     });
   }
