@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class ListaPerfilesComponent implements OnInit {
 
-  constructor( private _router:Router ) { }
+  constructor( private _router: Router ) { }
 
   ngOnInit() {
   }

@@ -5,12 +5,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './carrusel.component.html',
   styleUrls: ['./carrusel.component.css']
 })
-export class CarruselComponent implements OnInit {
 
+export class CarruselComponent {
 
+  pack = 'pelisculas';
 
-  constructor() { }
+  constructor () {  }
 
-  ngOnInit() {
+  moverIzquierda() {
+    event.preventDefault();
+    console.log('se hizo click izquieda');
+    $('.clearfix').animate({ scrollLeft: '-=1300' }, 1300);
   }
+
+  moverDerecha() {
+    event.preventDefault();
+    console.log('se hizo click derecha');
+   $('.clearfix').animate( {scrollLeft: '+=1300' }, 1300);
+ }
+
 }

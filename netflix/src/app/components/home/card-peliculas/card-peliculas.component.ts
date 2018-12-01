@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CardPeliculasComponent implements OnInit {
 
   pelicula = {
-    direccion: '../../../../assets/img/peliculas/el-hobbit-un-viaje-inesperado.jpg',
+    direccion: '../../../../assets/img/peliculas/1.png',
     nombre: ' El Hobbit',
     duracion: 'chingo',
     sinopsis: 'chingona'
