@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-card-peliculas',
@@ -9,9 +9,17 @@ export class CardPeliculasComponent implements OnInit {
 
   @Input() cartelera;
 
-  constructor() { }
+  @Output() InfoCartelera: EventEmitter<any>;
+
+  constructor() {
+    this.InfoCartelera = new EventEmitter();
+   }
 
   ngOnInit() {
   }
 
+
+  mostrarInfo() {
+    this.InfoCartelera.emit( this.cartelera );
+  }
 }
