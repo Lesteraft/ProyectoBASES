@@ -14,6 +14,33 @@ export class NavbarHomeComponent implements OnInit {
   constructor( private _router: Router ) { }
 
   ngOnInit() {
+    $('#icon-search').click(function() {
+        $('#input-search').attr('style', 'display:inline-block');
+        $('#input-search').animate({
+          width: '205px'
+        }, 400, function() {
+        });
+        $('#input-search').attr('style', 'border-left:none');
+        $('.icon').attr('style', 'border: 1px solid #fff; border-right:none; padding:0; height:30px');
+        $('#input-search').focus();
+    });
+
+    $(window).click(function(e: any) {
+        switch (e.target.id) {
+          case 'input-search':
+          case 'icon-search':
+                break;
+          default:
+            $('#input-search').animate({
+              opacity: '0',
+              width: '5px',
+              border: 'none'
+            }, 200, function() {
+            });
+            $('.icon').attr('style', '');
+            break;
+        }
+    })
   }
 
   mostrar() {

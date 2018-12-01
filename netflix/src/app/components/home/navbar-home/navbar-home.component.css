@@ -55,3 +55,28 @@ nav {
 .list-left {
     text-align: left;
 }
+
+#input-search {
+    height: 30px;
+    width: 5px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0px;
+    font-size: 14px;
+    border-color: #fff;
+}
+
+#input-search:focus {
+    border-color: #fff;
+    border: solid 1px;
+}
+
+#icon-search {
+    color: #fff;
+    font-size: 18px;
+    margin: 4px 5px;
+}
+
+#icon-search:hover {
+    cursor: pointer;
+}
