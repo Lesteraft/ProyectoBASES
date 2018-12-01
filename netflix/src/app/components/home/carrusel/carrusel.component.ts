@@ -16,97 +16,97 @@ export class CarruselComponent {
       nombre: 'It 2',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/1.png',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'A la sombra',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/a-la-sombre.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'Pantera Negra',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/black-panter.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'Dumbo',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/dumbo.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'El Hobbit',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/el-hobbit-un-viaje-inesperado.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'El Legado',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/el-legado.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'Marry Poppins',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/marry-poppins.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'Shazam',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/shazam.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'It 2',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/1.png',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'A la sombra',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/a-la-sombre.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'Pantera Negra',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/black-panter.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'Dumbo',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/dumbo.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'El Hobbit',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/el-hobbit-un-viaje-inesperado.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'El Legado',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/el-legado.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'Marry Poppins',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/marry-poppins.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     },
     {
       nombre: 'Shazam',
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/shazam.jpg',
-      sinopsis: 'Abruptaaaaaaa'
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     }
   ];
 

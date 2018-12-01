@@ -1,0 +1,14 @@
+.info-cartelera {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: none;
+}
+
+.card-cartelera:hover .info-cartelera {
+    display: block;
+}
+
+.cartelera-sinopsis {
+    margin-top: 100%
+}
