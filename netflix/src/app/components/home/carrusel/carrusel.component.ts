@@ -107,6 +107,24 @@ export class CarruselComponent {
       duracion: '128 minutos',
       imagen: '../../../../assets/img/peliculas/shazam.jpg',
       sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
+    },
+    {
+      nombre: 'El Hobbit',
+      duracion: '128 minutos',
+      imagen: '../../../../assets/img/peliculas/el-hobbit-un-viaje-inesperado.jpg',
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
+    },
+    {
+      nombre: 'El Legado',
+      duracion: '128 minutos',
+      imagen: '../../../../assets/img/peliculas/el-legado.jpg',
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
+    },
+    {
+      nombre: 'Marry Poppins',
+      duracion: '128 minutos',
+      imagen: '../../../../assets/img/peliculas/marry-poppins.jpg',
+      sinopsis: 'Abruptaaaaaaa esta es una prueba para observar como reacciona ante textos bastante largos y si seguimos metiendo más'
     }
   ];
 

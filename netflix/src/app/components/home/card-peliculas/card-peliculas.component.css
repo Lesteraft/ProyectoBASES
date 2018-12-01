@@ -3,6 +3,9 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     display: none;
+    height: 100%;
+    width: 100%;
+    ;
 }
 
 .card-cartelera:hover .info-cartelera {
@@ -10,5 +13,5 @@
 }
 
 .cartelera-sinopsis {
-    margin-top: 100%
+    margin-top: 90%;
 }
