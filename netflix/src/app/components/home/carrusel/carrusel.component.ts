@@ -128,6 +128,8 @@ export class CarruselComponent {
     }
   ];
 
+  InfoCartelera: any;
+
   constructor () {}
 
   moverIzquierda() {
@@ -139,5 +141,9 @@ export class CarruselComponent {
     console.log('se hizo click derecha ' + '#' + this.categoria);
    $('#' + this.categoria).animate( {scrollLeft: '+=1300' }, 1300);
  }
+
+ actualizaDatos( carteleraEvento ) {
+  console.log(carteleraEvento);
+  }
 
 }
