@@ -5,106 +5,14 @@
         <i class="fas fa-chevron-left fa-chevron-left-extra"></i>
     </span>
     <h1>{{categoria}}</h1>
-    <div class="module-section clearfix" id="#{{categoria}}">
+    <div class="module-section clearfix" id="{{categoria}}">
         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
         <ul id=".content">
-            <li class="card effect1">
+            <li *ngFor='let cartelera of carteleras' class="card effect1">
                 <div class="">
-                    <app-card-peliculas></app-card-peliculas>
+                    <app-card-peliculas [cartelera]='cartelera'></app-card-peliculas>
                 </div>
             </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-            <li class="card effect1">
-                <div class="">
-                    <app-card-peliculas></app-card-peliculas>
-                </div>
-            </li>
-
-
         </ul>
     </div>
     <!--end of module-section-->

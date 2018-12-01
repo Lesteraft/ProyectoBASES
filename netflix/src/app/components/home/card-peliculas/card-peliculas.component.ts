@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-peliculas',
@@ -7,12 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardPeliculasComponent implements OnInit {
 
-  pelicula = {
-    direccion: '../../../../assets/img/peliculas/1.png',
-    nombre: ' El Hobbit',
-    duracion: 'chingo',
-    sinopsis: 'chingona'
-  };
+  @Input() cartelera;
 
   constructor() { }
 
