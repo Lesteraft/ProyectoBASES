@@ -33,6 +33,7 @@ import {VgControlsModule} from 'videogular2/controls';
 import {VgOverlayPlayModule} from 'videogular2/overlay-play';
 import {VgBufferingModule} from 'videogular2/buffering';
 import { ReproductorComponent } from './components/reproductor/reproductor.component';
+import { LaunchPreviewComponent } from './components/launch-preview/launch-preview.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { ReproductorComponent } from './components/reproductor/reproductor.compo
     ConfiguracionesComponent,
     CarruselComponent,
     ReproductorComponent,
+    LaunchPreviewComponent,
   ],
   imports: [
     BrowserModule,
