@@ -27,6 +27,13 @@ import { MiListaComponent } from './components/home/mi-lista/mi-lista.component'
 import { ConfiguracionesComponent } from './components/home/configuraciones/configuraciones.component';
 import { CarruselComponent } from './components/home/carrusel/carrusel.component';
 
+// VideoPlayer
+import {VgCoreModule} from 'videogular2/core';
+import {VgControlsModule} from 'videogular2/controls';
+import {VgOverlayPlayModule} from 'videogular2/overlay-play';
+import {VgBufferingModule} from 'videogular2/buffering';
+import { ReproductorComponent } from './components/reproductor/reproductor.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,9 +57,14 @@ import { CarruselComponent } from './components/home/carrusel/carrusel.component
     MiListaComponent,
     ConfiguracionesComponent,
     CarruselComponent,
+    ReproductorComponent,
   ],
   imports: [
     BrowserModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
     AppRoutingModule,
     APP_ROUTING,
   ],

@@ -17,13 +17,20 @@ a {
 }
 
 nav {
-    border-bottom-color: white;
-    border-style: solid;
-    border-width: 1px;
+    border-bottom: 1px solid #fff;
 }
 
 .margin-bueno {
     margin-right: 15px;
+}
+
+.list-group {
+    border: 1px solid #ccc;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.list-group a {
+    font-weight: normal !important;
 }
 
 .list-group-item.active {
