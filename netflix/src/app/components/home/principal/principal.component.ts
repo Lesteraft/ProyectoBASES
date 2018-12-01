@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrincipalComponent implements OnInit {
 
+  categorias: any[] = ['Peliculas', 'Series', 'Anime'];
+
   constructor() { }
 
   ngOnInit() {

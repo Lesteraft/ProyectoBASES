@@ -2,8 +2,5 @@
     <app-navbar-home></app-navbar-home>
 </div>
 <div class=" mt-5 ">
-    <app-carrusel></app-carrusel>
-    <app-carrusel></app-carrusel>
-    <app-carrusel></app-carrusel>
-    <app-carrusel></app-carrusel>
+    <app-carrusel [categoria]='categoria' *ngFor='let categoria of categorias'></app-carrusel>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carrusel',
@@ -8,20 +8,18 @@ import { Component, OnInit } from '@angular/core';
 
 export class CarruselComponent {
 
-  pack = 'pelisculas';
+  @Input() categoria: any;
 
-  constructor () {  }
+  constructor () {}
 
   moverIzquierda() {
-    event.preventDefault();
-    console.log('se hizo click izquieda');
-    $('.clearfix').animate({ scrollLeft: '-=1300' }, 1300);
+    console.log('se hizo click izquieda ' + this.categoria);
+    $('#' + this.categoria).animate({ scrollLeft: '-=1300' }, 1300);
   }
 
   moverDerecha() {
-    event.preventDefault();
-    console.log('se hizo click derecha');
-   $('.clearfix').animate( {scrollLeft: '+=1300' }, 1300);
+    console.log('se hizo click derecha ' + '#' + this.categoria);
+   $('#' + this.categoria).animate( {scrollLeft: '+=1300' }, 1300);
  }
 
 }
