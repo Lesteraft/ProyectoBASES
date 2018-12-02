@@ -129,6 +129,7 @@ export class CarruselComponent {
   ];
 
   InfoCartelera: any;
+  mostrarInf = false;
 
   constructor () {}
 
@@ -139,11 +140,16 @@ export class CarruselComponent {
 
   moverDerecha() {
     console.log('se hizo click derecha ' + '#' + this.categoria);
-   $('#' + this.categoria).animate( {scrollLeft: '+=1300' }, 1300);
+    $('#' + this.categoria).animate( {scrollLeft: '+=1300' }, 1300);
  }
 
- actualizaDatos( carteleraEvento ) {
-  console.log(carteleraEvento);
+  actualizaDatos( carteleraEvento ) {
+    console.log(carteleraEvento);
+    this.InfoCartelera = carteleraEvento;
+    this.mostrarInfo();
   }
 
+  mostrarInfo() {
+    this.mostrarInf = !this.mostrarInf;
+  }
 }

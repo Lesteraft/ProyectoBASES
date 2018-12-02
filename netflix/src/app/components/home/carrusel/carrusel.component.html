@@ -11,9 +11,13 @@
             <li *ngFor='let cartelera of carteleras' class="card effect1">
                 <div class="">
                     <app-card-peliculas (InfoCartelera)='actualizaDatos( $event )' [cartelera]='cartelera'></app-card-peliculas>
+
                 </div>
             </li>
         </ul>
+    </div>
+    <div>
+        <app-informacion-cartelera *ngIf='mostrarInf' [infoCartelera]='InfoCartelera'></app-informacion-cartelera>
     </div>
 
     <!--end of module-section-->
