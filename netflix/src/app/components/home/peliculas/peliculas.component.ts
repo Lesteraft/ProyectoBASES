@@ -13,6 +13,7 @@ export class PeliculasComponent implements OnInit {
     preload = 'auto';
     api: VgAPI;
     scroll: LaunchPreviewComponent = new LaunchPreviewComponent;
+    categorias: any[] = ['Mi Lista', 'Peliculas'];
   constructor() {
   }
 

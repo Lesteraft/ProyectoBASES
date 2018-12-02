@@ -1,9 +1,9 @@
-<div class="header-nav">
-    <app-navbar-home></app-navbar-home>
-</div>
+<app-navbar-home></app-navbar-home>
 <div class="container-fluid">
     <div class="row row-preview">
         <app-launch-preview></app-launch-preview>
     </div>
-    <div class="row preview">Otro div</div>
+    <div class="">
+        <app-carrusel [categoria]='categoria' *ngFor='let categoria of categorias'></app-carrusel>
+    </div>
 </div>

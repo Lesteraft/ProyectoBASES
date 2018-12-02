@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     z-index: 1071;
-    background-color: rgb(20, 20, 20) !important;
+    background-color: transparent !important;
 }
 
 .mr45 {
@@ -14,10 +14,6 @@ a {
    cursor: pointer; */
     font-size: 13px;
     font-weight: 700
-}
-
-nav {
-    border-bottom: 1px solid #fff;
 }
 
 .margin-bueno {

@@ -62,6 +62,14 @@ export class NavbarHomeComponent implements OnInit {
             console.log(textoBusqueda);
         }
     });
+
+    $(window).scroll(function() {
+      if ($(window).scrollTop() < 1) {
+        $('.navbar').attr('style', 'background-color: transparent !important;');
+      } else if ($(window).scrollTop() > 10) {
+         $('.navbar').attr('style', 'background-color:rgb(20, 20, 20) !important; position:sticky !important');
+      }
+   });
   }
 
   mostrar() {
