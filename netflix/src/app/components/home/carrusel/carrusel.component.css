@@ -41,6 +41,7 @@ button:focus {
     display: ms flexbox;
     display: flex;
     color: #fff;
+    background: transparent;
 }
 
 .fa-chevron-left-extra {
@@ -80,6 +81,7 @@ button:focus {
     display: ms flexbox;
     display: flex;
     color: #fff;
+    background: transparent;
 }
 
 .fa-chevron-right-extra {
@@ -110,6 +112,7 @@ button:focus {
     overflow-x: scroll;
     border-left: 1px solid rgb(20, 20, 20);
     border-right: 1px solid rgb(20, 20, 20);
+    border: none;
 }
 
 ul {

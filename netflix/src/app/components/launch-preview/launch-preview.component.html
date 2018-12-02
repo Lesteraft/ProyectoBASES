@@ -1,5 +1,12 @@
-<vg-player (onPlayerReady)="onPlayerReady($event);">
-    <video [vgMedia]="media" #media id="singleVideo" preload="auto" crossorigin>
-      <source src="../../../assets/video/Nuevo Trailer 'BROLY' 2018 - Dragon Ball Super (HD)- Oficial Trailer 5.mp4" type="video/mp4">
+<div>
+    <vg-player (onPlayerReady)="onPlayerReady($event);">
+        <video [vgMedia]="media" #media id="singleVideo" preload="auto" crossorigin>
+      <source src="../../../assets/video/Nuevo Trailer 'BROLY' 2018 - Dragon Ball Super (HD)- Oficial Trailer 4.mp4" type="video/mp4">
   </video>
-</vg-player>
+    </vg-player>
+</div>
+<div>
+    <button><i class="fas fa-play"></i> Reproducir</button>
+    <button><i class="fas fa-plus"></i> Mi Lista</button>
+    <div id="div-clasificacion">Apto Para</div>
+</div>

@@ -87,3 +87,31 @@
         transform: translateX(-50%) translateY(-50%);
         width: 300px;
     }
+    
+    .listas {
+        position: relative;
+        bottom: 164px;
+    }
+    
+    .container-fluid,
+    .row {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .header-nav {
+        position: sticky;
+        top: 0;
+        z-index: 1071;
+        background-color: transparent !important;
+    }
+    
+    app-launch-preview {
+        width: 100%;
+    }
+    
+    .row-preview {
+        width: 100%;
+        position: relative;
+        bottom: 52px;
+    }
