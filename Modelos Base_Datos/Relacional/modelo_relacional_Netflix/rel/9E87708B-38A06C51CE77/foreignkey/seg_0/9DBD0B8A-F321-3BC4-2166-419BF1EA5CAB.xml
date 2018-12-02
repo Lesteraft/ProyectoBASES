@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9DBD0B8A-F321-3BC4-2166-419BF1EA5CAB" containerWithKeyObject="A92AF6EC-6F74-1509-B588-520DDA1A1F65" localFKIndex="4BC79D27-38B1-36B9-0357-A88361BB0E65" name="TBL_CONTROLES_PARENTALES_TBL_CUENTA_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9DBD0B8A-F321-3BC4-2166-419BF1EA5CAB" containerWithKeyObject="A92AF6EC-6F74-1509-B588-520DDA1A1F65" localFKIndex="4BC79D27-38B1-36B9-0357-A88361BB0E65" name="CUENTA_FKv2">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:07:47 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<referredTableLongName>TBL_CUENTA</referredTableLongName>
+<referredTableLongName>TBL_CUENTAS</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>89BFAA91-AF37-840F-4D0F-8457DCF33E43</referredTableID>
 <keyObject>E6FC621F-E731-1588-5EA1-2809137BD5FB</keyObject>

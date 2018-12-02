@@ -61,7 +61,7 @@
 <colUsage columnID="25354B9D-94F2-8937-4DF7-A2D68D0C4167"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="37C2EF96-34AB-FB66-7D50-9C496C8632E1" name="TBL_GUINISTASXEPISODIO_TBL_GUIONISTAS_FK">
+<ind_PK_UK id="37C2EF96-34AB-FB66-7D50-9C496C8632E1" name="GUIONISTAS_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:42:37 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -71,7 +71,7 @@
 <colUsage columnID="8273FFBF-388F-F443-1F34-553837979963"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2AEFFE7E-3699-F2DC-B856-587F2A1DBA2C" name="TBL_GUINISTASXEPISODIO_SERIES_FK">
+<ind_PK_UK id="2AEFFE7E-3699-F2DC-B856-587F2A1DBA2C" name="SERIES_FKv4">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:45:52 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

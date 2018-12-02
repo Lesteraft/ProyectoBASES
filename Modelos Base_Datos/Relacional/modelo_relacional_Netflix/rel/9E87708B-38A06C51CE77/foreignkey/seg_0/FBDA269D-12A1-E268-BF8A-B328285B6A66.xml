@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FBDA269D-12A1-E268-BF8A-B328285B6A66" containerWithKeyObject="5FDE9214-24B9-23F9-64F9-5FBC59562D56" localFKIndex="FD4EBFFF-DFED-1552-141E-3A623B564B36" name="TB_PERFIL_TBL_CLASIFICACIÓN_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FBDA269D-12A1-E268-BF8A-B328285B6A66" containerWithKeyObject="5FDE9214-24B9-23F9-64F9-5FBC59562D56" localFKIndex="FD4EBFFF-DFED-1552-141E-3A623B564B36" name="CLASIFICACIÓN_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:31:01 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<referredTableLongName>TBL_CLASIFICACIÓN</referredTableLongName>
+<referredTableLongName>TBL_CLASIFICACIONES</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>8678804B-C455-B21D-F8FF-964C09B8AD20</referredTableID>
 <keyObject>E406C014-B032-F7EE-A01A-304335C5DEE2</keyObject>

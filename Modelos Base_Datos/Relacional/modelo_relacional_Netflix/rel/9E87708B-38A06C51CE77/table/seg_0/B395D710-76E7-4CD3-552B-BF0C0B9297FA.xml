@@ -61,7 +61,7 @@
 <colUsage columnID="CAE8D919-E529-B0AE-56F7-3793EFB4416F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E5FD1671-AAB5-AD00-1B5B-C9BB96CEDDC6" name="TBL_DIRECTORES_X_PELICULA_TBL_DIRECTOR_FK">
+<ind_PK_UK id="E5FD1671-AAB5-AD00-1B5B-C9BB96CEDDC6" name="DIRECTOR_FKv2">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:28:46 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -71,7 +71,7 @@
 <colUsage columnID="9B54E170-8DF4-4556-43EC-F1088C8E2381"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="20CEA74D-F676-A07F-E56F-A556E42CA7DC" name="TBL_DIRECTORES_X_PELICULA_TBL_PELICULAS_FK">
+<ind_PK_UK id="20CEA74D-F676-A07F-E56F-A556E42CA7DC" name="PELICULAS_FKv3">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 00:10:10 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

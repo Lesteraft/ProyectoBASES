@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AA3F0016-14FC-5E53-E422-7A4F638E715E" containerWithKeyObject="815D663F-0641-5A7C-A32E-56ED088344F4" localFKIndex="EE7FC5B0-AB87-7476-34CA-56284428A1A3" name="TBL_REACCION_TBL_EPISODIOS_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AA3F0016-14FC-5E53-E422-7A4F638E715E" containerWithKeyObject="815D663F-0641-5A7C-A32E-56ED088344F4" localFKIndex="EE7FC5B0-AB87-7476-34CA-56284428A1A3" name="EPISODIOS_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:55:44 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

@@ -79,7 +79,7 @@
 <colUsage columnID="17B9A266-BCFD-B471-3F2B-34594A8C8AD1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0F607F53-70F0-EAA6-C12A-65095892160D" name="TBL_TARJETAS_TBL_CUENTA_FK">
+<ind_PK_UK id="0F607F53-70F0-EAA6-C12A-65095892160D" name="CUENTA_FKv4">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 01:35:28 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -89,7 +89,7 @@
 <colUsage columnID="17B9A266-BCFD-B471-3F2B-34594A8C8AD1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E7E175D2-951D-3CBC-CE58-460814E26B29" name="TBL_TARJETAS_TBL_METODOS_DE_PAGO_FK">
+<ind_PK_UK id="E7E175D2-951D-3CBC-CE58-460814E26B29" name="METODOS_DE_PAGO_FKv3">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 01:36:48 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

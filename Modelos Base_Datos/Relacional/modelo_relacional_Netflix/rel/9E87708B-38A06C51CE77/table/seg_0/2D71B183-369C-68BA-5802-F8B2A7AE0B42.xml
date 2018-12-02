@@ -55,7 +55,7 @@
 <colUsage columnID="54011F8F-3135-267B-14A2-39C7B8C8C447"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="84262CFD-D239-E105-879F-013499AA58D6" name="TBL_ADMINISTRADORES_TBL_PERSONAS_FK">
+<ind_PK_UK id="84262CFD-D239-E105-879F-013499AA58D6" name="PERSONAS_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 00:39:07 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

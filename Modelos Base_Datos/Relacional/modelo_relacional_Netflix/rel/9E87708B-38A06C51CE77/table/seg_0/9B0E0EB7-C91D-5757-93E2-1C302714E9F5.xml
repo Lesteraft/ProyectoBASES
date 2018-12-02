@@ -81,7 +81,7 @@
 <colUsage columnID="6192E8F3-3B14-E457-9E10-9706A7C21391"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3CA101B0-711F-D195-3D0D-A1950940C57A" name="TBL_AUDIOS_TBL_PELICULAS_FK">
+<ind_PK_UK id="3CA101B0-711F-D195-3D0D-A1950940C57A" name="PELICULAS_FKv2">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 15:44:51 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -91,7 +91,7 @@
 <colUsage columnID="7D8CAC1E-35C9-58CB-3A4B-9FB1DF50E93E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CB4E6E94-44A2-11EC-0F19-2BD00B738889" name="TBL_AUDIOS_TBL_IDIOMA_FK">
+<ind_PK_UK id="CB4E6E94-44A2-11EC-0F19-2BD00B738889" name="IDIOMA_FKv2">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 15:45:47 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

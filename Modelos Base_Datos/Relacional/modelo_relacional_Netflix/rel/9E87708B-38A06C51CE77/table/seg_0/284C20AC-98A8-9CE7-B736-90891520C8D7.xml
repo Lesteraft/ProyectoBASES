@@ -37,8 +37,11 @@
 <createdTime>2018-10-30 16:05:06 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="FECHA" id="32BA279D-48E3-429C-CCD5-7C32C1F5E9EE">
@@ -46,7 +49,9 @@
 <createdTime>2018-10-30 16:05:06 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -63,7 +68,7 @@
 <colUsage columnID="20F5C0EA-51A6-F0CE-3C8F-83B97C41B20B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AF21266B-982E-13D0-EA1D-1A652E78D426" name="TBL_CONFIGURACIONES_TB_PERFIL_FK">
+<ind_PK_UK id="AF21266B-982E-13D0-EA1D-1A652E78D426" name="PERFIL_FKv2">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:05:24 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

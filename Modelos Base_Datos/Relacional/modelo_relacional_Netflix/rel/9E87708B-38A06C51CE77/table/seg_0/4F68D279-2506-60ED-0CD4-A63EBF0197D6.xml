@@ -102,7 +102,7 @@
 <colUsage columnID="C347BBDD-E699-D58F-7077-4012A57491C7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3B875103-7E2D-A53D-1A1B-9B37478844BB" name="TBL_LISTA_FAVORITOS_TBL_PELICULAS_FK">
+<ind_PK_UK id="3B875103-7E2D-A53D-1A1B-9B37478844BB" name="PELICULAS_FKv6">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:56:03 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -112,7 +112,7 @@
 <colUsage columnID="932E4684-822E-5141-B74D-0E422DAFE8E2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4AED0A6B-127E-FA8B-54E4-78C9281CC663" name="TBL_LISTA_FAVORITOS_TBL_SERIES_FK">
+<ind_PK_UK id="4AED0A6B-127E-FA8B-54E4-78C9281CC663" name="SERIES_FKv5">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:56:08 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -122,7 +122,7 @@
 <colUsage columnID="7D4403DD-9E61-F78B-0D3B-A339B930A23D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9FA85CBB-7DB3-05F8-06A1-605647AFD3C3" name="TBL_LISTA_FAVORITOS_TBL_TEMPORADA_FK">
+<ind_PK_UK id="9FA85CBB-7DB3-05F8-06A1-605647AFD3C3" name="TEMPORADA_FKv2">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:56:16 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -132,7 +132,7 @@
 <colUsage columnID="470CD73D-AE81-3049-A8A4-E8A60551799B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="153BAA5A-9700-C630-7104-7338CFA7904B" name="TBL_LISTA_FAVORITOS_TB_PERFIL_FK">
+<ind_PK_UK id="153BAA5A-9700-C630-7104-7338CFA7904B" name="TB_PERFIL_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 17:00:18 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

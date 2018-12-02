@@ -61,7 +61,7 @@
 <colUsage columnID="2F99AF0E-4614-575E-BEAF-46630A20D4D8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0A3040E2-1221-7271-1799-3CF2B1D3A60A" name="TBL_DIRECTORE_X_SERIE_TBL_SERIES_FK">
+<ind_PK_UK id="0A3040E2-1221-7271-1799-3CF2B1D3A60A" name="SERIES_FKv2">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:50:09 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -71,7 +71,7 @@
 <colUsage columnID="2F99AF0E-4614-575E-BEAF-46630A20D4D8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CD38884F-F569-8B94-BECD-3E89D6A1E8FB" name="TBL_DIRECTORE_X_SERIE_TBL_DIRECTOR_FK">
+<ind_PK_UK id="CD38884F-F569-8B94-BECD-3E89D6A1E8FB" name="DIRECTOR_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:50:15 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

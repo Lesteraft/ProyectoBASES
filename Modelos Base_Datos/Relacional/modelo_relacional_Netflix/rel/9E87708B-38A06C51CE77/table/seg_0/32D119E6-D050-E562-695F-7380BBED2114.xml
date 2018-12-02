@@ -39,7 +39,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="FECHA_INICIO" id="F6E844DC-4FF3-32D4-F8C9-C95E628BF3C4">
@@ -75,7 +76,7 @@
 <colUsage columnID="8DB0BDCD-FD45-9943-F5C2-1C8BDCDE7B75"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="116FF547-4CA0-8384-63C0-F5AAC712B8D0" name="TBL_CODIGOS_PROMOCIONALES_TBL_METODOS_DE_PAGO_FK">
+<ind_PK_UK id="116FF547-4CA0-8384-63C0-F5AAC712B8D0" name="METODOS_DE_PAGO_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 01:25:09 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

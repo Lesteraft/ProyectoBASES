@@ -50,11 +50,11 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 05:53:46 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="NUMERO_TEMPORADAS" id="CCA2BC51-F4DD-B893-6CF9-4C9351EA7D7E">
@@ -81,7 +81,7 @@
 <colUsage columnID="F17F8AD9-EA8A-A676-E158-2C6E262843A4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EF74FDC8-2747-6F3A-CA96-F76B12F692D8" name="TBL_SERIES_TBL_ESTADOS_SERIES_FK">
+<ind_PK_UK id="EF74FDC8-2747-6F3A-CA96-F76B12F692D8" name="ESTADOS_SERIES_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 23:58:17 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -91,7 +91,7 @@
 <colUsage columnID="59DD32A7-79E1-8AEB-163F-5B383AD9BD5B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="88CEB09F-7631-3112-E04A-FE7753D78ADD" name="TBL_SERIES_TBL_ADMINISTRADORES_FK">
+<ind_PK_UK id="88CEB09F-7631-3112-E04A-FE7753D78ADD" name="ADMINISTRADORES_FKv2">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 00:40:13 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

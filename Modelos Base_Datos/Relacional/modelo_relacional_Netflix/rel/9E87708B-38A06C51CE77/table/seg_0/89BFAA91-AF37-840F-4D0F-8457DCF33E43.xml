@@ -147,7 +147,7 @@
 <colUsage columnID="D562798B-01CB-8866-DADA-4617AFA62AA1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="724DB4C2-68B2-3E59-6CE0-480E80771115" name="TBL_CUENTA_TBL_PLANES_FK">
+<ind_PK_UK id="724DB4C2-68B2-3E59-6CE0-480E80771115" name="PLANES_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:28:30 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -157,7 +157,7 @@
 <colUsage columnID="B6703EA1-789B-C1FA-61FD-F03A03C7A126"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9C78B351-4945-DCC7-2B04-636E67CF59A5" name="TBL_CUENTA_TBL_METODOS_DE_PAGO_FK">
+<ind_PK_UK id="9C78B351-4945-DCC7-2B04-636E67CF59A5" name="METODOS_DE_PAGO_FKv2">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:34:38 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -167,7 +167,7 @@
 <colUsage columnID="D562798B-01CB-8866-DADA-4617AFA62AA1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F21EEC06-D12C-DE07-3CFE-5FDA70B5F19F" name="TBL_CUENTA_TBL_PERSONAS_FK">
+<ind_PK_UK id="F21EEC06-D12C-DE07-3CFE-5FDA70B5F19F" name="PERSONAS_FKv2">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 00:32:39 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

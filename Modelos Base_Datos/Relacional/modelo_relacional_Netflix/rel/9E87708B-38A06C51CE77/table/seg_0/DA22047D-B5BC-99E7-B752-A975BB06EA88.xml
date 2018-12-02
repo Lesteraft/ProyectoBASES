@@ -66,7 +66,7 @@
 <colUsage columnID="E12957C9-9B40-4FFC-69F5-C5A16741B2E8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8B817AE1-6095-8FC7-6B8B-D47BB10D2D3B" name="TBL_BUSQUEDAS_TB_PERFIL_FK">
+<ind_PK_UK id="8B817AE1-6095-8FC7-6B8B-D47BB10D2D3B" name="PERFIL_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:27:06 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

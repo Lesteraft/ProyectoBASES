@@ -40,7 +40,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DURACION" id="0CB0E751-D962-AA09-0339-F481186D991C">
@@ -78,7 +79,7 @@
 <colUsage columnID="18886969-22BC-6806-64C9-CE57317AFA7A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="16E4CF8D-A374-436E-D8ED-61B927CF6616" name="TBL_EPISODIOS_TBL_TEMPORADA_FK">
+<ind_PK_UK id="16E4CF8D-A374-436E-D8ED-61B927CF6616" name="TEMPORADA_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:33:32 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

@@ -95,7 +95,7 @@
 <colUsage columnID="834B9316-37AF-F6A5-DC29-61DFD5372214"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E506E45C-1098-BEF0-33A2-669BBFDAC0D9" name="TBL_REPRODUCCIONES_TB_PERFIL_FK">
+<ind_PK_UK id="E506E45C-1098-BEF0-33A2-669BBFDAC0D9" name="PERFIL_FKv6">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:18:30 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -105,7 +105,7 @@
 <colUsage columnID="CBA9DA3C-E9C4-5B7F-A681-24E4E02250F7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E7CEC150-8F8B-28CC-F5FB-A7D86EBB40A3" name="TBL_REPRODUCCIONES_TBL_EPISODIOS_FK">
+<ind_PK_UK id="E7CEC150-8F8B-28CC-F5FB-A7D86EBB40A3" name="EPISODIOS_FKv2">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:18:36 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -115,7 +115,7 @@
 <colUsage columnID="4307BBE8-F6AC-92A1-88E5-E314366E6E66"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D6677C38-D40C-6C9A-72F9-B9826A13AFC1" name="TBL_REPRODUCCIONES_TBL_PELICULAS_FK">
+<ind_PK_UK id="D6677C38-D40C-6C9A-72F9-B9826A13AFC1" name="PELICULAS_FKv8">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:19:16 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
