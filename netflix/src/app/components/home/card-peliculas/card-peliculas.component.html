@@ -6,6 +6,11 @@
             <div class="text-center   ">
                 {{ cartelera.nombre }}
             </div>
+            <div class="position-relative text-right ">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-thumbs-down"></i>
+                <i class="fas fa-play-circle"></i>
+            </div>
             <div class="text-center " style="font-size: 9px;">
                 <div class="cartelera-sinopsis">
                     <span style="font-weight: bold; font-size: 10px; text-emphasis-style: inherit ">sinopsis:</span> {{cartelera.sinopsis | slice:0:80}}...
