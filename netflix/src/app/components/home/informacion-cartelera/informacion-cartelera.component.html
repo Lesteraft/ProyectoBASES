@@ -1,5 +1,5 @@
-<div class="collapse" id="collapseExample">
+<div class="collapse" id="collapse{{infoCartelera.id}}{{categoria}}" class="collapse" aria-labelledby="headingOne" [attr.data-parent]="'#accordion' + categoria">
     <div class="card card-body">
-        mañana no hay clases {{infoCartelera.nombre}}
+        mañana no hay clases {{infoCartelera.nombre}}, está peli pertenece a esta categoria: {{categoria}}
     </div>
 </div>

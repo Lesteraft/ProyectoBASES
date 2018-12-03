@@ -10,14 +10,14 @@
         <ul id=".content">
             <li *ngFor='let cartelera of carteleras' class="card effect1">
                 <div class="">
-                    <app-card-peliculas (InfoCartelera)='actualizaDatos( $event )' [cartelera]='cartelera'></app-card-peliculas>
+                    <app-card-peliculas [cartelera]='cartelera' [categoria]='categoria'></app-card-peliculas>
 
                 </div>
             </li>
         </ul>
     </div>
-    <div>
-        <app-informacion-cartelera *ngIf='mostrarInf' [infoCartelera]='InfoCartelera'></app-informacion-cartelera>
+    <div style="margin-top:-25px; margin-bottom: 50px;" id="accordion{{categoria}}">
+        <app-informacion-cartelera *ngFor='let cartel of carteleras' [infoCartelera]='cartel' [categoria]='categoria'></app-informacion-cartelera>
     </div>
 
     <!--end of module-section-->

@@ -8,8 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class InformacionCarteleraComponent implements OnInit {
 
   @Input() infoCartelera: any;
+  @Input() categoria: any;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }
