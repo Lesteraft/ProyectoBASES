@@ -64,12 +64,11 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 04:20:01 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CONTRASEÑA" id="6CAEB191-3077-279A-ABDD-60A12005C4E6">
@@ -80,8 +79,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="NUMERO_TARJETA" id="51B08E51-B08B-7236-3BC9-6AD755BDAF56">
@@ -147,7 +146,7 @@
 <colUsage columnID="D562798B-01CB-8866-DADA-4617AFA62AA1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="724DB4C2-68B2-3E59-6CE0-480E80771115" name="PLANES_FK">
+<ind_PK_UK id="724DB4C2-68B2-3E59-6CE0-480E80771115" name="T_CUENTA_T_PLANES_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:28:30 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -157,7 +156,7 @@
 <colUsage columnID="B6703EA1-789B-C1FA-61FD-F03A03C7A126"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9C78B351-4945-DCC7-2B04-636E67CF59A5" name="METODOS_DE_PAGO_FKv2">
+<ind_PK_UK id="9C78B351-4945-DCC7-2B04-636E67CF59A5" name="T_CUENTA_T_M_DE_PAGO_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:34:38 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -167,7 +166,7 @@
 <colUsage columnID="D562798B-01CB-8866-DADA-4617AFA62AA1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F21EEC06-D12C-DE07-3CFE-5FDA70B5F19F" name="PERSONAS_FKv2">
+<ind_PK_UK id="F21EEC06-D12C-DE07-3CFE-5FDA70B5F19F" name="T_CUENTA_T_PERSONAS_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 00:32:39 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

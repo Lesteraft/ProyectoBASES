@@ -22,19 +22,17 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 04:27:08 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="PRECIO" id="CFE5FCCA-54E8-AC97-564E-3224A90C0326">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:11:31 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -45,7 +43,6 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:12:03 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -56,12 +53,11 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:12:03 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

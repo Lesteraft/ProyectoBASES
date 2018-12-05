@@ -25,8 +25,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="FECHA" id="CEDAB980-B991-2727-C55C-60BDBEEFF07E">
@@ -66,7 +66,7 @@
 <colUsage columnID="69335432-6A5F-446F-689B-088B76FB42C9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AA14A5DF-5C0F-58DA-5F28-95412F9584C3" name="TB_PERFIL_FKv2">
+<ind_PK_UK id="AA14A5DF-5C0F-58DA-5F28-95412F9584C3" name="T_NOTIFI_T_PERFIL_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:33:27 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

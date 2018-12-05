@@ -36,12 +36,11 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:41:07 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="RUTA_ARCHIVO_SUBTITULO" id="EFCE9B72-BCB4-D935-D2C0-86746C736F46">
@@ -51,8 +50,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -68,7 +67,7 @@
 <colUsage columnID="4D120E3D-BD3D-F6C8-0A65-4D2B7413DBDF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A8DE24C3-100C-0D70-ECE6-A38E6B2F51F8" name="PELICULAS_FKv9">
+<ind_PK_UK id="A8DE24C3-100C-0D70-ECE6-A38E6B2F51F8" name="T_SUBTI_T_PELI_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 15:44:57 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

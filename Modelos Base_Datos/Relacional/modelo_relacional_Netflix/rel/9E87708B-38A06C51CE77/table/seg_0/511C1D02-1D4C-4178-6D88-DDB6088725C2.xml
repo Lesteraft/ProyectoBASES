@@ -67,15 +67,14 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DURACION" id="03F62E9C-51E4-6D34-ADB7-82BA4DDF58E6">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 05:35:01 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT014</logicalDatatype>
@@ -86,7 +85,6 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 05:35:24 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -98,7 +96,6 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:13:11 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -109,7 +106,6 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:24:29 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -129,7 +125,7 @@
 <colUsage columnID="C6FF73A1-6E9B-CB9F-5C62-78DDDE13A2D7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5F7B9E5F-7A1C-2DC7-807D-A7BEF218A55D" name="VALORACION_FK">
+<ind_PK_UK id="5F7B9E5F-7A1C-2DC7-807D-A7BEF218A55D" name="T_PELI_T_VALORACION_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:55:53 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -139,7 +135,7 @@
 <colUsage columnID="74E669F2-9398-6D5B-F1BE-FD084AD987EC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D64F6772-D1C1-FDC0-7637-48FFFD5FC62A" name="CLASIFICACIONES_X_EDAD_FK">
+<ind_PK_UK id="D64F6772-D1C1-FDC0-7637-48FFFD5FC62A" name="T_PELI_T_CLASIFI_X_EDAD_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:10:09 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -149,7 +145,7 @@
 <colUsage columnID="B72711CC-E91E-F073-EF6D-79FAC8AC44E0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="786C80B5-C3F6-32E6-B5ED-C01FB0D38D1B" name="ADMINISTRADORES_FK">
+<ind_PK_UK id="786C80B5-C3F6-32E6-B5ED-C01FB0D38D1B" name="T_PELI_T_ADMIN_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 00:41:12 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

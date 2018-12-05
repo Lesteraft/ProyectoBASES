@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EA8DA4FE-60FF-6F3F-C91E-D70046B1B59E" containerWithKeyObject="89BFAA91-AF37-840F-4D0F-8457DCF33E43" localFKIndex="724DB4C2-68B2-3E59-6CE0-480E80771115" name="PLANES_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EA8DA4FE-60FF-6F3F-C91E-D70046B1B59E" containerWithKeyObject="89BFAA91-AF37-840F-4D0F-8457DCF33E43" localFKIndex="724DB4C2-68B2-3E59-6CE0-480E80771115" name="T_CUENTA_T_PLANES_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:28:30 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

@@ -39,8 +39,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="MODELO" id="39AA7FC2-1646-F802-09C6-8459E8C218C8">
@@ -50,8 +50,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -77,7 +77,7 @@
 <colUsage columnID="6270DB28-6FD6-16BF-7FEF-64EF8FFCFAE2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0AE4DBA9-2305-B6B6-49FA-5624F7E60662" name="PLATAFORMAS_FK">
+<ind_PK_UK id="0AE4DBA9-2305-B6B6-49FA-5624F7E60662" name="T_DEVICES_T_PLATFORM_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:23:42 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

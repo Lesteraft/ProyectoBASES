@@ -40,7 +40,6 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:43:44 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -61,7 +60,7 @@
 <colUsage columnID="6EEF2B3B-B383-5800-0EB0-0228D68DBE42"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="27DDDF03-25C9-C980-4171-5F47AB676289" name="ACTORES_FKv2">
+<ind_PK_UK id="27DDDF03-25C9-C980-4171-5F47AB676289" name="T_ACTORS_X_EPI_T_ACTORS_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:44:29 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -71,7 +70,7 @@
 <colUsage columnID="6EEF2B3B-B383-5800-0EB0-0228D68DBE42"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CDF5C945-16C8-D5CC-5285-BCA42CB67A5A" name="SERIES_FK">
+<ind_PK_UK id="CDF5C945-16C8-D5CC-5285-BCA42CB67A5A" name="T_ACTORS_X_EPI_T_SERIES_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:46:53 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

@@ -38,7 +38,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B31239E1-EA62-59C7-A8C9-FFF010668056" name="PELICULAS_FKv4">
+<ind_PK_UK id="B31239E1-EA62-59C7-A8C9-FFF010668056" name="T_GEN_X_PELI_T_PELI_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:51:36 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -48,7 +48,7 @@
 <colUsage columnID="CB7D2D0B-EDAF-CDA8-B831-DBDA72E7A7E8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="20F87BC2-7854-56CB-1AFF-CBEA1CAC8D55" name="GENEROS_CINE_FK">
+<ind_PK_UK id="20F87BC2-7854-56CB-1AFF-CBEA1CAC8D55" name="T_GEN_X_PELI_T_GEN_CINE_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:51:41 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

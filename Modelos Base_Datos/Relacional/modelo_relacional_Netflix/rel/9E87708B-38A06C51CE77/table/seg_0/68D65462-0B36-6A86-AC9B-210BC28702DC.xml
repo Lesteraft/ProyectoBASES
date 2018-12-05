@@ -36,19 +36,17 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:06:29 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DURACION" id="0CB0E751-D962-AA09-0339-F481186D991C">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:06:29 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT014</logicalDatatype>
@@ -59,7 +57,6 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:24:47 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -79,7 +76,7 @@
 <colUsage columnID="18886969-22BC-6806-64C9-CE57317AFA7A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="16E4CF8D-A374-436E-D8ED-61B927CF6616" name="TEMPORADA_FK">
+<ind_PK_UK id="16E4CF8D-A374-436E-D8ED-61B927CF6616" name="T_EPISO_T_TEMPORA_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:33:32 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

@@ -40,7 +40,6 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:25:39 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -61,7 +60,7 @@
 <colUsage columnID="71A1CA16-1D7B-B424-9CB8-40D1CC1E2375"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7AC34DA4-BE79-4FD5-56D7-509C6D3B0096" name="GUIONISTAS_FKv2">
+<ind_PK_UK id="7AC34DA4-BE79-4FD5-56D7-509C6D3B0096" name="T_GUIO_X_PELI_T_GUIO_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:28:33 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -71,7 +70,7 @@
 <colUsage columnID="FB0A10C2-990C-B19D-8A9E-11FDD935B53A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="76A8DAE0-BDC2-B352-4E1D-67148CAAF6CE" name="PELICULAS_FKv5">
+<ind_PK_UK id="76A8DAE0-BDC2-B352-4E1D-67148CAAF6CE" name="T_GUIO_X_PELI_T_PELI_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 00:09:43 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
