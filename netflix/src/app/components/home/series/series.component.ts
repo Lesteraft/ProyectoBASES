@@ -6,7 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./series.component.css']
 })
 export class SeriesComponent implements OnInit {
-  categorias: any[] = ['Mi_Lista', 'Peliculas'];
+  categorias: any[] = [
+    {
+      nombre: 'Mi Lista',
+      ID: 0
+    },
+    {
+      nombre: 'Peliculas',
+      ID: 1
+    }
+  ];
   constructor() { }
 
   ngOnInit() {
