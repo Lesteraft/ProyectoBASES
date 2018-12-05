@@ -70,7 +70,7 @@
 <colUsage columnID="88331468-5396-E59C-7B6D-A8DD453BD89A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0786B226-DBB5-CA43-1CF5-AF81A46D6B2A" name="PERFIL_FKv3">
+<ind_PK_UK id="0786B226-DBB5-CA43-1CF5-AF81A46D6B2A" name="T_DOWNL_T_PERFIL_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:30:46 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -80,7 +80,7 @@
 <colUsage columnID="3363853F-BFD5-F2F5-0D49-5B5DB36F67C6"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FF6F8213-54B6-17DE-B588-50E140AEF396" name="DISPOSITIVOS_FK">
+<ind_PK_UK id="FF6F8213-54B6-17DE-B588-50E140AEF396" name="T_DOWNL_T_DEVICES_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:30:55 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

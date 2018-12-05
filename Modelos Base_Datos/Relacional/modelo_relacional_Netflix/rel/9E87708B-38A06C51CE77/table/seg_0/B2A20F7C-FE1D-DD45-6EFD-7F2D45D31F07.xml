@@ -40,8 +40,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="LATITUD" id="544CAD32-A746-EBD1-F527-0A118EFBE19D">
@@ -51,8 +51,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="LONGITUD" id="CFC97C03-0F6E-D719-A0C9-B517A0FF3381">
@@ -62,8 +62,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -79,7 +79,7 @@
 <colUsage columnID="EFC2E3F8-BB7E-315F-4AA5-BCFCDA6DFEBD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="876426D8-DABD-7B0E-6DA2-ECFF6247250F" name="REGIONES_FK">
+<ind_PK_UK id="876426D8-DABD-7B0E-6DA2-ECFF6247250F" name="T_REGIONES_T_REGIONES_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 01:45:55 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

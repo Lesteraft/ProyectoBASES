@@ -40,7 +40,6 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:26:27 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -49,7 +48,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="230A3DD2-49AF-2B59-AB3B-151B00F092E7" name="ACTORES_FK">
+<ind_PK_UK id="230A3DD2-49AF-2B59-AB3B-151B00F092E7" name="T_ACTORS_X_PELI_T_ACTORS_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 16:28:39 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -59,7 +58,7 @@
 <colUsage columnID="B288B26E-A4E5-AE8D-16FE-35EBDBA5E46C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="73F14B75-AC41-0FDC-5AAD-1F1C9035E8A5" name="PELICULAS_FK">
+<ind_PK_UK id="73F14B75-AC41-0FDC-5AAD-1F1C9035E8A5" name="T_ACTORS_X_PELI_T_PELI_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 00:10:16 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

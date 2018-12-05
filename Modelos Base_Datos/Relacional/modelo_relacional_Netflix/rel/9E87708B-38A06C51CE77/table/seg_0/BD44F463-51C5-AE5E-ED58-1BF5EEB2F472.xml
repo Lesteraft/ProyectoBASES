@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD44F463-51C5-AE5E-ED58-1BF5EEB2F472" name="TBL_DIRECTORE_X_SERIE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD44F463-51C5-AE5E-ED58-1BF5EEB2F472" name="TBL_DIRECTORES_X_SERIE">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:49:02 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -40,7 +40,6 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:49:37 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -49,7 +48,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="385FB232-5DF4-445F-C4D6-4AE776ABD74F" name="TBL_DIRECTORE_X_SERIE_PK">
+<ind_PK_UK id="385FB232-5DF4-445F-C4D6-4AE776ABD74F" name="TBL_DIRECTORES_X_SERIE_PK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:50:41 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -61,7 +60,7 @@
 <colUsage columnID="2F99AF0E-4614-575E-BEAF-46630A20D4D8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0A3040E2-1221-7271-1799-3CF2B1D3A60A" name="SERIES_FKv2">
+<ind_PK_UK id="0A3040E2-1221-7271-1799-3CF2B1D3A60A" name="T_DIREC_X_SERIE_T_SERIES_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:50:09 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -71,7 +70,7 @@
 <colUsage columnID="2F99AF0E-4614-575E-BEAF-46630A20D4D8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CD38884F-F569-8B94-BECD-3E89D6A1E8FB" name="DIRECTOR_FK">
+<ind_PK_UK id="CD38884F-F569-8B94-BECD-3E89D6A1E8FB" name="T_DIREC_X_SERIE_T_DIREC_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:50:15 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

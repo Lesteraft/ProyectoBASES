@@ -22,12 +22,11 @@
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:07:03 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CODIGO_CUENTA" id="18975100-08AA-1AB6-9828-5AF1CE928569">
@@ -57,7 +56,7 @@
 <colUsage columnID="0B496EC2-A0B7-3D48-EDE5-A8F8BBC7979D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4BC79D27-38B1-36B9-0357-A88361BB0E65" name="CUENTA_FKv2">
+<ind_PK_UK id="4BC79D27-38B1-36B9-0357-A88361BB0E65" name="T_CO_PARENT_T_CUENTA_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:07:47 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

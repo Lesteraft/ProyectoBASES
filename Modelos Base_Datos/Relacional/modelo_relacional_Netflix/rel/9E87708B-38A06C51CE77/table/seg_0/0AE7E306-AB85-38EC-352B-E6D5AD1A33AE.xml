@@ -50,7 +50,7 @@
 <colUsage columnID="35FD9355-7EDB-7125-4730-85F73F2702B0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="41DD01E6-CCCE-8A54-CCDB-9BD8380E631C" name="PERFIL_FKv4">
+<ind_PK_UK id="41DD01E6-CCCE-8A54-CCDB-9BD8380E631C" name="T_PERFIL_X_DEVI_T_PERFIL_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:25:33 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -60,7 +60,7 @@
 <colUsage columnID="35FD9355-7EDB-7125-4730-85F73F2702B0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DC36C7E5-81ED-44AC-849B-A13ACFF53533" name="DISPOSITIVOS_FKv2">
+<ind_PK_UK id="DC36C7E5-81ED-44AC-849B-A13ACFF53533" name="T_PERFIL_X_DEVI_T_DEVICES_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:25:39 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

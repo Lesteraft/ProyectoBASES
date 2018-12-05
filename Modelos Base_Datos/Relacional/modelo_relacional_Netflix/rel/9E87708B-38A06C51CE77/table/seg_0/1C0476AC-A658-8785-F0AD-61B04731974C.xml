@@ -36,7 +36,6 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 05:55:57 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -47,7 +46,6 @@
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 05:55:57 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -67,7 +65,7 @@
 <colUsage columnID="8CEB6D49-333C-A0C9-5135-59522168C2C7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FFE9C676-D678-B4E7-23F0-2D55C38C92C1" name="SERIES_FKv7">
+<ind_PK_UK id="FFE9C676-D678-B4E7-23F0-2D55C38C92C1" name="TBL_TEMPO_SERIES_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:32:57 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
