@@ -19,3 +19,11 @@
 .cartelera-sinopsis {
     margin-top: 73%;
 }
+
+.far {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.far:hover {
+    color: rgba(255, 255, 255, 1);
+}
