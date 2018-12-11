@@ -35,6 +35,14 @@
 .body {
     width: 100%;
     position: absolute;
-    height: 130%;
-    background-color: rgb(255, 255, 255);
+    height: 100%;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+#invalid-tarjeta,
+#invalid-fecha-vencimiento,
+#invalid-cvc {
+    display: none;
+    color: red;
+    font-size: 14px;
 }

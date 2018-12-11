@@ -1,4 +1,5 @@
 <div class="body">
+    <app-navbar-sing-in></app-navbar-sing-in>
     <div class="div-central" id="contenido-registro-4"><br>
         <div>PASO 3 DE 3</div>
         <div><b>Configura tu tarjeta de crédito o débito.</b></div>
@@ -7,11 +8,11 @@
             <img class="item-btn-tarjetas" src="assets/img/singin/icon_master_33x25.png" alt="">
             <img class="item-btn-tarjetas" src="assets/img/singin/icon_amex_37x25.png" alt="">
         </div>
-        <input class="input-tarjetas" type="text" placeholder="Nombre"><br>
-        <input class="input-tarjetas" type="text" placeholder="Apellido"><br>
-        <input class="input-tarjetas" type="text" placeholder="Numero de tarjeta"><br>
-        <input class="input-tarjetas" type="text" placeholder="Fecha de vencimiento(MM/AA)"><br>
-        <input class="input-tarjetas" type="text" placeholder="Codigo de seguridad">
+        <input class="input-tarjetas" type="text" placeholder="Nombre" id="infopago-nombre"><br>
+        <input class="input-tarjetas" type="text" placeholder="Apellido" id="infopago-apellido"><br>
+        <input class="input-tarjetas" type="text" placeholder="Numero de tarjeta" id="infopago-tarjeta"><br><i id="invalid-tarjeta">Numero de tarjeta invalido</i>
+        <input class="input-tarjetas" type="text" placeholder="Fecha de vencimiento(MM/AA)" id="infopago-fecha_vencimiento"><br><i id="invalid-fecha-vencimiento">Fecha vencimiento incorrecta</i>
+        <input class="input-tarjetas" type="text" placeholder="Codigo de seguridad" id="infopago-cvc"><br><i id="invalid-cvc">CVC incorrecto</i><br>
         <!--INFORMACION SOBRE EL PLAN A ADQUIRIR-->
         <div id="info-plan-adquirido">
             <div><span style="font-size:12px;"><b>TU PLAN</b></span><br> Streaming ilimitado en HD y Ultra HD por USD11.99 al mes después de la prueba gratis.</div><br>
@@ -26,6 +27,6 @@
             </div>
         </div>
 
-        <button type="button" id="btn-iniciar-membresia">INICIAR MEMBRESÍA</button>
+        <button type="button" id="btn-iniciar-membresia" (click)="valido()">INICIAR MEMBRESÍA</button>
     </div>
 </div>

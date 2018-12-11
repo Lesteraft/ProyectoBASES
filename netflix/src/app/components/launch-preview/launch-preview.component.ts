@@ -29,5 +29,3 @@ export class LaunchPreviewComponent implements OnInit {
     });
   }
 }
-
-
