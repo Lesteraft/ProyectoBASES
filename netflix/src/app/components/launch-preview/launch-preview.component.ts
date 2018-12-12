@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import {VgAPI} from 'videogular2/core';
 import * as $ from 'jquery';
+import { ReproductorComponent } from '../reproductor/reproductor.component';
 
 @Component({
   selector: 'app-launch-preview',
@@ -9,12 +11,14 @@ import * as $ from 'jquery';
 })
 export class LaunchPreviewComponent implements OnInit {
     preload = 'auto';
+    video = '../../../assets/video/Trailer1.mp4';
     api: VgAPI;
+    id = 2;
   constructor() {
   }
 
-  ngOnInit() {
 
+  ngOnInit() {
   }
 
   onPlayerReady(api: VgAPI) {
@@ -28,4 +32,5 @@ export class LaunchPreviewComponent implements OnInit {
        }
     });
   }
+
 }

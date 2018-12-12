@@ -7,6 +7,6 @@ npm install --save-dev @fortawesome/fontawesome-free
 #####Recursos####### 
 #VideoGular
 #https://videogular.github.io/videogular2/docs/
-#
+#https://regexr.com/
 #
 ####################

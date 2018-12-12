@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {VgAPI} from 'videogular2/core';
+import {Router} from '@angular/router';
 import * as $ from 'jquery';
 import { LaunchPreviewComponent } from '../../launch-preview/launch-preview.component';
 
@@ -23,12 +24,14 @@ export class PeliculasComponent implements OnInit {
         ID: 1
       }
     ];
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
   }
     // this.api.play();
-
+  cargarVideo() {
+    console.log('prueba');
+  }
   }
 

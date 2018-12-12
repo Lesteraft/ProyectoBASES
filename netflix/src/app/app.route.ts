@@ -38,7 +38,7 @@ const APP_ROUTES: Routes = [
     { path: 'recientes', component: RecientesComponent },
     { path: 'mi-lista', component: MiListaComponent },
     { path: 'configuraciones', component: ConfiguracionesComponent },
-    { path: 'reproductor', component: ReproductorComponent },
+    { path: 'reproductor/:id', component: ReproductorComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'principal' }
 
 ];
