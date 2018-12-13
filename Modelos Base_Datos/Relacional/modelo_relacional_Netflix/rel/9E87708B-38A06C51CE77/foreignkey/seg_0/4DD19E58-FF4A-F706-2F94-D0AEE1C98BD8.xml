@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4DD19E58-FF4A-F706-2F94-D0AEE1C98BD8" containerWithKeyObject="530C5127-05EA-1A40-8134-9992C48CA852" localFKIndex="72BC001B-AB32-56ED-56C0-9FD9F5910100" name="T_PAGOS_T_COD_PROMO_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-12-13 00:46:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<referredTableLongName>TBL_CODIGOS_PROMOCIONALES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>32D119E6-D050-E562-695F-7380BBED2114</referredTableID>
+<keyObject>1EC535B9-3820-8EDE-5C9A-F94D53BB17F5</keyObject>
+<referredKeyID>1EC535B9-3820-8EDE-5C9A-F94D53BB17F5</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>CODIGO_PROMOCIONAL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

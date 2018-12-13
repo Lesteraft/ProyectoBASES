@@ -32,6 +32,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CODIGO_PROMOCIONAL" id="A27C6419-1039-6974-341C-5F5910A12C3A">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-12-13 00:46:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DD19E58-FF4A-F706-2F94-D0AEE1C98BD8" referredColumn="8DB0BDCD-FD45-9943-F5C2-1C8BDCDE7B75"/>
+</associations>
+</Column>
 <Column name="FECHA_PAGO" id="7EBF0864-F24B-766E-9611-918FFC35E2A7">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 01:19:43 UTC</createdTime>
@@ -84,6 +99,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A6730AAE-F584-55CC-AF5D-15F707CE973C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72BC001B-AB32-56ED-56C0-9FD9F5910100" name="T_PAGOS_T_COD_PROMO_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-12-13 00:46:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A27C6419-1039-6974-341C-5F5910A12C3A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

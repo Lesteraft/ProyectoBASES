@@ -32,34 +32,6 @@
 <colAssociation fkAssociation="EA8DA4FE-60FF-6F3F-C91E-D70046B1B59E" referredColumn="FAE66B24-E5C1-06CA-41BD-352E98ED13DA"/>
 </associations>
 </Column>
-<Column name="CODIGO_METODO_PAGO" id="D562798B-01CB-8866-DADA-4617AFA62AA1">
-<createdBy>Oscar E. Blandon</createdBy>
-<createdTime>2018-10-30 16:34:38 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="6D241650-02A5-CB79-6DB0-99BEAEF4BC02" referredColumn="E5B39A35-8DFB-9D43-74B0-32BD09204A53"/>
-</associations>
-</Column>
-<Column name="CODIGO_PERSONA" id="A07F818C-1EEC-A9D2-61E0-D2643AD4F8BC">
-<createdBy>Oscar E. Blandon</createdBy>
-<createdTime>2018-10-31 00:32:39 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C74BB99B-2889-9C82-9E42-0BF38EAA4D4A" referredColumn="8D11B2AE-2E57-15CB-D24D-C5FD49970351"/>
-</associations>
-</Column>
 <Column name="CORREO" id="05369407-B619-C07D-3CB5-6ABCA9358994">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 04:20:01 UTC</createdTime>
@@ -126,26 +98,6 @@
 <colUsage columnID="93AFBE6B-5CC0-D466-D018-0C706C20A4DB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="97F9B202-558A-9F2B-DB04-09BB64C24A87" name="TBL_CUENTAS__UN">
-<createdBy>Oscar E. Blandon</createdBy>
-<createdTime>2018-11-01 01:32:55 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<indexState>Unique Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="A07F818C-1EEC-A9D2-61E0-D2643AD4F8BC"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="08FAB761-F010-A31B-EB7D-E2B135CA4BB3" name="TBL_CUENTAS__UNv1">
-<createdBy>Oscar E. Blandon</createdBy>
-<createdTime>2018-11-01 01:33:38 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<indexState>Unique Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="D562798B-01CB-8866-DADA-4617AFA62AA1"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="724DB4C2-68B2-3E59-6CE0-480E80771115" name="T_CUENTA_T_PLANES_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:28:30 UTC</createdTime>
@@ -154,26 +106,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B6703EA1-789B-C1FA-61FD-F03A03C7A126"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="9C78B351-4945-DCC7-2B04-636E67CF59A5" name="T_CUENTA_T_M_DE_PAGO_FK">
-<createdBy>Oscar E. Blandon</createdBy>
-<createdTime>2018-10-30 16:34:38 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="D562798B-01CB-8866-DADA-4617AFA62AA1"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="F21EEC06-D12C-DE07-3CFE-5FDA70B5F19F" name="T_CUENTA_T_PERSONAS_FK">
-<createdBy>Oscar E. Blandon</createdBy>
-<createdTime>2018-10-31 00:32:39 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="A07F818C-1EEC-A9D2-61E0-D2643AD4F8BC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
