@@ -13,11 +13,11 @@ export class InfopagoSinginComponent implements OnInit {
 
   constructor( private router: Router ) { }
   ngOnInit() {
-      let nombre: string;
-      let apellido: string = $('#infopago-apellido').val();
-      let numero_tarjeta: string = $('#infopago-tarjeta').val();
-      let fecha_vencimiento: string = $('#infopago-fecha_vencimiento').val();
-      let cvc: string = $('#infopago-cvc').val();
+      let nombre: any;
+      let apellido: any = $('#infopago-apellido').val();
+      let numero_tarjeta: any = $('#infopago-tarjeta').val();
+      let fecha_vencimiento: any = $('#infopago-fecha_vencimiento').val();
+      let cvc: any = $('#infopago-cvc').val();
       $('#infopago-nombre').keyup(function() {
         nombre = $('#infopago-nombre').val();
         if (nombre === '') {
@@ -68,7 +68,7 @@ export class InfopagoSinginComponent implements OnInit {
 
   }
 
-  valido(nombre: string, apellido: string, numero_tarjeta: string, fecha_vencimiento: string, cvc: string) {
+  valido(nombre: any, apellido: any, numero_tarjeta: any, fecha_vencimiento: any, cvc: any) {
     nombre = $('#infopago-nombre').val();
     apellido = $('#infopago-apellido').val();
     fecha_vencimiento = $('#infopago-fecha_vencimiento').val();

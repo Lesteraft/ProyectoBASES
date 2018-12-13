@@ -5,7 +5,7 @@
         <i class="fas fa-chevron-left fa-chevron-left-extra"></i>
     </span>
     <h1>{{categoria.nombre}}</h1>
-    <div class="module-section clearfix" id="{{categoria.nombre}}">
+    <div class="module-section clearfix" id="carousel{{categoria.ID}}">
         <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
         <ul id=".content">
             <li *ngFor='let cartelera of carteleras' class="card effect1">
@@ -17,6 +17,7 @@
         </ul>
     </div>
     <div style="margin-top:-25px; margin-bottom: 50px; width: auto;" id="accordion{{categoria.ID}}">
+        <!--padre-->
         <app-informacion-cartelera *ngFor='let cartel of carteleras' [infoCartelera]='cartel' [categoria]='categoria'></app-informacion-cartelera>
     </div>
 
