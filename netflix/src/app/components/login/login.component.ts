@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
+import { CookieService } from 'ngx-cookie-service';
+
+
 
 @Component({
   selector: 'app-login',
@@ -9,17 +12,40 @@ import * as $ from 'jquery';
 })
 export class LoginComponent implements OnInit {
 
-  constructor( private _router: Router  ) {}
+  constructor( private _router: Router, private cookieService: CookieService) {
+  }
 
   ngOnInit() {
   }
 
-  validar() {
+  login() {
+    const cookie = this.cookieService;
+    const router = this._router;
     console.log('se ha dado click');
     if ((this.validacion('#id_userLoginId') || this.validacion('#id_userPassword')) &&
         (this.validacion('#id_userLoginId') && this.validacion('#id_userPassword'))) {
-        this._router.navigate(['perfiles', '0']);
+        $.ajax({
+          url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/login.php',
+          method: 'POST',
+          dataType: 'json',
+          data: 'user=' + $('#id_userLoginId').val() + '&' + 'password=' + $('#id_userPassword').val(),
+          success: function(respuesta) {
+            console.log(respuesta);
+              if (respuesta.codigo === 0) {
+               cookie.set('usuario', respuesta.user);
+               cookie.set('password', respuesta.password);
+               router.navigate(['perfiles', '0']);
+              } else {
+                alert('usuario y/o contraseña incorrectos');
+              }
+
+          },
+          error: function(error) {
+            console.log(error);
+          }
+        });
     }
+
   }
 
   validacion(id) {

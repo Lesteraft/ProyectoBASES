@@ -1,26 +1,12 @@
 import { Injectable } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
 
 @Injectable()
 export class LoginService {
-    private user: any;
-    private password: any;
-
-    public setUser( user ) {
-        this.user = user;
-    }
-
-
-    public setPassword( password ) {
-        this.password = password;
-    }
-
-    public deleteUser() {
-        this.user = '';
-        this.password = '';
-    }
+    constructor( private cookieService: CookieService ) {}
 
     public isLogin(): Boolean {
-        if (this.user && this.password !== '') {
+        if ( this.cookieService.check('usuario') && this.cookieService.check('password') ) {
             return true;
         } else {
             return false;
@@ -28,5 +14,4 @@ export class LoginService {
 
 
     }
-
 }

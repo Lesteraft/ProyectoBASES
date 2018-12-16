@@ -3,6 +3,7 @@ npm install bootstrap --save
 npm install jquery --save
 npm install popper.js --save
 npm install --save-dev @fortawesome/fontawesome-free
+npm install ngx-cookie-service --save
 #*#
 #####Recursos####### 
 VideoGular

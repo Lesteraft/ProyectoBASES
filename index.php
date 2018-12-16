@@ -10,29 +10,24 @@
 <?php
 
     // Conectar al servicio XE (es deicr, la base de datos) en la máquina "localhost"
-    $conn = oci_connect('NETFLIX', 'oracle', 'localhost/XE');
-    if (!$conn) {
-        $e = oci_error();
-        trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-    }
+     // Conectar al servicio XE (es deicr, la base de datos) en la máquina "localhost"
+     $conn = oci_connect('NETFLIX', 'oracle', 'localhost/XE');
+     if (!$conn) {
+         $e = oci_error();
+         trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+     }
 
-    $sql = "INSERT INTO tBL_PLATAFORMAS (CODIGO_PLATAFORMA, NOMBRE_PLATAFORMA) VALUES (4, 'iPhone')";
-    $sql = "INSERT INTO TBL_CUENTAS (CODIGO_CUENTA, CODIGO_PLAN, CORREO, NUMERO_TARJETA, CODIGO_TARJETA, FECHA_VALIDEZ) VALUES(5, 1, 'os@gmail.com', 123456, 123, TO_DATE('11-23', 'MM-YY'))";
-    $stid = oci_parse($conn, $sql);
-    echo $sql;
-    oci_execute($stid);
-  /*  echo "<table border='1'>\n";
-    while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-        echo "<tr>\n";
-        foreach ($row as $item) {
-            echo "    <td>" . ($item !== null ? htmlentities($item, ENT_QUOTES) : "") . "</td>\n";
-        }
-        echo "</tr>\n";
-    }
-    echo "</table>\n";*/
-    oci_commit($conn);
+     $sql = "SELECT CORREO, CONTRASENIA FROM TBL_CUENTAS ORDER BY CODIGO_CUENTA";
+     $stid = oci_parse($conn, $sql);
+     oci_execute($stid);
+     $registros = array();
+     while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
+         $registros[] = $row;
+     }
 
+     echo var_dump($registros);
 
+     oci_commit($conn);
 ?>
 </body>
 </html>

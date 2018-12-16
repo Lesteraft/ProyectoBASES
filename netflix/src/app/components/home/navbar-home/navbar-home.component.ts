@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
-import { AuthService } from '../../../services/auth.service';
-
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-navbar-home',
@@ -15,7 +14,7 @@ export class NavbarHomeComponent implements OnInit {
 
   i = 0;
 
-  constructor( private _router: Router, private auth: AuthService ) { }
+  constructor( private _router: Router, private cookieService: CookieService ) {}
 
   ngOnInit() {
   let textoBusqueda: any;
@@ -85,6 +84,11 @@ export class NavbarHomeComponent implements OnInit {
         $('#opcionesUssuario').css('display', 'none');
       }
     } , 800);
+  }
+
+  logout() {
+    this.cookieService.deleteAll();
+    this._router.navigate(['/login']);
   }
 
 

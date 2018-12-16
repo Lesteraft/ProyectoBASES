@@ -4,22 +4,22 @@
             <div id="logoNetflix">
                 <img src="../../../assets/img/logo.png" id="imagen-logo">
             </div>
-            <section id="div-login">
+            <section id="div-login" class="fadeIn, animated">
                 <h1>Inicia Sesión</h1>
                 <form style="margin-top: 50px" class="form control">
                     <div>
-                        <input (keyup.enter)='validar();' class="form-control" id="id_userLoginId" type="email" placeholder="Email o número de teléfono">
+                        <input (keyup.enter)='login();' class="form-control" id="id_userLoginId" type="email" placeholder="Email o número de teléfono">
                         <DIV class="invalid-feedback">
                             Ingrese un email o número de teléfono válido
                         </DIV>
                     </div>
                     <div>
-                        <input (keyup.enter)='validar();' class="form-control" type="password" placeholder="Contraseña" id="id_userPassword">
+                        <input (keyup.enter)='login();' class="form-control" type="password" placeholder="Contraseña" id="id_userPassword">
                         <div class="invalid-feedback">
                             La contraseña debe tener entre 4 - 60 caracteres
                         </div>
                     </div>
-                    <button style="margin-top: 50px;" type="button" (click)="validar()">Iniciar sesión</button>
+                    <button style="margin-top: 50px;" type="button" (click)="login()">Iniciar sesión</button>
                     <table>
                         <tr>
                             <td><label style="font-size:13px; color: #9d9595"><input type="checkbox" > Recuerdame</label></td>

@@ -30,7 +30,10 @@ import { CarruselComponent } from './components/home/carrusel/carrusel.component
 
 // Servicios
 import { SinginService } from './services/singin.service';
-import { AuthService } from './services/auth.service';
+import { LoginService } from './services/login.service';
+import { CookieService } from 'ngx-cookie-service';
+import { AuthGuardService } from './services/auth.guard.service';
+
 
 // VideoPlayer
 import {VgCoreModule} from 'videogular2/core';
@@ -40,6 +43,7 @@ import {VgBufferingModule} from 'videogular2/buffering';
 import { ReproductorComponent } from './components/reproductor/reproductor.component';
 import { InformacionCarteleraComponent } from './components/home/informacion-cartelera/informacion-cartelera.component';
 import { LaunchPreviewComponent } from './components/launch-preview/launch-preview.component';
+
 
 
 @NgModule({
@@ -80,7 +84,9 @@ import { LaunchPreviewComponent } from './components/launch-preview/launch-previ
   ],
   providers: [
     SinginService,
-    AuthService
+    LoginService,
+    CookieService,
+    AuthGuardService
   ],
   bootstrap: [AppComponent]
 })

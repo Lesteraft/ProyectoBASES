@@ -16,8 +16,7 @@ import { RecientesComponent } from './components/home/recientes/recientes.compon
 import { MiListaComponent } from './components/home/mi-lista/mi-lista.component';
 import { ConfiguracionesComponent } from './components/home/configuraciones/configuraciones.component';
 import { ReproductorComponent } from './components/reproductor/reproductor.component';
-
-
+import { AuthGuardService } from './services/auth.guard.service';
 
 
 
@@ -29,16 +28,16 @@ const APP_ROUTES: Routes = [
     { path: 'singin/metodopago', component: MetodopagoSinginComponent },
     { path: 'singin/infopago', component: InfopagoSinginComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'perfiles/:nuevo', component: PerfilesComponent },
-    { path: 'agregarPerfiles', component: AgregarPerfilesComponent },
-    { path: 'card-pelicula', component: CardPeliculasComponent },
-    { path: 'peliculas', component: PeliculasComponent },
-    { path: 'principal', component: PrincipalComponent },
-    { path: 'series', component: SeriesComponent },
-    { path: 'recientes', component: RecientesComponent },
-    { path: 'mi-lista', component: MiListaComponent },
-    { path: 'configuraciones', component: ConfiguracionesComponent },
-    { path: 'reproductor/:id', component: ReproductorComponent },
+    { path: 'perfiles/:nuevo', component: PerfilesComponent, canActivate: [AuthGuardService] },
+    { path: 'agregarPerfiles', component: AgregarPerfilesComponent, canActivate: [AuthGuardService] },
+    { path: 'card-pelicula', component: CardPeliculasComponent, canActivate: [AuthGuardService] },
+    { path: 'peliculas', component: PeliculasComponent, canActivate: [AuthGuardService] },
+    { path: 'principal', component: PrincipalComponent, canActivate: [AuthGuardService]},
+    { path: 'series', component: SeriesComponent, canActivate: [AuthGuardService] },
+    { path: 'recientes', component: RecientesComponent, canActivate: [AuthGuardService] },
+    { path: 'mi-lista', component: MiListaComponent, canActivate: [AuthGuardService] },
+    { path: 'configuraciones', component: ConfiguracionesComponent, canActivate: [AuthGuardService] },
+    { path: 'reproductor/:id', component: ReproductorComponent, canActivate: [AuthGuardService] },
     { path: '**', pathMatch: 'full', redirectTo: 'principal' }
 
 ];
