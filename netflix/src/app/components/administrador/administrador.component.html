@@ -1,0 +1,74 @@
+<nav>
+    <img src="assets/img/logo.png" class="d-inline-block align-top" alt="" id="navbar-img-logo">
+    <a href="" (click)="logout()" id="cerrar_sesion">Cerrar sesion</a>
+</nav>
+<div class="container body" id="main">
+
+    <div class="row">
+        <div id="texto-cuenta">Administracion</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="texto-mayus">Bienvenido</div>
+            <div><img src="assets/img/admin.jpg" alt="" style="width: 85px;"></div>
+        </div>
+        <div class="col-md-4 row-border">
+            <div>{{correo}}</div>
+            <div>+504 9856-9536</div>
+        </div>
+        <div class="col-md-4 row-border c3">
+            <div><a href="#">Cambiar email</a></div>
+            <div><a href="#">Cambiar contraseña</a></div>
+            <div><a href="#">Cambiar número de teléfono</a></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 row-border">
+            <div class="texto-mayus">PELICULAS</div>
+        </div>
+
+        <div class="col-md-4 row-border">
+
+        </div>
+        <div class="col-md-4 row-border c3">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="bold-font" style="font-size:20px; color: gray">Sube contenido a la plataforma.</div><br>
+            <div class="bold-font">Clasificacion</div>
+            <div>
+                <select name="" id="" class="inputs">
+                    <option value="">Mayores de 18 años</option>
+                    <option value="">Mayores de 15 años</option>
+                    <option value="">Mayores de 13 años</option>
+                    <option value="">Todas las edades</option>
+                </select>
+            </div>
+            <div class="bold-font">Nombre</div>
+            <div><input type="text" placeholder=" Nombre" class="inputs"></div>
+            <div class="bold-font">Proporciona una reseña</div>
+            <div><textarea name="" id="" cols="30" rows="5" placeholder="  Reseña"></textarea></div>
+            <div class="bold-font">Fecha de estreno</div>
+            <div><input type="date" class="inputs"></div><br>
+            <div><button type="button" id="btn-subir-pelicula">Subir Pelicula</button></div>
+        </div>
+        <div class="col-md-4">
+            <br><br><br>
+            <div class="bold-font">Archivo de imagen</div>
+            <input type="file" class="input-archivos">
+            <div class="bold-font">Archivo de video</div>
+            <div><input type="file" class="input-archivos"></div>
+        </div>
+
+        <div class="col-md-4">
+            <br><br><br>
+            <div class="bold-font row-border">Normas</div><br>
+            <div>Debes proporcionar el nombre exacto.</div>
+            <div>La reseña no debe alcanzar mas de 200 caracteres.</div>
+            <div>Subir contenido esta bajo tu responsabilidad y esta sujeto a politicas y normas.</div>
+        </div>
+
+    </div>

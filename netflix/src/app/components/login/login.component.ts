@@ -32,9 +32,15 @@ export class LoginComponent implements OnInit {
           success: function(respuesta) {
             console.log(respuesta);
               if (respuesta.codigo === 0) {
-               cookie.set('usuario', respuesta.user);
-               cookie.set('password', respuesta.password);
-               router.navigate(['perfiles', '0']);
+               cookie.set('usuario', respuesta.CORREO);
+               cookie.set('password', respuesta.CONTRASENIA);
+               const dominio: any  = 'netflix.com';
+               const subString = respuesta.CORREO.split('@');
+               if (dominio ===  subString[1]) {
+                router.navigate(['/administrador']);
+               } else {
+                router.navigate(['perfiles', '0']);
+               }
               } else {
                 alert('usuario y/o contraseña incorrectos');
               }

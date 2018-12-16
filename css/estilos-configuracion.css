@@ -1,7 +1,7 @@
-body {
+.body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #F3F3F3;
+    background-color: #fff !important;
 }
 
 
@@ -106,3 +106,25 @@ div.col-md-4 {
 
 
 /*FIN main*/
+
+#btn-subir-pelicula {
+    border-style: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 240px;
+    background-color: #FF020D;
+    font-weight: bold;
+    color: #fff;
+}
+
+.bold-font {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inputs {
+    width: 240px;
+    height: 40px;
+    margin: 10px 0;
+    border: solid 1px #ccc;
+}

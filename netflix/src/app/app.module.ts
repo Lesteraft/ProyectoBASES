@@ -43,6 +43,7 @@ import {VgBufferingModule} from 'videogular2/buffering';
 import { ReproductorComponent } from './components/reproductor/reproductor.component';
 import { InformacionCarteleraComponent } from './components/home/informacion-cartelera/informacion-cartelera.component';
 import { LaunchPreviewComponent } from './components/launch-preview/launch-preview.component';
+import { AdministradorComponent } from './components/administrador/administrador.component';
 
 
 
@@ -72,6 +73,7 @@ import { LaunchPreviewComponent } from './components/launch-preview/launch-previ
     ReproductorComponent,
     InformacionCarteleraComponent,
     LaunchPreviewComponent,
+    AdministradorComponent,
   ],
   imports: [
     BrowserModule,

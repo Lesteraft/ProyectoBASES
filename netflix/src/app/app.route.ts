@@ -17,6 +17,8 @@ import { MiListaComponent } from './components/home/mi-lista/mi-lista.component'
 import { ConfiguracionesComponent } from './components/home/configuraciones/configuraciones.component';
 import { ReproductorComponent } from './components/reproductor/reproductor.component';
 import { AuthGuardService } from './services/auth.guard.service';
+import { AdministradorComponent } from './components/administrador/administrador.component';
+
 
 
 
@@ -37,6 +39,7 @@ const APP_ROUTES: Routes = [
     { path: 'recientes', component: RecientesComponent, canActivate: [AuthGuardService] },
     { path: 'mi-lista', component: MiListaComponent, canActivate: [AuthGuardService] },
     { path: 'configuraciones', component: ConfiguracionesComponent, canActivate: [AuthGuardService] },
+    { path: 'administrador', component: AdministradorComponent, canActivate: [AuthGuardService] },
     { path: 'reproductor/:id', component: ReproductorComponent, canActivate: [AuthGuardService] },
     { path: '**', pathMatch: 'full', redirectTo: 'principal' }
 

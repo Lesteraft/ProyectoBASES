@@ -1,0 +1,102 @@
+.body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: rgb(44, 43, 43);
+    border: 1px solid #fff;
+}
+
+
+/*INCIO main*/
+
+.container {
+    width: 70% !important;
+    font-size: 14px;
+}
+
+a {
+    color: #fff !important;
+}
+
+#texto-cuenta {
+    margin: 15px 0;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 30px;
+    border-bottom: solid 1px #ccc;
+}
+
+.texto-mayus {
+    font-size: 18px;
+    color: #a49999;
+}
+
+div.col-md-4 {
+    padding: 10px 0;
+}
+
+.row {
+    padding: 10px 0;
+}
+
+.row-border {
+    border-bottom: solid 1px #ccc;
+    font-size: 17px;
+}
+
+.c3 {
+    text-align: right;
+}
+
+
+/*FIN main*/
+
+#btn-subir-pelicula {
+    border-style: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 240px;
+    background-color: #FF020D;
+    font-weight: bold;
+    color: #fff;
+}
+
+.bold-font {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inputs {
+    width: 240px;
+    height: 40px;
+    margin: 10px 0;
+    border: solid 1px #ccc;
+    background-color: rgb(218, 218, 218);
+}
+
+nav {
+    border-bottom: solid 1px #ccc;
+    height: 70px;
+    background-color: rgb(54, 54, 54);
+    border-bottom: solid 1px #fff;
+    margin-bottom: 30px;
+}
+
+#navbar-img-logo {
+    width: 180px;
+    position: relative;
+    top: 10px;
+}
+
+textarea {
+    background-color: rgb(218, 218, 218);
+}
+
+nav a#cerrar_sesion {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 19px;
+    float: right;
+    position: relative;
+    top: 15px;
+    right: 15px;
+}

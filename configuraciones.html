@@ -14,12 +14,11 @@
 <body>
     <div class="container" id="main">
         <div class="row">
-            <div id="texto-cuenta">Cuenta</div>
+            <div id="texto-cuenta">Administracion</div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="texto-mayus">MEMBRESÍA Y FACTURACIÓN</div>
-                <button type="button" id="btn-cancelar-membresia" class="btn-config">Cancelar mebresía</button>
+                <div class="texto-mayus">USUARIO</div>
             </div>
             <div class="col-md-4 row-border">
                 <div>correo_cuenta</div>
@@ -33,73 +32,56 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4"></div>
             <div class="col-md-4 row-border">
-                <div>Informacion tarjeta</div>
+                <div class="texto-mayus">PELICULAS</div>
+            </div>
+
+            <div class="col-md-4 row-border">
+
             </div>
             <div class="col-md-4 row-border c3">
-                <div><a href="#">Actualizar información de pago</a></div>
-                <div><a href="#">Información de facturación</a></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 row-border"></div>
-            <div class="col-md-4 row-border">
-                <div><b>Canjea la tarjeta de regalo o el codigo de promoción</b></div>
-                <input type="text" placeholder="Ingresa codigo o PIN" id="input-promocion">
-                <button type="button" class="btn-config" id="btn-canjear">Canjear</button>
-            </div>
-            <div class="col-md-4 row-border c3">
-                <div><a href="#">Dónde comprar tarjetas de regalo</a></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 row-border">
-                <div class="texto-mayus">INFORMACION DEL PLAN</div>
-            </div>
-            <div class="col-md-4 row-border">
-                <div>Tipo_Plan</div>
-            </div>
-            <div class="col-md-4 row-border c3">
-                <div><a href="#">Cambiar de plan</a></div>
+
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-4 row-border">
-                <div class="texto-mayus">CONFIGURACIÓN</div>
+            <div class="col-md-4">
+                <div class="bold-font" style="font-size:20px; color: gray">Sube contenido a la plataforma.</div><br>
+                <div class="bold-font">Clasificacion</div>
+                <div>
+                    <select name="" id="" class="inputs">
+                            <option value="">Mayores de 18 años</option>
+                            <option value="">Mayores de 15 años</option>
+                            <option value="">Mayores de 13 años</option>
+                            <option value="">Todas las edades</option>
+                        </select>
+                </div>
+                <div class="bold-font">Nombre</div>
+                <div><input type="text" placeholder=" Nombre" class="inputs"></div>
+                <div class="bold-font">Proporciona una reseña</div>
+                <div><textarea name="" id="" cols="30" rows="5" placeholder="  Reseña"></textarea></div>
+                <div class="bold-font">Fecha de estreno</div>
+                <div><input type="date" class="inputs"></div><br>
+                <div><button type="button" id="btn-subir-pelicula">Subir Pelicula</button></div>
             </div>
-            <div class="col-md-4 row-border">
-                <div><a href="#">Configuración de comunicaciones</a></div>
-                <div><a href="#">Configuraciones de marketing</a></div>
-                <div><a href="#">Control parental</a></div>
-                <div><a href="#">Participación de pruebas</a></div>
-                <div><a href="#">Administración de dispositivos de descarga</a></div>
-                <div><a href="#">Activar un dispositivo</a></div>
-                <div><a href="#">Actividad de streaming reciente del dispositivo</a></div>
-                <div><a href="#">Cerrar sesión en todos los dispositivos</a></div>
+            <div class="col-md-4">
+                <br><br><br>
+                <div class="bold-font">Archivo de imagen</div>
+                <input type="file">
+                <div class="bold-font">Archivo de video</div>
+                <div><input type="file"></div>
+            </div>
 
+            <div class="col-md-4">
+                <br><br><br>
+                <div class="bold-font">Normas</div>
+                <div>Debes proporcionar el nombre exacto.</div>
+                <div>La reseña no debe alcanzar mas de 200 caracteres.</div>
+                <div>Subir contenido esta bajo tu responsabilidad y esta sujeto a politicas y normas.</div>
             </div>
-            <div class="col-md-4 row-border"></div>
+
         </div>
 
-        <div class="row">
-            <div class="col-md-4 row-border">
-                <div class="texto-mayus">MI PERFIL</div>
-            </div>
-            <div class="col-md-4 row-border">
-                <div>Foto, Nombre_perfil</div>
-                <div><a href="#">Idioma</a></div>
-                <div><a href="#">Configuración de reproducción</a></div>
-                <div><a href="#">Aspecto de los subtitulos</a></div>
-            </div>
-            <div class="col-md-4 row-border">
-                <div><a href="#">Administrar perfiles</a></div>
-                <div><a href="#">Actividad de visualización</a></div>
-                <div><a href="#">Calificaciones</a></div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
