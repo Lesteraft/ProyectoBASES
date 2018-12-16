@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { SinginService } from '../../../../services/singin.service';
+import { Router } from '@angular/router';
+
+let planUsuario;
 
 @Component({
   selector: 'app-planes-singin',
@@ -7,16 +11,13 @@ import * as $ from 'jquery';
   styleUrls: ['./planes-singin.component.css']
 })
 export class PlanesSinginComponent implements OnInit {
-
-  constructor() { }
+  constructor(private router: Router, private _singinService: SinginService) { }
 
   ngOnInit() {
-    let planUsuario;
-
     $(window).click(function(e: any) {
         switch (e.target.id) {
             case 'plan-basico':
-                planUsuario = 'basico';
+                planUsuario = 1;
                 $('#triangulo-plan-basico').attr('style', 'display:');
                 $('#triangulo-plan-basico').animate(
                     {
@@ -33,7 +34,7 @@ export class PlanesSinginComponent implements OnInit {
                 $('.col-planes-3').css({'color': '#ccc'});
                 break;
             case 'plan-estandar':
-                planUsuario = 'estandar';
+                planUsuario = 2;
                 $('#triangulo-plan-basico').attr('style', 'display:none');
                 $('#triangulo-plan-estandar').attr('style', 'display:');
                 $('#triangulo-plan-estandar').animate(
@@ -50,7 +51,7 @@ export class PlanesSinginComponent implements OnInit {
                 $('.col-planes-3').css({'color': '#ccc'});
                 break;
             case 'plan-premium':
-                planUsuario = 'premium';
+                planUsuario = 3;
                 $('#triangulo-plan-basico').attr('style', 'display:none');
                 $('#triangulo-plan-estandar').attr('style', 'display:none');
                 $('#triangulo-plan-premium').attr('style', 'display:');
@@ -71,19 +72,10 @@ export class PlanesSinginComponent implements OnInit {
         }
     });
 
-    $('#btn-cc').click(function() {
-        $('#contenido-registro').animate({
-            opacity: '0'
-         }, 'fast');
-         $('html, body').animate({
-            scrollTop: $('#contenido-registro-1').offset().top
-        }, 300);
-        // $("#contenido-registro").attr("style", "display:none");
-        $('#contenido-registro-1').attr('style', 'display:');
-        $('#contenido-registro-1').animate({
-            opacity: '1'
-         });
-    });
+  }
 
+  private sendPlanUsuario() {
+    this._singinService.setPlanUsuario(planUsuario);
+    this.router.navigate(['/singin/registro']);
   }
 }

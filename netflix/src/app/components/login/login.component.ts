@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 })
 export class LoginComponent implements OnInit {
 
-  constructor( private _router: Router ) {}
+  constructor( private _router: Router  ) {}
 
   ngOnInit() {
   }

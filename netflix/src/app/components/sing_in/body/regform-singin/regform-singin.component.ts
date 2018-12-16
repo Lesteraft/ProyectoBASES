@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { SinginService } from '../../../../services/singin.service';
 import * as $ from 'jquery';
 import { Router } from '@angular/router';
 
 let emailValido;
 let passValido;
+let user_email;
+let user_password;
 
 @Component({
   selector: 'app-regform-singin',
@@ -12,13 +15,13 @@ let passValido;
 })
 
 export class RegformSinginComponent implements OnInit {
-  constructor( private router: Router ) {
+  constructor( private router: Router, private _singinService: SinginService ) {
+      console.log(this._singinService.getPlanUsuario());
   }
   ngOnInit() {
      // Validacion campos
      $('#user-email').keyup(function() {
          const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-         let user_email: any;
          user_email = $('#user-email').val();
          if (regex.test(user_email)) {
              $('#valid-email').attr('style', 'display:inline');
@@ -35,7 +38,6 @@ export class RegformSinginComponent implements OnInit {
      });
 
      $('#user-password').keyup(function() {
-        let user_password: any;
         user_password = $('#user-password').val();
          if (user_password.length >= 4) {
              $('#valid-password').attr('style', 'display:inline');
@@ -96,6 +98,8 @@ export class RegformSinginComponent implements OnInit {
   }
   camposValidos() {
     if ( emailValido && passValido ) {
+        this._singinService.setUsuario(user_email);
+        this._singinService.setPassword(user_password);
         this.router.navigate(['/singin/metodopago']);
     }
   }

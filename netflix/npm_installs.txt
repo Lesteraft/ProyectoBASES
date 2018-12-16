@@ -5,8 +5,10 @@ npm install popper.js --save
 npm install --save-dev @fortawesome/fontawesome-free
 #*#
 #####Recursos####### 
-#VideoGular
-#https://videogular.github.io/videogular2/docs/
-#https://regexr.com/
-#
+VideoGular
+https://videogular.github.io/videogular2/docs/
+https://regexr.com/
+https://www.oracle.com/technetwork/articles/fuecks-sps-095636.html
+https://docs.oracle.com/cd/B12037_01/server.101/b10759/statements_6014.htm
+https://docs.oracle.com/cd/A84870_01/doc/server.816/a76989/ch26.htm
 ####################

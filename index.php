@@ -16,10 +16,12 @@
         trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
     }
 
-    $stid = oci_parse($conn, 'SELECT * FROM employees');
+    $sql = "INSERT INTO tBL_PLATAFORMAS (CODIGO_PLATAFORMA, NOMBRE_PLATAFORMA) VALUES (4, 'iPhone')";
+    $sql = "INSERT INTO TBL_CUENTAS (CODIGO_CUENTA, CODIGO_PLAN, CORREO, NUMERO_TARJETA, CODIGO_TARJETA, FECHA_VALIDEZ) VALUES(5, 1, 'os@gmail.com', 123456, 123, TO_DATE('11-23', 'MM-YY'))";
+    $stid = oci_parse($conn, $sql);
+    echo $sql;
     oci_execute($stid);
-
-    echo "<table border='1'>\n";
+  /*  echo "<table border='1'>\n";
     while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
         echo "<tr>\n";
         foreach ($row as $item) {
@@ -27,7 +29,9 @@
         }
         echo "</tr>\n";
     }
-    echo "</table>\n";
+    echo "</table>\n";*/
+    oci_commit($conn);
+
 
 ?>
 </body>

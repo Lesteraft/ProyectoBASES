@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
+import { AuthService } from '../../../services/auth.service';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class NavbarHomeComponent implements OnInit {
 
   i = 0;
 
-  constructor( private _router: Router ) { }
+  constructor( private _router: Router, private auth: AuthService ) { }
 
   ngOnInit() {
   let textoBusqueda: any;
@@ -85,5 +86,6 @@ export class NavbarHomeComponent implements OnInit {
       }
     } , 800);
   }
+
 
 }

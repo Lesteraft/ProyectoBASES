@@ -27,6 +27,11 @@ import { MiListaComponent } from './components/home/mi-lista/mi-lista.component'
 import { ConfiguracionesComponent } from './components/home/configuraciones/configuraciones.component';
 import { CarruselComponent } from './components/home/carrusel/carrusel.component';
 
+
+// Servicios
+import { SinginService } from './services/singin.service';
+import { AuthService } from './services/auth.service';
+
 // VideoPlayer
 import {VgCoreModule} from 'videogular2/core';
 import {VgControlsModule} from 'videogular2/controls';
@@ -35,6 +40,7 @@ import {VgBufferingModule} from 'videogular2/buffering';
 import { ReproductorComponent } from './components/reproductor/reproductor.component';
 import { InformacionCarteleraComponent } from './components/home/informacion-cartelera/informacion-cartelera.component';
 import { LaunchPreviewComponent } from './components/launch-preview/launch-preview.component';
+
 
 @NgModule({
   declarations: [
@@ -70,9 +76,12 @@ import { LaunchPreviewComponent } from './components/launch-preview/launch-previ
     VgOverlayPlayModule,
     VgBufferingModule,
     AppRoutingModule,
-    APP_ROUTING,
+    APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    SinginService,
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
