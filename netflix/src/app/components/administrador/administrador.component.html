@@ -40,27 +40,26 @@
             <div class="bold-font" style="font-size:20px; color: gray">Sube contenido a la plataforma.</div><br>
             <div class="bold-font">Clasificacion</div>
             <div>
-                <select name="" id="" class="inputs">
-                    <option value="">Mayores de 18 años</option>
-                    <option value="">Mayores de 15 años</option>
-                    <option value="">Mayores de 13 años</option>
-                    <option value="">Todas las edades</option>
+                <select name="" id="slcClasif" class="inputs">
+                    <option value="">Clasificacion</option>
+                    <option value="1">Mayores de 18 años</option>
+                    <option value="2">Mayores de 15 años</option>
+                    <option value="3">Mayores de 13 años</option>
+                    <option value="4">Todas las edades</option>
                 </select>
             </div>
-            <div class="bold-font">Nombre</div>
-            <div><input type="text" placeholder=" Nombre" class="inputs"></div>
             <div class="bold-font">Proporciona una reseña</div>
-            <div><textarea name="" id="" cols="30" rows="5" placeholder="  Reseña"></textarea></div>
+            <div><textarea name="" id="" cols="30" rows="5" placeholder="  Reseña" id="resenia"></textarea></div>
             <div class="bold-font">Fecha de estreno</div>
-            <div><input type="date" class="inputs"></div><br>
-            <div><button type="button" id="btn-subir-pelicula">Subir Pelicula</button></div>
+            <div><input type="text" class="inputs" id="fecha_estreno" placeholder=" DD/MM/YYYY"></div><br>
+            <div><button type="button" id="btn-subir-pelicula" (click)="subirPeli()">Subir Pelicula</button></div>
         </div>
         <div class="col-md-4">
             <br><br><br>
             <div class="bold-font">Archivo de imagen</div>
-            <input type="file" class="input-archivos">
+            <input type="file" class="input-archivos" name="foto" (change)="archivoImagenSeleccionado($event)">
             <div class="bold-font">Archivo de video</div>
-            <div><input type="file" class="input-archivos"></div>
+            <div><input type="file" class="input-archivos" (change)="archivoVideoSeleccionado($event)"></div>
         </div>
 
         <div class="col-md-4">
