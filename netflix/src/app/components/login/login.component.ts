@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     if ((this.validacion('#id_userLoginId') || this.validacion('#id_userPassword')) &&
         (this.validacion('#id_userLoginId') && this.validacion('#id_userPassword'))) {
         $.ajax({
-          url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/login.php',
+          url: 'http://localhost/trabajosUNAH/proyectoBASES/netflix/src/app/ajax/login.php',
           method: 'POST',
           dataType: 'json',
           data: 'user=' + $('#id_userLoginId').val() + '&' + 'password=' + $('#id_userPassword').val(),

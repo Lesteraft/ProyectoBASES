@@ -99,7 +99,7 @@ export class InfopagoSinginComponent implements OnInit {
                          'cvc=' + this._singinService.getCvc();
       console.log(parametros);
       $.ajax({
-        url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/registro-usuario.php',
+        url: 'http://localhost/trabajosUNAH/proyectoBASES/netflix/src/app/ajax/registro-usuario.php',
         data: parametros,
         method: 'POST',
         dataType: 'html',
