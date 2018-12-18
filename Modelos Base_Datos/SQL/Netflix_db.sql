@@ -67,16 +67,27 @@ CREATE SEQUENCE cuentas_seq
  START WITH     1
  INCREMENT BY   1;
  
-  DROP SEQUENCE cuentas_seq; 
+  
 
 /*SEQUENCE PELICULAS*/
 CREATE SEQUENCE peliculas_seq
  START WITH     1
  INCREMENT BY   1;
  
- DROP SEQUENCE peliculas_seq; 
+
  
 
 
-/*Pruebas procedimientos almacenados*/
-execute upload_peli(2, 1, 1, 1, 'Aquaman', 'Hola Mundo', to_date('11/12', 'MM/YY'), 0, 'URLVIDEO', 'URLIMAGEN');
+/*############### - ELIMINACIONES - #########################*/
+
+DROP PROCEDURE Registro_Usuarios;
+DROP PROCEDURE LOGIN;
+DROP PROCEDURE UPLOAD_PELI;
+
+/*SEQUENCES*/
+
+/*SEQUENCE CUENTAS*/
+DROP SEQUENCE cuentas_seq; 
+
+/*SEQUENCE PELICULAS*/
+ DROP SEQUENCE peliculas_seq; 
