@@ -15,6 +15,7 @@ let user_password;
 })
 
 export class RegformSinginComponent implements OnInit {
+  mostrar = false;
   constructor( private router: Router, private _singinService: SinginService ) {
       console.log(this._singinService.getPlanUsuario());
   }
@@ -96,11 +97,20 @@ export class RegformSinginComponent implements OnInit {
          }
      });
   }
+
   camposValidos() {
+      const dominioPrivado = 'netflix.com';
+      const dominio = user_email.split('@');
     if ( emailValido && passValido ) {
-        this._singinService.setUsuario(user_email);
-        this._singinService.setPassword(user_password);
-        this.router.navigate(['/singin/metodopago']);
+        if ( dominioPrivado !== dominio[1] ) {
+            this._singinService.setUsuario(user_email);
+            this._singinService.setPassword(user_password);
+            this.router.navigate(['/singin/metodopago']);
+        } else {
+            alert('El dominio proporcionado es propiedad de Netflix y no se puede usar');
+        }
+
     }
   }
+
 }

@@ -78,3 +78,36 @@
     height: 100%;
     background-color: rgb(255, 255, 255);
 }
+
+#user-admin {
+    width: 150px;
+    height: 40px;
+}
+
+#div-administrador {
+    background-color: rgb(205, 211, 214);
+    padding: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn-verificar {
+    position: relative;
+    left: 10px;
+    width: 95px !important;
+    height: 40px !important;
+    text-align: center !important;
+    border-radius: 10px;
+    padding: 5px !important;
+}
+
+#btn-verificar:hover {
+    background-color: rgb(182, 13, 22);
+}
+
+#btn-option {
+    width: 145px !important;
+    position: relative;
+    float: right !important;
+    bottom: 75px;
+}
