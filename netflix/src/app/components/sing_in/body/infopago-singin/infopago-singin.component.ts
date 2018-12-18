@@ -53,9 +53,9 @@ export class InfopagoSinginComponent implements OnInit {
     fecha_vencimiento = $('#infopago-fecha_vencimiento').val();
     cvc = $('#infopago-cvc').val();
     numero_tarjeta = $('#infopago-tarjeta').val();
-    const regexFecha_vecimento = /([1-9]){2}\/([1-9]){2}/;
-    const regexNumero_tarjeta = /([1-9]){12}/;
-    const regexCVC = /([1-9]){3}/;
+    const regexFecha_vecimento = /([0-9]){2}\/([0-9]){2}/;
+    const regexNumero_tarjeta = /([0-9]){12}/;
+    const regexCVC = /([0-9]){3}/;
     let num: Boolean, fecha: Boolean, cod: Boolean;
 
     if (regexNumero_tarjeta.test(numero_tarjeta)) {
