@@ -49,20 +49,20 @@ export class AdministradorComponent implements OnInit {
     const urlImagen1 = this.archivoImagen1Select.name.split('1');
     const urlImagen2 = this.archivoImagen2Select.name.split('2');
 
-    const parametros = 'nombre=' + this.archivoVideoSelect.name + '&' +
+    const parametros = 'nombre=' + urlVideo[0] + '&' +
                      'resenia=' + $('#resenia').val() + '&' +
                      'clasificacion=' + selecClasif + '&' +
                      'fecha=' + $('#fecha_estreno').val() + '&' +
-                     'urlVideo=../../../assets/video/' +
+                     'urlVideo=C:/wamp64/www/trabajosUNAH/ProyectoBASES/netflix/src/assets/video' +
                       urlVideo[0] + '/' + this.archivoVideoSelect.name + '&' +
-                     'urlImagen1=../../../assets/video/' +
+                     'urlImagen1=C:/wamp64/www/trabajosUNAH/ProyectoBASES/netflix/src/assets/video' +
                       urlImagen1[0] + '/' + this.archivoImagen1Select.name + '&' +
-                      'urlImagen2=../../../assets/video/' +
+                      'urlImagen2=C:/wamp64/www/trabajosUNAH/ProyectoBASES/netflix/src/assets/video' +
                       urlImagen2[0] + '/' + this.archivoImagen2Select.name;
 
       console.log(parametros);
       $.ajax({
-        url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/subir-peliculas.php',
+        url: 'http://localhost/trabajosUNAH/proyectoBASES/netflix/src/app/ajax/subir-peliculas.php',
         method: 'POST',
         dataType: 'JSON',
         data: parametros,
@@ -76,5 +76,5 @@ export class AdministradorComponent implements OnInit {
       });
 
   }
-
 }
+

@@ -2,7 +2,7 @@
     <img src="assets/img/logo.png" class="d-inline-block align-top" alt="" id="navbar-img-logo">
     <a href="" (click)="logout()" id="cerrar_sesion">Cerrar sesion</a>
 </nav>
-<div class="container body" id="main">
+<div class="m-5 p-5 body" id="main">
 
     <div class="row">
         <div id="texto-cuenta">Administracion</div>
@@ -35,41 +35,60 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-4">
-            <div class="bold-font" style="font-size:20px; color: gray">Sube contenido a la plataforma.</div><br>
-            <div class="bold-font">Clasificacion</div>
-            <div>
-                <select name="" id="slcClasif" class="inputs">
-                    <option value="">Clasificacion</option>
-                    <option value="1">Mayores de 18 años</option>
-                    <option value="2">Mayores de 15 años</option>
-                    <option value="3">Mayores de 13 años</option>
-                    <option value="4">Todas las edades</option>
-                </select>
+    <div class="">
+        <div class="row">
+            <div class="col-md-4 p-3">
+                <div class="bold-font" style="font-size:20px; color: gray">Sube contenido a la plataforma.</div><br>
+                <div class="bold-font">Clasificacion</div>
+                <div>
+                    <select name="" id="slcClasif" class="inputs w-100">
+                        <option value="">Clasificacion</option>
+                        <option value="1">Mayores de 18 años</option>
+                        <option value="2">Mayores de 15 años</option>
+                        <option value="3">Mayores de 13 años</option>
+                        <option value="4">Todas las edades</option>
+                    </select>
+                </div>
+                <div class="bold-font">Proporciona una reseña</div>
+                <div><textarea class="w-100" style="resize: none" id="" cols="30" rows="5" placeholder="  Reseña" id="resenia"></textarea></div>
+                <div class="bold-font">Fecha de estreno</div>
+                <div><input type="text" class="inputs w-100" id="fecha_estreno" placeholder=" DD/MM/YYYY"></div><br>
+                <div><button class="btn-block w-100" type="button" id="btn-subir-pelicula" (click)="subirPeli()">Publicar Pelicula</button></div>
             </div>
-            <div class="bold-font">Proporciona una reseña</div>
-            <div><textarea name="" id="" cols="30" rows="5" placeholder="  Reseña" id="resenia"></textarea></div>
-            <div class="bold-font">Fecha de estreno</div>
-            <div><input type="text" class="inputs" id="fecha_estreno" placeholder=" DD/MM/YYYY"></div><br>
-            <div><button type="button" id="btn-subir-pelicula" (click)="subirPeli()">Subir Pelicula</button></div>
-        </div>
-        <div class="col-md-4">
-            <br><br><br>
-            <div class="bold-font">Archivo de imagen 1</div>
-            <input type="file" class="input-archivos" name="foto" (change)="archivoImagen1Seleccionado($event)">
-            <div class="bold-font">Archivo de imagen 2</div>
-            <input type="file" class="input-archivos" name="foto" (change)="archivoImagen2Seleccionado($event)">
-            <div class="bold-font">Archivo de video</div>
-            <div><input type="file" class="input-archivos" (change)="archivoVideoSeleccionado($event)"></div>
-        </div>
+            <div class="col-md-4 p-5">
+                <br><br><br>
+                <div class="bold-font">Archivo de imagen 1</div>
+                <label class="btn btn-outline-light btn-block" id="img1"> <i class="fa fa-upload mr-1" aria-hidden="true"></i><input  type="file" class="input-archivos d-none" name="foto" (change)="archivoImagen1Seleccionado($event)">Imagen1.jpg</label>
+                <div class="bold-font">Archivo de imagen 2</div>
+                <label class="btn btn-outline-light btn-block" id="img2"><i class="fa fa-upload mr-1" aria-hidden="true"></i><input type="file" class="input-archivos d-none" name="foto" (change)="archivoImagen2Seleccionado($event)">Imagen2.jpg</label>
+                <div class="bold-font">Archivo de video</div>
+                <label class="btn btn-outline-light btn-block" id="video1"><i class="fa fa-upload mr-1" aria-hidden="true"></i><input type="file" class="input-archivos d-none" (change)="archivoVideoSeleccionado($event)"> Video.mp4 </label>
+            </div>
 
-        <div class="col-md-4">
-            <br><br><br>
-            <div class="bold-font row-border">Normas</div><br>
-            <div>Debes proporcionar el nombre exacto.</div>
-            <div>La reseña no debe alcanzar mas de 200 caracteres.</div>
-            <div>Subir contenido esta bajo tu responsabilidad y esta sujeto a politicas y normas.</div>
-        </div>
+            <div class="col-md-4">
+                <br><br><br>
+                <table class="table mt-5 pt-5">
+                    <thead class="thead-light">
+                        <tr>
+                            <th colspan="2" scope="col" class="text-center">NORMAS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td> Debes proporcionar el nombre exacto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td> La reseña no debe alcanzar mas de 200 caracteres.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Subir contenido esta bajo tu responsabilidad y esta sujeto a politicas y normas.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
+        </div>
     </div>
