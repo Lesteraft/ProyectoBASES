@@ -53,11 +53,11 @@ export class AdministradorComponent implements OnInit {
                      'resenia=' + $('#resenia').val() + '&' +
                      'clasificacion=' + selecClasif + '&' +
                      'fecha=' + $('#fecha_estreno').val() + '&' +
-                     'urlVideo=E:/wamp64/www/ProyectoBASES/netflix/src/assets/video/' +
+                     'urlVideo=../../../assets/video/' +
                       urlVideo[0] + '/' + this.archivoVideoSelect.name + '&' +
-                     'urlImagen1=E:/wamp64/www/ProyectoBASES/netflix/src/assets/video/' +
+                     'urlImagen1=../../../assets/video/' +
                       urlImagen1[0] + '/' + this.archivoImagen1Select.name + '&' +
-                      'urlImagen2=E:/wamp64/www/ProyectoBASES/netflix/src/assets/video/' +
+                      'urlImagen2=../../../assets/video/' +
                       urlImagen2[0] + '/' + this.archivoImagen2Select.name;
 
       console.log(parametros);

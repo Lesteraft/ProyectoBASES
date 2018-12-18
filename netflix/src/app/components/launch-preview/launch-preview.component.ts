@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {VgAPI} from 'videogular2/core';
 import * as $ from 'jquery';
-import { ReproductorComponent } from '../reproductor/reproductor.component';
 
 @Component({
   selector: 'app-launch-preview',
