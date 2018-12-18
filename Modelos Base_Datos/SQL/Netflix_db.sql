@@ -10,16 +10,6 @@ BEGIN
     (in_codigo_cuenta, in_codigo_plan, in_correo, in_password, in_num_tarjeta, in_codigo_tarjeta, in_fecha_validez);
 END;
 
-
-/*Procedimiento almacenado necesario para validar credenciales del login*/
-CREATE OR REPLACE PROCEDURE LOGIN
- AS
- BEGIN
-    SELECT CORREO, CONTRASENIA  FROM TBL_CUENTAS;
- END;
- 
-
-
 /*Procedimiento necesario para subir peliculas*/
 CREATE OR REPLACE PROCEDURE 
 UPLOAD_PELI(
