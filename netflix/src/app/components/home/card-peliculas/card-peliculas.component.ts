@@ -13,10 +13,11 @@ export class CardPeliculasComponent implements OnInit {
  // @Output() InfoCartelera: EventEmitter<any>;
 
   constructor() {
-  //  this.InfoCartelera = new EventEmitter();
+
    }
 
   ngOnInit() {
+    console.log(this.cartelera);
   }
 
 /*

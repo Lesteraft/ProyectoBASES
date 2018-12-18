@@ -6,7 +6,7 @@ import * as $ from 'jquery';
   styleUrls: ['./carrusel.component.css']
 })
 
-export class CarruselComponent {
+export class CarruselComponent implements OnInit {
 
   @Input() categoria: any;
 
@@ -166,11 +166,16 @@ export class CarruselComponent {
     }
   ];
 
+  carteleras2: any[];
   InfoCartelera: any;
   mostrarInf = false;
 
-  constructor () {}
+  constructor () {
 
+  }
+
+  ngOnInit() {
+  }
   moverIzquierda() {
     console.log('se hizo click izquieda ' + '#carousel' + this.categoria.ID);
     $('#carousel' + this.categoria.ID).animate({ scrollLeft: '-=1300' }, 1300);
