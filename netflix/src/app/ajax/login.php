@@ -12,7 +12,7 @@
         oci_execute($stid);
         while ($linea = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
             if($_POST['user'] === $linea['CORREO']) {
-                if($_POST['password'] == $linea['CONTRASENIA']) {
+                if($_POST['password'] === $linea['CONTRASENIA']) {
                     $linea["codigo"] = 0;
                     echo json_encode($linea);
                     return;

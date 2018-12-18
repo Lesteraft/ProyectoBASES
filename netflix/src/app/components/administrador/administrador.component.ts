@@ -3,7 +3,6 @@ import { CookieService } from 'ngx-cookie-service';
 import * as $ from 'jquery';
 
 let selecClasif: any;
-let formData: any;
 
 @Component({
   selector: 'app-administrador',
@@ -13,7 +12,8 @@ let formData: any;
 export class AdministradorComponent implements OnInit {
   public correo: any;
   private archivoVideoSelect: File = null;
-  private archivoImagenSelect: File = null;
+  private archivoImagen1Select: File = null;
+  private archivoImagen2Select: File = null;
 
   constructor(private cookieService: CookieService) {
     this.correo = cookieService.get('usuario');
@@ -34,41 +34,46 @@ export class AdministradorComponent implements OnInit {
     this.archivoVideoSelect = <File>archivo.target.files[0];
   }
 
-  archivoImagenSeleccionado( archivo ) {
-    this.archivoImagenSelect = <File>archivo.target.files[0];
+  archivoImagen1Seleccionado( archivo ) {
+    this.archivoImagen1Select = <File>archivo.target.files[0];
+  }
+
+  archivoImagen2Seleccionado( archivo ) {
+    this.archivoImagen2Select = <File>archivo.target.files[0];
   }
 
   subirPeli() {
     console.log(selecClasif);
-    let clasificacion;
-    switch (selecClasif) {
-      case '1':
-        clasificacion = 'Mayores de 18 años';
-        break;
-      case '2':
-        clasificacion = 'Mayores de 15 años';
-        break;
-      case '3':
-        clasificacion = 'Mayores de 13 años';
-        break;
-      case '4':
-        clasificacion = 'Todas las edades';
-          break;
-      default:
-        break;
-    }
+
     const urlVideo = this.archivoVideoSelect.name.split('.');
-    const urlImagen = this.archivoImagenSeleccionado.name.split('.');
+    const urlImagen1 = this.archivoImagen1Select.name.split('1');
+    const urlImagen2 = this.archivoImagen2Select.name.split('2');
+
     const parametros = 'nombre=' + this.archivoVideoSelect.name + '&' +
                      'resenia=' + $('#resenia').val() + '&' +
-                     'clasificacion=' + clasificacion + '&' +
+                     'clasificacion=' + selecClasif + '&' +
                      'fecha=' + $('#fecha_estreno').val() + '&' +
                      'urlVideo=E:/wamp64/www/ProyectoBASES/netflix/src/assets/video/' +
                       urlVideo[0] + '/' + this.archivoVideoSelect.name + '&' +
-                     'urlImagen=E:/wamp64/www/ProyectoBASES/netflix/src/assets/video/' +
-                      urlImagen[0] + '/' + this.archivoImagenSelect.name;
+                     'urlImagen1=E:/wamp64/www/ProyectoBASES/netflix/src/assets/video/' +
+                      urlImagen1[0] + '/' + this.archivoImagen1Select.name + '&' +
+                      'urlImagen2=E:/wamp64/www/ProyectoBASES/netflix/src/assets/video/' +
+                      urlImagen2[0] + '/' + this.archivoImagen2Select.name;
 
       console.log(parametros);
+      $.ajax({
+        url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/subir-peliculas.php',
+        method: 'POST',
+        dataType: 'JSON',
+        data: parametros,
+        success: function(respuesta) {
+            console.log(respuesta);
+        },
+        error: function(error) {
+          console.log(error);
+        }
+
+      });
 
   }
 
