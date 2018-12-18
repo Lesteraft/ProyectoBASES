@@ -71,16 +71,6 @@
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DURACION" id="03F62E9C-51E4-6D34-ADB7-82BA4DDF58E6">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 05:35:01 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT014</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="RESENIA" id="5D7CBDBC-F45E-375F-3228-E4E81B31D7A0">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 05:35:24 UTC</createdTime>
@@ -110,6 +100,39 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL_VIDEO" id="240DA59F-9617-EDA4-E174-5CA6EDB6BF21">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-12-18 06:44:34 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL_IMAGEN1" id="3CE18875-79D3-803A-4A2B-95C8CB27529B">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-12-18 06:44:34 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL_IMAGEN2" id="98D1E3FC-D386-98B0-C1D7-77F5C4F72ABE">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-12-18 06:44:48 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

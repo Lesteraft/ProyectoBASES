@@ -18,6 +18,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CODIGO_ADMINISTRADOR" id="0942BFDE-74DC-C2CB-3C2F-1857FA73D0EA">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-12-18 06:45:16 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50489C0B-F648-61BD-13E4-CBDB8DC25246" referredColumn="A36366CA-75BE-7A18-7F98-2BDBEB7B4284"/>
+</associations>
+</Column>
 <Column name="CODIGO_PLAN" id="B6703EA1-789B-C1FA-61FD-F03A03C7A126">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:28:30 UTC</createdTime>
@@ -43,7 +58,7 @@
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CONTRASEÑA" id="6CAEB191-3077-279A-ABDD-60A12005C4E6">
+<Column name="CONTRASENIA" id="6CAEB191-3077-279A-ABDD-60A12005C4E6">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 04:20:36 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
@@ -106,6 +121,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B6703EA1-789B-C1FA-61FD-F03A03C7A126"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90806848-4F68-E146-C303-CE04958ACFE3" name="T_CUENTAS_T_ADMINI_FK">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-12-18 06:45:16 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0942BFDE-74DC-C2CB-3C2F-1857FA73D0EA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
