@@ -5,7 +5,7 @@ CREATE OR REPLACE PROCEDURE Registro_Usuarios(in_codigo_cuenta IN  integer, in_c
 IS
 BEGIN
     INSERT INTO TBL_CUENTAS
-    (CODIGO_CUENTA, CODIGO_PLAN, CORREO, CONTRASEÑA, NUMERO_TARJETA, CODIGO_TARJETA, FECHA_VALIDEZ) 
+    (CODIGO_CUENTA, CODIGO_PLAN, CORREO, CONTRASENIA, NUMERO_TARJETA, CODIGO_TARJETA, FECHA_VALIDEZ) 
     VALUES
     (in_codigo_cuenta, in_codigo_plan, in_correo, in_password, in_num_tarjeta, in_codigo_tarjeta, in_fecha_validez);
 END;
@@ -15,15 +15,9 @@ END;
 CREATE OR REPLACE PROCEDURE LOGIN
  AS
  BEGIN
-    SELECT CORREO, CONTRASEÑA  FROM TBL_CUENTAS;
+    SELECT CORREO, CONTRASENIA  FROM TBL_CUENTAS;
  END;
  
- ALTER TABLE TBL_PELICULAS
- ADD
- (
-    URL_VIDEO VARCHAR2(200),
-    URL_IMAGEN VARCHAR2(200)
-);
 
 
 /*Procedimiento necesario para subir peliculas*/
