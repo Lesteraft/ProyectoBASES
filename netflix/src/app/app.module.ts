@@ -35,7 +35,6 @@ import { CookieService } from 'ngx-cookie-service';
 import { AuthGuardService } from './services/auth.guard.service';
 import { PeliculasService } from './services/peliculas.service';
 
-
 // VideoPlayer
 import {VgCoreModule} from 'videogular2/core';
 import {VgControlsModule} from 'videogular2/controls';
@@ -45,6 +44,7 @@ import { ReproductorComponent } from './components/reproductor/reproductor.compo
 import { InformacionCarteleraComponent } from './components/home/informacion-cartelera/informacion-cartelera.component';
 import { LaunchPreviewComponent } from './components/launch-preview/launch-preview.component';
 import { AdministradorComponent } from './components/administrador/administrador.component';
+
 
 
 
