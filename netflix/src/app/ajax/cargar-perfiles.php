@@ -1,18 +1,24 @@
 <?php
     header('Access-Control-Allow-Origin: *');
     $contenido = array();
-    if(isset($_POST['nombre'])){
+    $tamaño = 0;
+    if(isset($_POST['accion'])){
          // Conectar al servicio XE (es deicr, la base de datos) en la máquina "localhost"
         $conn = oci_connect('NETFLIX', 'oracle', 'localhost/xe');
         if (!$conn) {
             $e = oci_error();
             trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
         }
-        $sql = "BEGIN crear_perfil(perfiles_seq.nextval, 1, 1, ".$_POST["codigo_cuenta"].",'".$_POST["nombre"]."'); END;";
+        $sql = "SELECT * FROM TBL_PERFILES";
         $stid = oci_parse($conn, $sql);
         oci_execute($stid);
         oci_commit($conn);
-        echo '{"mensaje":"exito"}';
+        while ($linea = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
+            $contenido[] = $linea;
+            $tamaño++;
+        }
+        $contenido['length'] = $tamaño;
+        echo json_encode($contenido);
 
     }
 ?>

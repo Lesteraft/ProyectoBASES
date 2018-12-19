@@ -15,7 +15,6 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this._peliculasService.getCartelera());
   }
 
   login() {
@@ -70,6 +69,7 @@ export class LoginComponent implements OnInit {
             console.log(error);
           }
         });
+
     }
 
   }

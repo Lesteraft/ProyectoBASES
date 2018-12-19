@@ -15,11 +15,11 @@ export class PerfilesComponent implements OnInit {
   constructor( private _router: Router, private activatesRoute: ActivatedRoute  ) {
     this.activatesRoute.params.subscribe( _params => {
       this.nombre = _params.nuevo;
-      console.log(this.nombre);
       if ( this.nombre !== '0' ) {
         console.log('se agregó');
       }
     });
+
   }
 
   ngOnInit() {
