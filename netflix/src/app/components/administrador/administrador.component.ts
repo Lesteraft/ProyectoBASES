@@ -69,7 +69,7 @@ export class AdministradorComponent implements OnInit {
 
       console.log(parametros);
       $.ajax({
-        url: 'http://localhost/trabajosUNAH/proyectoBASES/netflix/src/app/ajax/subir-peliculas.php',
+        url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/subir-peliculas.php',
         method: 'POST',
         dataType: 'JSON',
         data: parametros,
