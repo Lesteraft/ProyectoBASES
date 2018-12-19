@@ -13,7 +13,7 @@
                 POSTEAR_PELICULA 
                     (
                         PELICULAS_SEQ.NEXTVAL, 1,'".$_POST['clasificacion']."', 1, '".$_POST['nombre']."','".$_POST['resenia']."', 
-                        TO_DATE('".$_POST['fecha']."', 'DD/MM/YYYY'), 0,'".$_POST['urlVideo']."','".$_POST['urlImagen1']."'
+                        TO_DATE('".$_POST['fecha']."', 'DD/MM/YYYY'), 0,'".$_POST['urlVideo']."','".$_POST['urlImagen1']."','".$_POST['urlImagen2']."'
                     );
             END;";
      $stid = oci_parse($conn, $sql);

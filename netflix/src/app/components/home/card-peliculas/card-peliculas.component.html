@@ -1,10 +1,10 @@
 <div class="card-cartelera">
     <div class="card mb-3" style="width: 9rem;">
-        <img [src]='cartelera.imagen' style="height: 13.5rem;" alt=" ">
+        <img [src]='cartelera.URLIMAGEN' style="height: 13.5rem;" alt=" ">
 
         <div class="info-cartelera">
             <div class="text-center   ">
-                {{ cartelera.nombre }}
+                {{ cartelera.NOMBRE_PELICULA }}
             </div>
             <div class="position-relative text-right col-1 mt-3">
                 <i class="far fa-play-circle"></i>
@@ -13,10 +13,10 @@
             </div>
             <div class="text-center " style="font-size: 9px;">
                 <div class="cartelera-sinopsis">
-                    <span style="font-weight: bold; font-size: 10px; text-emphasis-style: inherit ">sinopsis:</span> {{cartelera.sinopsis | slice:0:80}}...
+                    <span style="font-weight: bold; font-size: 10px; text-emphasis-style: inherit ">sinopsis:</span> {{cartelera.RESENIA | slice:0:80}}...
                 </div>
             </div>
-            <div class="text-center" data-toggle="collapse" [attr.data-target]="'#collapse' + cartelera.id + categoria" aria-expanded="false" [attr.aria-controls]="'collapse' + cartelera.id + categoria">
+            <div class="text-center" data-toggle="collapse" [attr.data-target]="'#collapse' + cartelera.CODIGO_PELICULA + categoria" aria-expanded="false" [attr.aria-controls]="'collapse' + cartelera.CODIGO_PELICULA + categoria">
                 <i class="fas fa-angle-down " style="font-size: 25px"></i>
             </div>
         </div>

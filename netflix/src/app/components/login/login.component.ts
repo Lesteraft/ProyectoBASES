@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
                 success: function(respuesta) {
                     /*respuesta contiene la tabla tbl_peliculas*/
                     const peliculas = JSON.stringify(respuesta);
-                    //cartelera.setCartelera(peliculas);
+                    // cartelera.setCartelera(peliculas);
                     console.log(respuesta);
                     if (consulta.codigo === 0) {
                      const tarjeta = '********' + consulta.NUMERO_TARJETA.substring(8, 12);

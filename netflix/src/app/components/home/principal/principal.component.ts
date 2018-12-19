@@ -11,7 +11,7 @@ import { PeliculasService } from '../../../services/peliculas.service';
 })
 export class PrincipalComponent implements OnInit {
   carteleras2: any[];
-  carteleras: any[];
+  carteleras: any = {};
   categorias: any[] = [
     {
       nombre: 'Peliculas',
@@ -32,7 +32,6 @@ export class PrincipalComponent implements OnInit {
   ];
 
   constructor( private _peliculasService: PeliculasService ) {
-    console.log(this._peliculasService.getCartelera());
   }
   ngOnInit() {
   }
