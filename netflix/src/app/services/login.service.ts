@@ -6,12 +6,10 @@ export class LoginService {
     constructor( private cookieService: CookieService ) {}
 
     public isLogin(): Boolean {
-        if ( this.cookieService.check('usuario') && this.cookieService.check('password') ) {
+        if ( this.cookieService.check('usuario') ) {
             return true;
         } else {
             return false;
         }
-
-
     }
 }

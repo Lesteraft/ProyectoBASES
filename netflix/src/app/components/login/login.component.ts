@@ -25,15 +25,17 @@ export class LoginComponent implements OnInit {
     if ((this.validacion('#id_userLoginId') || this.validacion('#id_userPassword')) &&
         (this.validacion('#id_userLoginId') && this.validacion('#id_userPassword'))) {
         $.ajax({
-          url: 'http://localhost/trabajosUNAH/proyectoBASES/netflix/src/app/ajax/login.php',
+          url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/login.php',
           method: 'POST',
           dataType: 'json',
           data: 'user=' + $('#id_userLoginId').val() + '&' + 'password=' + $('#id_userPassword').val(),
           success: function(respuesta) {
-            console.log(respuesta);
               if (respuesta.codigo === 0) {
+               const tarjeta = '********' + respuesta.NUMERO_TARJETA.substring(8, 12);
+               cookie.set('usuario', respuesta.CODIGO_CUENTA);
                cookie.set('usuario', respuesta.CORREO);
-               cookie.set('password', respuesta.CONTRASENIA);
+               cookie.set('tarjeta', tarjeta );
+               cookie.set('plan', respuesta.NOMBRE_PLAN);
                const dominio: any  = 'netflix.com';
                const subString = respuesta.CORREO.split('@');
                if (dominio ===  subString[1]) {
