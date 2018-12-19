@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
   login() {
     const cookie = this.cookieService;
     const router = this._router;
+    const cartelera = this._peliculasService;
     let consulta: any;
     console.log('se ha dado click');
     if ((this.validacion('#id_userLoginId') || this.validacion('#id_userPassword')) &&
@@ -39,10 +40,13 @@ export class LoginComponent implements OnInit {
                 data: 'accion=obtener_data',
                 success: function(respuesta) {
                     /*respuesta contiene la tabla tbl_peliculas*/
+                    const peliculas = JSON.stringify(respuesta);
+                    //cartelera.setCartelera(peliculas);
                     console.log(respuesta);
                     if (consulta.codigo === 0) {
                      const tarjeta = '********' + consulta.NUMERO_TARJETA.substring(8, 12);
                      cookie.set('cod_cuenta', consulta.CODIGO_CUENTA);
+                     cookie.set('cartelera', peliculas);
                      cookie.set('usuario', consulta.CORREO);
                      cookie.set('tarjeta', tarjeta );
                      cookie.set('plan', consulta.NOMBRE_PLAN);

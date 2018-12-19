@@ -12,7 +12,7 @@
         oci_execute($stid);
         oci_commit($conn);
 
-        echo '{"mensaje":"exito"}'
+        echo '{"mensaje":"exito"}';
 
     }
 ?>
