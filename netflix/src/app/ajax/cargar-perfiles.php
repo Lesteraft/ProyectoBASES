@@ -9,7 +9,7 @@
             $e = oci_error();
             trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
         }
-        $sql = "SELECT * FROM TBL_PERFILES";
+        $sql = "SELECT * FROM TB_PERFILES";
         $stid = oci_parse($conn, $sql);
         oci_execute($stid);
         oci_commit($conn);

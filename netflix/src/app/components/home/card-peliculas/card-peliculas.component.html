@@ -1,13 +1,13 @@
-<div class="card-cartelera">
+<div class="card-cartelera" [id]="cartelera.CODIGO_PELICULA">
     <div class="card mb-3" style="width: 9rem;">
-        <img [src]='cartelera.URLIMAGEN' style="height: 13.5rem;" alt=" ">
+        <img [src]='cartelera.URL_IMAGEN1' style="height: 13.5rem;" alt=" ">
 
         <div class="info-cartelera">
             <div class="text-center   ">
                 {{ cartelera.NOMBRE_PELICULA }}
             </div>
             <div class="position-relative text-right col-1 mt-3">
-                <i class="far fa-play-circle"></i>
+                <i class="far fa-play-circle" (click)="reproductor(cartelera.CODIGO_PELICULA)"></i>
                 <i class="far fa-thumbs-up"></i>
                 <i class="far fa-thumbs-down"></i>
             </div>

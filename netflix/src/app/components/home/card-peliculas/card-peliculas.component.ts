@@ -1,4 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-card-peliculas',
@@ -12,7 +14,7 @@ export class CardPeliculasComponent implements OnInit {
 
  // @Output() InfoCartelera: EventEmitter<any>;
 
-  constructor() {
+  constructor( private router: Router, private cookie: CookieService) {
 
    }
 
@@ -26,4 +28,23 @@ export class CardPeliculasComponent implements OnInit {
   }
 
   */
+
+  reproductor(id) {
+    const cookie = this.cookie;
+
+    $.ajax({
+      data: 'id=' + id,
+      url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/cargar-video.php',
+      method: 'POST',
+      dataType: 'JSON',
+      success: function(respuesta) {
+          cookie.set('url', respuesta.URL_VIDEO);
+      },
+      error: function(error) {
+          console.log(error);
+      }
+    });
+    console.log(id);
+    this.router.navigate(['/reproductor', id]);
+  }
 }

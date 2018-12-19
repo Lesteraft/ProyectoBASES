@@ -18,20 +18,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODIGO_VALORACION" id="74E669F2-9398-6D5B-F1BE-FD084AD987EC">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 06:55:53 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="D5370E4F-4084-46D3-DF43-254C155FFFB3" referredColumn="4DD4437A-EDA6-EE8D-E758-F64736C91ED0"/>
-</associations>
-</Column>
 <Column name="CODIGO_CLASIFICACION" id="B72711CC-E91E-F073-EF6D-79FAC8AC44E0">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-30 16:10:09 UTC</createdTime>
@@ -59,6 +45,17 @@
 <associations>
 <colAssociation fkAssociation="C0DFDAAD-7F68-A1FD-85EA-B249AC35582D" referredColumn="A36366CA-75BE-7A18-7F98-2BDBEB7B4284"/>
 </associations>
+</Column>
+<Column name="VALORACION" id="01112F45-EC6A-72D7-D2EE-E0A3B24FB7DC">
+<createdBy>Oscar E. Blandon</createdBy>
+<createdTime>2018-12-19 08:44:31 UTC</createdTime>
+<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="NOMBRE_PELICULA" id="0208E850-0057-5BC4-BED1-7EDB3D99AAFC">
 <createdBy>LesterPC</createdBy>
@@ -146,16 +143,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C6FF73A1-6E9B-CB9F-5C62-78DDDE13A2D7"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="5F7B9E5F-7A1C-2DC7-807D-A7BEF218A55D" name="T_PELI_T_VALORACION_FK">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 06:55:53 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="74E669F2-9398-6D5B-F1BE-FD084AD987EC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="D64F6772-D1C1-FDC0-7637-48FFFD5FC62A" name="T_PELI_T_CLASIFI_X_EDAD_FK">
