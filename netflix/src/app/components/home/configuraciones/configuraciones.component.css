@@ -2,7 +2,6 @@ body {
     margin: 0;
     height: 100%;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #F3F3F3;
 }
 
 
@@ -43,9 +42,19 @@ nav a:hover {
 
 /*INCIO main*/
 
-.container {
-    width: 65% !important;
+.container-fluid {
     font-size: 14px;
+    position: relative;
+    top: 10px;
+    color: #fff;
+    background-color: rgb(61, 61, 61);
+    position: relative;
+    top: 15px;
+    width: 80%;
+    padding: 40px !important;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
 }
 
 #texto-cuenta {
@@ -91,6 +100,9 @@ div.col-md-4 {
 #btn-canjear {
     width: 90px;
     height: 35px;
+    width: 90px;
+    height: 40px;
+    margin: 0 15px;
 }
 
 .btn-config:hover {
@@ -103,4 +115,8 @@ div.col-md-4 {
     padding: 10px;
     text-align: center;
     margin: 15px 0;
+}
+
+a {
+    color: #afafaf;
 }

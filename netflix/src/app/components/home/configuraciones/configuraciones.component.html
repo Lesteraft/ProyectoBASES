@@ -1,92 +1,90 @@
 <app-navbar-home></app-navbar-home>
 
-<body class="animated fadeIn" style="background-color: #fff !important">
-    <div class="container" id="main">
-        <div class="row">
-            <div id="texto-cuenta">Cuenta</div>
+<div class="container-fluid" id="main">
+    <div class="row">
+        <div id="texto-cuenta">Cuenta</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="texto-mayus">MEMBRESÍA Y FACTURACIÓN</div>
+            <button type="button" id="btn-cancelar-membresia" class="btn-config">Cancelar mebresía</button>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="texto-mayus">MEMBRESÍA Y FACTURACIÓN</div>
-                <button type="button" id="btn-cancelar-membresia" class="btn-config">Cancelar mebresía</button>
-            </div>
-            <div class="col-md-4 row-border">
-                <div>correo_cuenta</div>
-                <div>contraseña_cuenta</div>
-                <div>Teléfono</div>
-            </div>
-            <div class="col-md-4 row-border c3">
-                <div><a href="#">Cambiar email</a></div>
-                <div><a href="#">Cambiar contraseña</a></div>
-                <div><a href="#">Cambiar número de teléfono</a></div>
-            </div>
+        <div class="col-md-4 row-border">
+            <div>{{correo}}</div>
+            <div>************</div>
+            <div>+504 9865-3676</div>
         </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 row-border">
-                <div>Informacion tarjeta</div>
-            </div>
-            <div class="col-md-4 row-border c3">
-                <div><a href="#">Actualizar información de pago</a></div>
-                <div><a href="#">Información de facturación</a></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 row-border"></div>
-            <div class="col-md-4 row-border">
-                <div><b>Canjea la tarjeta de regalo o el codigo de promoción</b></div>
-                <input type="text" placeholder="Ingresa codigo o PIN" id="input-promocion">
-                <button type="button" class="btn-config" id="btn-canjear">Canjear</button>
-            </div>
-            <div class="col-md-4 row-border c3">
-                <div><a href="#">Dónde comprar tarjetas de regalo</a></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 row-border">
-                <div class="texto-mayus">INFORMACION DEL PLAN</div>
-            </div>
-            <div class="col-md-4 row-border">
-                <div>Tipo_Plan</div>
-            </div>
-            <div class="col-md-4 row-border c3">
-                <div><a href="#">Cambiar de plan</a></div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4 row-border">
-                <div class="texto-mayus">CONFIGURACIÓN</div>
-            </div>
-            <div class="col-md-4 row-border">
-                <div><a href="#">Configuración de comunicaciones</a></div>
-                <div><a href="#">Configuraciones de marketing</a></div>
-                <div><a href="#">Control parental</a></div>
-                <div><a href="#">Participación de pruebas</a></div>
-                <div><a href="#">Administración de dispositivos de descarga</a></div>
-                <div><a href="#">Activar un dispositivo</a></div>
-                <div><a href="#">Actividad de streaming reciente del dispositivo</a></div>
-                <div><a href="#">Cerrar sesión en todos los dispositivos</a></div>
-
-            </div>
-            <div class="col-md-4 row-border"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="texto-mayus">MI PERFIL</div>
-            </div>
-            <div class="col-md-4">
-                <div>Foto, Nombre_perfil</div>
-                <div><a href="#">Idioma</a></div>
-                <div><a href="#">Configuración de reproducción</a></div>
-                <div><a href="#">Aspecto de los subtitulos</a></div>
-            </div>
-            <div class="col-md-4">
-                <div><a href="#">Administrar perfiles</a></div>
-                <div><a href="#">Actividad de visualización</a></div>
-                <div><a href="#">Calificaciones</a></div>
-            </div>
+        <div class="col-md-4 row-border c3">
+            <div><a href="#">Cambiar email</a></div>
+            <div><a href="#">Cambiar contraseña</a></div>
+            <div><a href="#">Cambiar número de teléfono</a></div>
         </div>
     </div>
-</body>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 row-border">
+            <div>{{tarjeta}}</div>
+        </div>
+        <div class="col-md-4 row-border c3">
+            <div><a href="#">Actualizar información de pago</a></div>
+            <div><a href="#">Información de facturación</a></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 row-border"></div>
+        <div class="col-md-4 row-border">
+            <div><b>Canjea la tarjeta de regalo o el codigo de promoción</b></div>
+            <input type="text" placeholder="Ingresa codigo o PIN" id="input-promocion">
+            <button type="button" class="btn-config" id="btn-canjear">Canjear</button>
+        </div>
+        <div class="col-md-4 row-border c3">
+            <div><a href="#">Dónde comprar tarjetas de regalo</a></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 row-border">
+            <div class="texto-mayus">INFORMACION DEL PLAN</div>
+        </div>
+        <div class="col-md-4 row-border">
+            <div>{{plan}}</div>
+        </div>
+        <div class="col-md-4 row-border c3">
+            <div><a href="#">Cambiar de plan</a></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 row-border">
+            <div class="texto-mayus">CONFIGURACIÓN</div>
+        </div>
+        <div class="col-md-4 row-border">
+            <div><a href="#">Configuración de comunicaciones</a></div>
+            <div><a href="#">Configuraciones de marketing</a></div>
+            <div><a href="#">Control parental</a></div>
+            <div><a href="#">Participación de pruebas</a></div>
+            <div><a href="#">Administración de dispositivos de descarga</a></div>
+            <div><a href="#">Activar un dispositivo</a></div>
+            <div><a href="#">Actividad de streaming reciente del dispositivo</a></div>
+            <div><a href="#">Cerrar sesión en todos los dispositivos</a></div>
+
+        </div>
+        <div class="col-md-4 row-border"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="texto-mayus">MI PERFIL</div>
+        </div>
+        <div class="col-md-4">
+            <div>Foto, Nombre_perfil</div>
+            <div><a href="#">Idioma</a></div>
+            <div><a href="#">Configuración de reproducción</a></div>
+            <div><a href="#">Aspecto de los subtitulos</a></div>
+        </div>
+        <div class="col-md-4">
+            <div><a href="#">Administrar perfiles</a></div>
+            <div><a href="#">Actividad de visualización</a></div>
+            <div><a href="#">Calificaciones</a></div>
+        </div>
+    </div>
+</div>

@@ -7,7 +7,14 @@
             trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
         }
 
-        $sql = 'SELECT CORREO, CONTRASENIA FROM TBL_CUENTAS ORDER BY CODIGO_CUENTA';
+        $sql = 'SELECT A.CODIGO_CUENTA,
+                       A.CORREO,
+                       A.CONTRASENIA,
+                       A.NUMERO_TARJETA,
+                       B.NOMBRE_PLAN
+                FROM TBL_CUENTAS A
+                INNER JOIN TBL_PLANES B
+                ON A.CODIGO_PLAN = B.CODIGO_PLAN';
         $stid = oci_parse($conn, $sql);
         oci_execute($stid);
         while ($linea = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
