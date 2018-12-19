@@ -50,11 +50,9 @@ export class AdministradorComponent implements OnInit {
   }
 
   subirPeli() {
-    console.log(selecClasif);
+  //  console.log(selecClasif);
 
     const urlVideo = this.archivoVideoSelect.name.split('.');
-    const urlImagen1 = this.archivoImagen1Select.name.split('1');
-    const urlImagen2 = this.archivoImagen2Select.name.split('2');
 
     const parametros = 'nombre=' + urlVideo[0] + '&' +
                      'resenia=' + $('#resenia').val() + '&' +
@@ -63,9 +61,9 @@ export class AdministradorComponent implements OnInit {
                      'urlVideo=../../../../assets/video/' +
                       urlVideo[0] + '/' + this.archivoVideoSelect.name + '&' +
                      'urlImagen1=../../../../assets/video/' +
-                      urlImagen1[0] + '/' + this.archivoImagen1Select.name + '&' +
+                     urlVideo[0] + '/' + this.archivoImagen1Select.name + '&' +
                       'urlImagen2=../../../../assets/video/' +
-                      urlImagen2[0] + '/' + this.archivoImagen2Select.name;
+                      urlVideo[0] + '/' + this.archivoImagen2Select.name;
 
       console.log(parametros);
       $.ajax({
@@ -74,10 +72,10 @@ export class AdministradorComponent implements OnInit {
         dataType: 'JSON',
         data: parametros,
         success: function(respuesta) {
-            console.log(respuesta);
+           // console.log(respuesta);
         },
         error: function(error) {
-          console.log(error);
+         // console.log(error);
         }
 
       });

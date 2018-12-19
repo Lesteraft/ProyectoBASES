@@ -17,7 +17,7 @@ export class CardPeliculasComponent implements OnInit {
    }
 
   ngOnInit() {
-    console.log(this.cartelera);
+   // console.log(this.cartelera);
   }
 
 /*

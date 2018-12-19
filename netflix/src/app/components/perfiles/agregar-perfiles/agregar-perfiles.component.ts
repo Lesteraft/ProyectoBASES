@@ -28,10 +28,10 @@ export class AgregarPerfilesComponent implements OnInit {
         dataType: 'JSON',
         data: 'nombre=' + nombre + '&' + 'codigo_cuenta=' + this.cookieService.get('cod_cuenta'),
         success: function(respuesta) {
-            console.log(respuesta);
+           // console.log(respuesta);
         },
         error: function(error) {
-          console.log(error);
+         // console.log(error);
         }
       });
       this._router.navigate(['perfiles', nombre]);

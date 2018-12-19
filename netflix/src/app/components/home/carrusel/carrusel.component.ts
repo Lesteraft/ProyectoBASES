@@ -173,9 +173,8 @@ export class CarruselComponent implements OnInit {
   mostrarInf = false;
 
   constructor ( private _peliculasService: PeliculasService ) {
-    console.log(this._peliculasService.getCartelera());
+   // console.log(this._peliculasService.getCartelera());
     this.carteleras2 = this._peliculasService.getCartelera();
-    console.log(this.carteleras);
   }
 
   ngOnInit() {
@@ -184,12 +183,12 @@ export class CarruselComponent implements OnInit {
 
 
   moverIzquierda() {
-    console.log('se hizo click izquieda ' + '#carousel' + this.categoria.ID);
+   // console.log('se hizo click izquieda ' + '#carousel' + this.categoria.ID);
     $('#carousel' + this.categoria.ID).animate({ scrollLeft: '-=1300' }, 1300);
   }
 
   moverDerecha() {
-    console.log('se hizo click derecha ' + '#carousel' + this.categoria.ID);
+   // console.log('se hizo click derecha ' + '#carousel' + this.categoria.ID);
     $('#carousel' + this.categoria.ID).animate( {scrollLeft: '+=1300' }, 1300);
  }
 }

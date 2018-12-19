@@ -1,7 +1,7 @@
 <?php
  header('Access-Control-Allow-Origin: *');  
     if(isset($_POST['user'])){
-        $conn = oci_connect('NETFLIX', 'oracle', 'localhost/XE');
+        $conn = oci_connect('NETFLIX', 'oracle', 'localhost/xe');
         if (!$conn) {
             $e = oci_error();
             trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);

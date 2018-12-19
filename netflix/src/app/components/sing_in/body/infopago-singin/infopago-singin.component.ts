@@ -104,11 +104,11 @@ export class InfopagoSinginComponent implements OnInit {
         method: 'POST',
         dataType: 'html',
         success: function(respuesta) {
-            console.log(respuesta);
+           // console.log(respuesta);
           // this.router.navigate(['/principal']);
         },
-        error: function(respuesta) {
-
+        error: function(error) {
+        //  console.log(error);
         }
       });
     }
