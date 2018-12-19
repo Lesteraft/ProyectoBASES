@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as $ from 'jquery';
+import { PeliculasService } from '../../../services/peliculas.service';
+
 @Component({
   selector: 'app-carrusel',
   templateUrl: './carrusel.component.html',
@@ -166,16 +168,18 @@ export class CarruselComponent implements OnInit {
     }
   ];
 
-  carteleras2: any[];
+  carteleras2: any[] = [];
   InfoCartelera: any;
   mostrarInf = false;
 
-  constructor () {
-
+  constructor ( private _peliculasService: PeliculasService ) {
   }
 
   ngOnInit() {
+
   }
+
+
   moverIzquierda() {
     console.log('se hizo click izquieda ' + '#carousel' + this.categoria.ID);
     $('#carousel' + this.categoria.ID).animate({ scrollLeft: '-=1300' }, 1300);
