@@ -58,7 +58,7 @@
             <div class="col-md-4 p-5">
                 <br><br><br>
                 <div class="bold-font">Archivo de imagen 1</div>
-                <label class="btn btn-outline-light btn-block" id="img1"> <i class="fa fa-upload mr-1" aria-hidden="true"></i><input  type="file" class="input-archivos d-none" name="foto" (change)="archivoImagen1Seleccionado($event)">Imagen1.jpg</label>
+                <label class="btn btn-outline-light btn-block" (change)="uploadImg('img1')" id="img1"> <i class="fa fa-upload mr-1" aria-hidden="true"></i><input  type="file" class="input-archivos d-none" name="foto" (change)="archivoImagen1Seleccionado($event)">Imagen1.jpg</label>
                 <div class="bold-font">Archivo de imagen 2</div>
                 <label class="btn btn-outline-light btn-block" id="img2"><i class="fa fa-upload mr-1" aria-hidden="true"></i><input type="file" class="input-archivos d-none" name="foto" (change)="archivoImagen2Seleccionado($event)">Imagen2.jpg</label>
                 <div class="bold-font">Archivo de video</div>
