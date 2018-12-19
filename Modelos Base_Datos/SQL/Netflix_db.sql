@@ -55,6 +55,16 @@ BEGIN
     );
 END;
 
+/*Procedimiento almacenado para crear perfiles*/
+CREATE OR REPLACE PROCEDURE 
+crear_perfil(in_codigo_perfil integer, in_codigo_idioma integer, in_codigo_cuenta integer, in_nombre_perfil varchar )
+IS
+BEGIN
+    INSERT INTO TBL_PERFILES
+    (CODIGO_PERFIL, CODIGO_IDIOMA, CODIGO_CUENTA, NOMBRE_PERFIL)
+    VALUES
+    (in_codigo_perfil, in_codigo_idioma, in_codigo_cuenta, in_nombre_perfil);
+END;
 
 /*Creacion SEQUENCE*/
 
@@ -75,6 +85,12 @@ CREATE SEQUENCE peliculas_seq
 CREATE SEQUENCE administrador_seq
  START WITH     1
  INCREMENT BY   1;
+ 
+ /*SEQUENCE PERFILES*/
+CREATE SEQUENCE perfiles_seq
+ START WITH     1
+ INCREMENT BY   1;
+  
 
 /*############### - ELIMINACIONES - #########################*/
 
@@ -90,5 +106,15 @@ DROP SEQUENCE cuentas_seq;
 
 /*SEQUENCE PELICULAS*/
  DROP SEQUENCE peliculas_seq; 
+ 
+ /*SEQUENCE PERFILES*/
+  DROP SEQUENCE perfiles_seq;
+ 
+SELECT A.CORREO,
+       A.NUMERO_TARJETA,
+       B.NOMBRE_PLAN
+FROM TBL_CUENTAS A
+INNER JOIN TBL_PLANES B
+ON A.CODIGO_PLAN = B.CODIGO_PLAN;
 
 

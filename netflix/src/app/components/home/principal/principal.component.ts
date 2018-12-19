@@ -32,9 +32,9 @@ export class PrincipalComponent implements OnInit {
   ];
 
   constructor( private _peliculasService: PeliculasService ) {
+    console.log(this._peliculasService.getCartelera());
   }
   ngOnInit() {
-    console.log(this._peliculasService.getCartelera());
   }
 
 }
