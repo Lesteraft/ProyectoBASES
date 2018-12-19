@@ -33,6 +33,7 @@ import { SinginService } from './services/singin.service';
 import { LoginService } from './services/login.service';
 import { CookieService } from 'ngx-cookie-service';
 import { AuthGuardService } from './services/auth.guard.service';
+import { PeliculasService } from './services/peliculas.service';
 
 
 // VideoPlayer
@@ -88,7 +89,8 @@ import { AdministradorComponent } from './components/administrador/administrador
     SinginService,
     LoginService,
     CookieService,
-    AuthGuardService
+    AuthGuardService,
+    PeliculasService
   ],
   bootstrap: [AppComponent]
 })

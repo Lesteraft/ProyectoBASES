@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../../../services/login.service';
 import { Router } from '@angular/router';
+import { PeliculasService } from '../../../services/peliculas.service';
+
 
 @Component({
   selector: 'app-principal',
@@ -29,24 +31,10 @@ export class PrincipalComponent implements OnInit {
     }
   ];
 
-  constructor() {
-    $.ajax({
-      url: 'http://localhost/trabajosUNAH/proyectoBASES/netflix/src/app/ajax/actualizar.php',
-      method: 'POST',
-      dataType: 'JSON',
-      data: 'codigo=1',
-      success: function(respuesta) {
-          this.cartelera2 = respuesta;
-          console.log(respuesta);
-      },
-      error: function(error) {
-        console.log(error);
-      }
-    });
+  constructor( private _peliculasService: PeliculasService ) {
   }
   ngOnInit() {
-    this.carteleras = this.carteleras2;
-    console.log(this.carteleras);
+    console.log(this._peliculasService.getCartelera());
   }
 
 }

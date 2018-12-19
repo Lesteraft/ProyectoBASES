@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
 import { CookieService } from 'ngx-cookie-service';
+import { PeliculasService } from '../../services/peliculas.service';
 
 
 
@@ -12,10 +13,12 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor( private _router: Router, private cookieService: CookieService) {
+  constructor( private _router: Router, private cookieService: CookieService, private _peliculasService: PeliculasService) {
+
   }
 
   ngOnInit() {
+    console.log(this._peliculasService.getCartelera());
   }
 
   login() {
