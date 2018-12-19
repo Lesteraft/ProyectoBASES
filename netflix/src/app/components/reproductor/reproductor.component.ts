@@ -1,6 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import {VgAPI} from 'videogular2/core';
 import * as $ from 'jquery';
+import { CookieService } from 'ngx-cookie-service';
+
+
 @Component({
   selector: 'app-reproductor',
   templateUrl: './reproductor.component.html',
@@ -8,28 +12,17 @@ import * as $ from 'jquery';
 })
 
 export class ReproductorComponent implements OnInit {
+   api: VgAPI;
   video: any = {
     url: ''
   };
 
   @Input() id;
-  constructor(private activeRoute: ActivatedRoute ) {
+  constructor(private activeRoute: ActivatedRoute, private cookie: CookieService ) {
     this.activeRoute.params.subscribe(  params => {
        this.id = params['id'];
     });
-    $.ajax({
-      data: 'id=' + this.id,
-      url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/cargar-video.php',
-      method: 'POST',
-      dataType: 'JSON',
-      success: function(respuesta) {
-         $('#source-video').attr('src', respuesta.url);
-          console.log(respuesta.url);
-      },
-      error: function(error) {
-          console.log(error);
-      }
-    });
+    this.video.url = this.cookie.get('url');
   }
 
   ngOnInit() {
@@ -37,6 +30,11 @@ export class ReproductorComponent implements OnInit {
 
   cargarVideo() {
     console.log(this.video);
+  }
+
+  onPlayerReady(api: VgAPI) {
+    this.api = api;
+    this.api.play();
   }
 }
 

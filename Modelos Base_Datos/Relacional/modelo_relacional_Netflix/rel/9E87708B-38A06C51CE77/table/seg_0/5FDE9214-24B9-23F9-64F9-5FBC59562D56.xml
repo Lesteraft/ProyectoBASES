@@ -32,20 +32,6 @@
 <colAssociation fkAssociation="BB5313D7-FC54-298E-A5AB-8CF71E6AACD0" referredColumn="A5AFE658-A524-11EF-0B68-65E8C7E94209"/>
 </associations>
 </Column>
-<Column name="CODIGO_CLASIFICACION" id="184401D7-3314-F6E0-3E93-9688D9121B42">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 06:31:01 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="FBDA269D-12A1-E268-BF8A-B328285B6A66" referredColumn="4ECFB294-9FE5-EC81-DE46-E12B893702EE"/>
-</associations>
-</Column>
 <Column name="CODIGO_LUGAR" id="DA4A4531-882F-4902-9118-A2D57D90A01E">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:31:56 UTC</createdTime>
@@ -145,16 +131,6 @@
 <colUsage columnID="E113B26E-C5E4-1A2B-30B8-0369FA1CD5BC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FD4EBFFF-DFED-1552-141E-3A623B564B36" name="T_PERFIL_T_CLASIFI_FK">
-<createdBy>LesterPC</createdBy>
-<createdTime>2018-10-24 06:31:01 UTC</createdTime>
-<ownerDesignName>modelo_relacional_Netflix</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="184401D7-3314-F6E0-3E93-9688D9121B42"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="42FBA0EE-23C2-FCCD-AE4B-CFC82291F4AC" name="TB_PERFIL_TBL_REGION_FK">
 <createdBy>LesterPC</createdBy>
 <createdTime>2018-10-24 06:31:56 UTC</createdTime>
@@ -165,7 +141,7 @@
 <colUsage columnID="DA4A4531-882F-4902-9118-A2D57D90A01E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F74665CA-3ABE-AF0B-D298-E238A22EB3B0" name="T_PERFIL_T_CONTROL_PARENT_FK">
+<ind_PK_UK id="F74665CA-3ABE-AF0B-D298-E238A22EB3B0" name="T_PERFIL_T_CLASIFI_FK">
 <createdBy>Oscar E. Blandon</createdBy>
 <createdTime>2018-10-31 01:28:55 UTC</createdTime>
 <ownerDesignName>modelo_relacional_Netflix</ownerDesignName>

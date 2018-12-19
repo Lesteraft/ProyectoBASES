@@ -1,21 +1,22 @@
 <?php
- header('Access-Control-Allow-Origin: *');  
+ header('Access-Control-Allow-Origin: *'); 
+ $contenido = array(); 
     if(isset($_POST['id'])){
-        if(file_exists('../../assets/data/video.json')) {
-            $archivo = fopen('../../assets/data/video.json', 'r');
-            while($linea = fgets($archivo)){
-                $registro = json_decode($linea, true);
-                if($registro['id'] === $_POST['id']){
-                    break;
-                }
-            }
-            //fclose($archivo);
-            echo json_encode($registro);
-        }else
-        echo '{"error":"1"}';
+        $conn = oci_connect('NETFLIX', 'oracle', 'localhost/XE');
+        if (!$conn) {
+            $e = oci_error();
+            trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+        }
 
+        $sql = 'SELECT URL_VIDEO
+                FROM TBL_PELICULAS
+                WHERE CODIGO_PELICULA ='.$_POST['id'];
+        $stid = oci_parse($conn, $sql);
+        oci_execute($stid);
+        $linea = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS);
+        echo json_encode($linea);
 
+      
     }
-    
 
-?>
+ ?>

@@ -22,6 +22,7 @@ export class AgregarPerfilesComponent implements OnInit {
 
   continuar( nombre: string ) {
     if ( nombre !== '' ) {
+      console.log(nombre);
       $.ajax({
         url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/agregar-perfil.php',
         method: 'POST',
@@ -34,7 +35,7 @@ export class AgregarPerfilesComponent implements OnInit {
          // console.log(error);
         }
       });
-      this._router.navigate(['perfiles', nombre]);
+      //this._router.navigate(['perfiles', nombre]);
     } else {
       console.log('debe haber problemas');
       $('#txtNombreAgregar').addClass('errorInput');
