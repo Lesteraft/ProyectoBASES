@@ -26,6 +26,13 @@ export class AdministradorComponent implements OnInit {
 
   }
 
+  uploadImg(id) {
+    $('#' + id).addClass('btn-success');
+    $('#' + id).removeClass('btn-outline-light');
+    $('#' + id).css('disabled', 'disabled');
+    console.log(id);
+  }
+
   logout() {
     this.cookieService.deleteAll();
   }
