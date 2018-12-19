@@ -9,7 +9,6 @@ import { CookieService } from 'ngx-cookie-service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  private consultaUsuario: any;
   constructor( private _router: Router, private cookieService: CookieService) {
   }
 
@@ -40,7 +39,7 @@ export class LoginComponent implements OnInit {
                     console.log(respuesta);
                     if (consulta.codigo === 0) {
                      const tarjeta = '********' + consulta.NUMERO_TARJETA.substring(8, 12);
-                     cookie.set('usuario', consulta.CODIGO_CUENTA);
+                     cookie.set('cod_cuenta', consulta.CODIGO_CUENTA);
                      cookie.set('usuario', consulta.CORREO);
                      cookie.set('tarjeta', tarjeta );
                      cookie.set('plan', consulta.NOMBRE_PLAN);

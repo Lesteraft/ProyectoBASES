@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-agregar-perfiles',
@@ -9,7 +10,7 @@ import * as $ from 'jquery';
 })
 export class AgregarPerfilesComponent implements OnInit {
 
-  constructor( private _router: Router) { }
+  constructor( private _router: Router, private cookieService: CookieService) { }
 
   ngOnInit() {
   }
@@ -21,7 +22,18 @@ export class AgregarPerfilesComponent implements OnInit {
 
   continuar( nombre: string ) {
     if ( nombre !== '' ) {
-      console.log(nombre);
+      $.ajax({
+        url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/agregar-perfil.php',
+        method: 'POST',
+        dataType: 'JSON',
+        data: 'nombre=' + nombre + '&' + 'codigo_cuenta=' + this.cookieService.get('cod_cuenta'),
+        success: function(respuesta) {
+            console.log(respuesta);
+        },
+        error: function(error) {
+          console.log(error);
+        }
+      });
       this._router.navigate(['perfiles', nombre]);
     } else {
       console.log('debe haber problemas');
