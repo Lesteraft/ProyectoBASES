@@ -16,8 +16,7 @@ export class PrincipalComponent implements OnInit {
     {
       nombre: 'Peliculas',
       ID: 0
-    }
-    /*,
+    },
     {
       nombre: 'Series',
       ID: 1
@@ -29,7 +28,7 @@ export class PrincipalComponent implements OnInit {
     {
       nombre: 'Mi Lista',
       ID: 3
-   }*/
+   }
   ];
 
   constructor( ) {
