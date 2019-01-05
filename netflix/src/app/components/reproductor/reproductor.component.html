@@ -23,8 +23,8 @@
         <vg-fullscreen></vg-fullscreen>
     </vg-controls>
 
-    <video [vgMedia]="media" #media [id]="id" preload="auto" crossorigin>
-        <source id="source-video" [src]="video.url" type="video/mp4">
+    <video [vgMedia]="media" #media [id]="id" preload="auto" crossorigin style="height: auto;">
+        <source id="source-video" src='{{ video.url }}' type="video/mp4">
         <track kind="subtitles" label="English" src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt" srclang="en" default>
         <track kind="subtitles" label="Español" src="http://static.videogular.com/assets/subs/pale-blue-dot-es.vtt" srclang="es">
     </video>

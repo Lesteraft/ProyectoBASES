@@ -4,11 +4,11 @@
         <div class="">
             <div class="" id="divPerfiles" style="display: block;">
                 <div class="text-center">
-                    <h1 style="">¿Quién está viendo ahora?</h1>
+                    <h1>¿Quién está viendo ahora?</h1>
                 </div>
                 <div class="">
-                    <ul id="listaPerfiles" class="navbar" (click)='redireccionar()'>
-                        <app-lista-perfiles class="m-auto"></app-lista-perfiles>
+                    <ul id="listaPerfiles" class="navbar">
+                        <app-lista-perfiles  (click)='redireccionar( perfil )' [perfil]='perfil' *ngFor="let perfil of perfiles" class="m-auto"></app-lista-perfiles>
                         <li (click)="agregarPerfil()" id="agregarPerfilli">
                             <a>
                                 <div>
@@ -25,8 +25,8 @@
                         </li>
                     </ul>
                 </div>
-                <div style="margin-top: 50px;">
-                    <button class="btn btn-dark" (click)="administrarPerfiles()" id="btn-AdministrarRegistro" style="width: 18vw; min-width: 173px!important; margin-left: 13vw;">Administrar Perfiles</button>
+                <div class="text-center" style="margin-top: 50px;">
+                    <button class="btn btn-dark" (click)="administrarPerfiles()" id="btn-AdministrarRegistro" style="width: 18vw; min-width: 173px!important; margin-left: 0;">Administrar Perfiles</button>
                 </div>
             </div>
         </div>

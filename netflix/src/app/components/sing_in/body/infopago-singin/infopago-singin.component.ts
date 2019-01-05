@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import { Router } from '@angular/router';
 import { SinginService } from '../../../../services/singin.service';
+import { HttpClient } from '@angular/common/http';
 
 let valido: Boolean = false;
 @Component({
@@ -11,7 +12,8 @@ let valido: Boolean = false;
 })
 export class InfopagoSinginComponent implements OnInit {
 
-  constructor( private router: Router, private _singinService: SinginService ) { }
+  constructor( private router: Router, private _singinService: SinginService,
+               private http: HttpClient ) { }
   ngOnInit() {
       let numero_tarjeta: any = $('#infopago-tarjeta').val();
       let fecha_vencimiento: any = $('#infopago-fecha_vencimiento').val();
@@ -91,26 +93,21 @@ export class InfopagoSinginComponent implements OnInit {
 
     if (valido) {
 
-      const parametros = 'usuario=' + this._singinService.getUsuario() + '&' +
-                         'password=' + this._singinService.getPassword() + '&' +
-                         'planUsuario=' + this._singinService.getPlanUsuario() + '&' +
-                         'numero_tarjeta=' + this._singinService.getNumeroTarjeta() + '&' +
-                         'fecha_vencimiento=' + this._singinService.getFechaVencimientoTarjeta() + '&' +
-                         'cvc=' + this._singinService.getCvc();
+      const parametros = {
+         'usuario': this._singinService.getUsuario(),
+         'password': this._singinService.getPassword(),
+         'planUsuario': this._singinService.getPlanUsuario(),
+         'numero_tarjeta': this._singinService.getNumeroTarjeta(),
+         'fecha_vencimiento': this._singinService.getFechaVencimientoTarjeta(),
+         'cvc': this._singinService.getCvc()
+      };
       console.log(parametros);
-      $.ajax({
-        url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/registro-usuario.php',
-        data: parametros,
-        method: 'POST',
-        dataType: 'html',
-        success: function(respuesta) {
-           // console.log(respuesta);
-          // this.router.navigate(['/principal']);
-        },
-        error: function(error) {
-        //  console.log(error);
-        }
-      });
+
+      this.http.post('http://localhost/proyectoBASES/netflix/src/app/ajax/registro-usuario.php', parametros)
+         .subscribe( (data: any) => {
+            console.log(data)
+         });
+
     }
   }
 

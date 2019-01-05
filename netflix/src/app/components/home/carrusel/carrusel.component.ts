@@ -168,13 +168,18 @@ export class CarruselComponent implements OnInit {
     }
   ];
 
-  carteleras2: any = {};
+  carteleras2: any = [];
   InfoCartelera: any;
   mostrarInf = false;
 
   constructor ( private _peliculasService: PeliculasService ) {
    // console.log(this._peliculasService.getCartelera());
-    this.carteleras2 = this._peliculasService.getCartelera();
+      _peliculasService.getCartelera()
+         .subscribe( (data: any) => {
+            console.log(data);
+            this.carteleras2 = data;
+         })
+      ;
   }
 
   ngOnInit() {

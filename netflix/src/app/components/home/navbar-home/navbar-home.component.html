@@ -28,13 +28,13 @@
             </div>
             <input style="display:none " class="mr-sm-2" id="input-search" type="search" placeholder="Titulos,personas,generos" aria-label="Search">
             <div class="margin-bueno" style="margin-right: 10px;">
-                <span style="color: white; font-size: 15px; font-weight: 500;"> Lester </span>
+                <span style="color: white; font-size: 15px; font-weight: 500;"> {{ perfil.nombre }} </span>
             </div>
             <div class="margin-bueno">
                 <i style="font-size: 25px; color: white;" class="fa fa-bell"></i>
             </div>
             <div class="margin-bueno">
-                <img (mouseenter)='mostrar();' (mouseleave)="ocultar()" style="width: 35px" src="../../../../assets/img/perfil//001.png" alt="">
+                <img (mouseenter)='mostrar();' (mouseleave)="ocultar()" style="width: 35px" [src]="perfil.imagen" alt="">
                 <div>
                     <div class='text-center animated fadeIn' (mouseleave)="ocultar()" (mouseenter)='mostrar();' id="opcionesUssuario" style='display: none;'>
                         <i style="color:white; font-size: 15px; padding-top: 10px;" class="fas fa-caret-up position-absolute">
@@ -43,8 +43,8 @@
                               <div class="">
                                 <div class="">
                                   <div class="list-group" id="list-tab" role="tablist" style="background-color: tranparent !important">
-                                    <a class="list-group-item list-group-item-action list-left" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"> <img src="../../../../assets/img/perfil//001.png" style='width: 30px; margin-right: 10px;' alt=""> Perfiles</a>
-                                    <a class="list-group-item list-group-item-action list-left" style="border-bottom: white solid" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" [routerLink]="['/perfiles/0']">Administrar perfiles</a>
+                                    <a class="list-group-item list-group-item-action list-left" id="list-home-list" data-toggle="list" [routerLink]="['/perfiles','0']" role="tab" aria-controls="home"> <img [src]="perfil.imagen" style='width: 30px; margin-right: 10px;' alt=""> Perfiles</a>
+                                    <a class="list-group-item list-group-item-action list-left" style="border-bottom: white solid" id="list-profile-list" data-toggle="list"  role="tab" aria-controls="profile" [routerLink]="['/perfiles','0']">Administrar perfiles</a>
                                     <a class="list-group-item list-group-item-action list-down list-left" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" [routerLink]="['/configuraciones']">Cuenta</a>
                                     <a class="list-group-item list-group-item-action list-down list-left" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Centro de ayuda</a>
                                     <a class="list-group-item list-group-item-action list-down list-left" id="list-settings-list" data-toggle="list" href="#" id="link-logout" (click)="logout()" role="tab" aria-controls="settings">Cerrar sesión</a>

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { LOCALE_ID } from '@angular/core';
 
 // Rutas
   import { APP_ROUTING } from './app.route';
@@ -26,6 +27,10 @@ import { RecientesComponent } from './components/home/recientes/recientes.compon
 import { MiListaComponent } from './components/home/mi-lista/mi-lista.component';
 import { ConfiguracionesComponent } from './components/home/configuraciones/configuraciones.component';
 import { CarruselComponent } from './components/home/carrusel/carrusel.component';
+//
+
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 // Servicios
@@ -74,7 +79,7 @@ import { AdministradorComponent } from './components/administrador/administrador
     ReproductorComponent,
     InformacionCarteleraComponent,
     LaunchPreviewComponent,
-    AdministradorComponent,
+    AdministradorComponent
   ],
   imports: [
     BrowserModule,
@@ -83,14 +88,17 @@ import { AdministradorComponent } from './components/administrador/administrador
     VgOverlayPlayModule,
     VgBufferingModule,
     AppRoutingModule,
-    APP_ROUTING
+    APP_ROUTING,
+    HttpClientModule,
+    HttpModule
   ],
   providers: [
     SinginService,
     LoginService,
     CookieService,
     AuthGuardService,
-    PeliculasService
+    PeliculasService,
+    {provide: LOCALE_ID, useValue: 'es'}
   ],
   bootstrap: [AppComponent]
 })

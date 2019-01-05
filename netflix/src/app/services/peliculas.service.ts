@@ -1,51 +1,17 @@
 import { Injectable } from '@angular/core';
-import { CookieService } from 'ngx-cookie-service';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class PeliculasService {
 
-
     public cartelera: any;
-    private categoria: any[];
 
-    constructor( private cookieService: CookieService ) {
-
-        /*$.ajax({
-            url: 'http://localhost/trabajosUNAH/proyectoBASES/netflix/src/app/ajax/actualizar.php',
-            method: 'POST',
-            dataType: 'JSON',
-            data: 'codigo=1',
-            success: function(respuesta) {
-                this.cartelera = respuesta;
-                console.log(this.cartelera);
-            },
-            error: function(error) {
-              // console.log(error);
-            }
-          });
-
+    constructor( private http: HttpClient) {
     }
-
-    getCartelera () {
-        $.ajax({
-            url: 'http://localhost/trabajosUNAH/proyectoBASES/netflix/src/app/ajax/actualizar.php',
-            method: 'POST',
-            dataType: 'JSON',
-            data: 'codigo=1',
-            success: function(respuesta) {
-                return respuesta;
-                console.log(this.cartelera);
-            },
-            error: function(error) {
-                return error;
-              // console.log(error);
-            }
-          });*/
-    }
-
-
-    getCartelera(): {} {
-        return JSON.parse(this.cookieService.get('cartelera'));
-    }
-
+   getCartelera() {
+      return this.http.get('http://localhost/proyectoBASES/netflix/src/app/ajax/cargar-contenido.php');
+   }
+   getUrl( id ){
+      return this.http.post('http://localhost/proyectoBASES/netflix/src/app/ajax/cargar-video.php', {'id': id});
+   }
 }

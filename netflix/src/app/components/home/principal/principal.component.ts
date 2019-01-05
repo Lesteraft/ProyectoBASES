@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from '../../../services/login.service';
-import { Router } from '@angular/router';
+// import { LoginService } from '../../../services/login.service';
+// import { Router } from '@angular/router';
 import { PeliculasService } from '../../../services/peliculas.service';
 
 
@@ -16,7 +16,8 @@ export class PrincipalComponent implements OnInit {
     {
       nombre: 'Peliculas',
       ID: 0
-    },
+    }
+    /*,
     {
       nombre: 'Series',
       ID: 1
@@ -28,10 +29,11 @@ export class PrincipalComponent implements OnInit {
     {
       nombre: 'Mi Lista',
       ID: 3
-    }
+   }*/
   ];
 
-  constructor( private _peliculasService: PeliculasService ) {
+  constructor( ) {
+
   }
   ngOnInit() {
   }

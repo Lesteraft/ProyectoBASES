@@ -56,7 +56,12 @@
                 <div><button class="btn-block w-100" type="button" id="btn-subir-pelicula" (click)="subirPeli()">Publicar Pelicula</button></div>
             </div>
             <div class="col-md-4 p-5">
-                <br><br><br>
+                <br>
+               <label class="bold-font" for="">
+                  Nombre de la pelicula
+                  <input class="w-100 inputs" type="text" id="txt-nombrePeli">
+               </label>
+                <br>
                 <div class="bold-font">Archivo de imagen 1</div>
                 <label class="btn btn-outline-light btn-block" (change)="uploadImg('img1')" id="img1"> <i class="fa fa-upload mr-1" aria-hidden="true"></i><input  type="file" class="input-archivos d-none" name="foto" (change)="archivoImagen1Seleccionado($event)">Imagen Cartelera.jpg</label>
                 <div class="bold-font">Archivo de imagen 2</div>
@@ -65,9 +70,9 @@
                 <label class="btn btn-outline-light btn-block" (change)="uploadImg('video1')" id="video1"><i class="fa fa-upload mr-1" aria-hidden="true"></i><input type="file" class="input-archivos d-none" (change)="archivoVideoSeleccionado($event)"> Video.mp4 </label>
             </div>
 
-            <div class="col-4">
-                <br>
-                <table class="table">
+            <div class="col-md-4">
+                <br><br><br>
+                <table class="table mt-5 pt-5">
                     <thead class="thead-light">
                         <tr>
                             <th colspan="2" scope="col" class="text-center">NORMAS</th>
@@ -88,6 +93,12 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="bold-font">Eliminar Cuenta</div>
+                <div>
+                    <input type="text" placeholder="Codigo Usuario" id="input-eliminar">
+                    <button id="eliminar" type="button" (click)='eliminarCuenta()'>Eliminar</button>
+                </div>
             </div>
+
         </div>
     </div>

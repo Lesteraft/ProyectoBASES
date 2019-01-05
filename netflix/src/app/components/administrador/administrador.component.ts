@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
+import { Router, ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 import * as $ from 'jquery';
 
 let selecClasif: any;
@@ -15,7 +17,8 @@ export class AdministradorComponent implements OnInit {
   private archivoImagen1Select: File = null;
   private archivoImagen2Select: File = null;
 
-  constructor(private cookieService: CookieService) {
+  constructor( private cookieService: CookieService, private _router: Router,
+               private http: HttpClient) {
     this.correo = cookieService.get('usuario');
   }
   ngOnInit() {
@@ -50,36 +53,55 @@ export class AdministradorComponent implements OnInit {
   }
 
   subirPeli() {
-  //  console.log(selecClasif);
+    console.log(selecClasif);
 
     const urlVideo = this.archivoVideoSelect.name.split('.');
 
-    const parametros = 'nombre=' + urlVideo[0] + '&' +
-                     'resenia=' + $('#resenia').val() + '&' +
-                     'clasificacion=' + selecClasif + '&' +
-                     'fecha=' + $('#fecha_estreno').val() + '&' +
-                     'urlVideo=../../../../assets/video/' +
-                      urlVideo[0] + '/' + this.archivoVideoSelect.name + '&' +
-                     'urlImagen1=../../../../assets/video/' +
-                     urlVideo[0] + '/' + this.archivoImagen1Select.name + '&' +
-                      'urlImagen2=../../../../assets/video/' +
-                      urlVideo[0] + '/' + this.archivoImagen2Select.name;
+    const parametros =
+    {
+      'nombre': $('#txt-nombrePeli').val(),
+      'resenia': $('#resenia').val(),
+      'clasificacion': selecClasif,
+      'fecha': $('#fecha_estreno').val(),
+      'urlVideo': '../../../../assets/video/' +
+      urlVideo[0] + '/' + this.archivoVideoSelect.name,
+      'urlImagen1': '../../../../assets/video/' +
+      urlVideo[0] + '/' + this.archivoImagen1Select.name,
+      'urlImagen2':'../../../../assets/video/' +
+      urlVideo[0] + '/' + this.archivoImagen2Select.name
+   };
+
+
 
       console.log(parametros);
-      $.ajax({
-        url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/subir-peliculas.php',
-        method: 'POST',
-        dataType: 'JSON',
-        data: parametros,
-        success: function(respuesta) {
-           // console.log(respuesta);
-        },
-        error: function(error) {
-         // console.log(error);
-        }
 
-      });
+      this.http.post('http://localhost/proyectoBASES/netflix/src/app/ajax/subir-peliculas.php', parametros)
+         .subscribe( data => {
+            console.log(data);
+         }, error => {
+            console.log(error);
+         })
+      ;
 
+
+      // this._router.navigate(['principal']);
+  }
+
+  eliminarCuenta() {
+    console.log($('#input-eliminar').val());
+    $.ajax({
+      url: 'http://localhost/proyectoBASES/netflix/src/app/ajax/eliminar-cuenta.php',
+      method: 'POST',
+      dataType: 'JSON',
+      data: 'codigo_cuenta=' + $('#input-eliminar').val(),
+      success: function(respuesta) {
+          console.log(respuesta);
+          alert('exito');
+      },
+      error: function(error) {
+        console.log(error);
+      }
+
+    });
   }
 }
-

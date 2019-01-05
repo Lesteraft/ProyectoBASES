@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import * as $ from 'jquery';
+import { HttpClient } from '@angular/common/http';
+import { LoginService } from '../../../services/login.service';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component ({
   selector: 'app-perfiles',
@@ -8,34 +10,35 @@ import * as $ from 'jquery';
   styleUrls: ['./perfiles.component.css']
 })
 
-export class PerfilesComponent implements OnInit {
+export class PerfilesComponent {
 
-  nombre: any;
+  perfiles: any = [];
 
-  constructor( private _router: Router, private activatesRoute: ActivatedRoute  ) {
-    this.activatesRoute.params.subscribe( _params => {
-      this.nombre = _params.nuevo;
-      if ( this.nombre !== '0' ) {
-        console.log('se agregó');
-      }
-    });
+  constructor( private _router: Router, private activatesRoute: ActivatedRoute,
+               private http: HttpClient, private loginUser: LoginService, private cookies: CookieService ) {
 
+     this.http.post('http://localhost/proyectoBASES/netflix/src/app/ajax/cargar-perfiles.php', this.loginUser.getUsuario() )
+        .subscribe( (data: any) => {
+            this.perfiles = data;
+           console.log(this.perfiles);
+        })
+     ;
   }
 
-  ngOnInit() {
-  }
+   regresar() { this._router.navigate(['login']); }
 
-  regresar() { this._router.navigate(['login']); }
+   agregarPerfil() {
+      console.log('se ha dado click');
+      this._router.navigate(['/agregarPerfiles']);
+   }
 
-  agregarPerfil() {
-    console.log('se ha dado click');
-    this._router.navigate(['agregarPerfiles']);
-  }
-
-  administrarPerfiles() {
-    console.log('se administrarán perfiles');
-  }
-  redireccionar() {
-     this._router.navigate(['principal']);
- }
+   administrarPerfiles() {
+      console.log('se administrarán perfiles');
+   }
+   redireccionar( perfil: any ) {
+      this.cookies.set('perfilNombre', perfil.NOMBRE_PERFIL);
+      this.cookies.set('perfilImagen', perfil.IMAGEN);
+      console.log(perfil);
+      this._router.navigate(['principal']);
+   }
 }

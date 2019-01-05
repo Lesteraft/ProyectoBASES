@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
 import { CookieService } from 'ngx-cookie-service';
+import { LoginService } from '../../../services/login.service';
 
 @Component({
   selector: 'app-navbar-home',
@@ -13,8 +14,14 @@ import { CookieService } from 'ngx-cookie-service';
 export class NavbarHomeComponent implements OnInit {
 
   i = 0;
+  private perfil: any = {};
 
-  constructor( private _router: Router, private cookieService: CookieService ) {}
+  constructor( private _router: Router, private cookieService: CookieService, private _login: LoginService ) {
+     this.perfil.nombre = cookieService.get('perfilNombre');
+     this.perfil.imagen = cookieService.get('perfilImagen');
+     console.log(this.perfil);
+ }
+
 
   ngOnInit() {
   let textoBusqueda: any;
@@ -86,10 +93,10 @@ export class NavbarHomeComponent implements OnInit {
     } , 800);
   }
 
-  logout() {
-    this.cookieService.deleteAll();
-    this._router.navigate(['/login']);
-  }
+   logout() {
+      this._login.logOut();
+      this._router.navigate(['/login']);
+   }
 
 
 }
